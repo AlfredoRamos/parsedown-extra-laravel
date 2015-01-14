@@ -19,6 +19,5 @@
         "psr-0": {
             "AlfredoRamos\\ParsedownExtra\\": "src/"
         }
-    },
-    "minimum-stability": "stable"
+    }
 }
