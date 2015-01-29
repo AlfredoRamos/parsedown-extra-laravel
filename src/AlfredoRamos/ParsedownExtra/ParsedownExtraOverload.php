@@ -19,6 +19,14 @@ namespace AlfredoRamos\ParsedownExtra;
 
 class ParsedownExtraOverload extends \ParsedownExtra {
 	
+	/**
+	 * @deprecated Function overloaded to maintain compatibility.
+	 * @see Parsedown::parse()
+	 *
+	 * @var string
+	 *
+	 * @return string
+	 */
 	function parse($text) {
 		return parent::text($text);
 	}
