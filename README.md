@@ -1,6 +1,6 @@
 Parsedown Extra for Laravel
 ======================
-This is just a [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Laravel 4.
+A [Parsedown Extra](https://github.com/erusev/parsedown-extra) wrapper for Laravel 4
 
 Installation with Composer
 ====================
