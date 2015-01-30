@@ -15,6 +15,9 @@
         "php": ">=5.4.0",
 		"erusev/parsedown-extra": "*"
     },
+	"require-dev": {
+		"orchestra/testbench": "2.2.*"
+	}
     "autoload": {
         "psr-0": {
             "AlfredoRamos\\ParsedownExtra\\": "src/"
