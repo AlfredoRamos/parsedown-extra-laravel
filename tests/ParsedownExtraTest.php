@@ -16,7 +16,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+use Orchestra\Testbench\TestCase;
+
 class ParsedownExtraTest extends TestCase {
+	
+	protected function getPackageProviders() {
+		return ['AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider'];
+	}
+	
+	protected function getPackageAliases() {
+		return ['Markdown' => 'AlfredoRamos\ParsedownExtra\ParsedownExtraFacade'];
+	}
 	
 	public function testBasicHtml() {
 		$expected = '<p>Parsedown Extra</p>';
