@@ -1,6 +1,8 @@
 Parsedown Extra for Laravel
 ======================
-A [Parsedown Extra](https://github.com/erusev/parsedown-extra) wrapper for Laravel 4
+A [Parsedown Extra](https://github.com/erusev/parsedown-extra) wrapper for Laravel 4.
+
+[![Build Status](https://img.shields.io/travis/AlfredoRamos/parsedown-extra-laravel/master.svg?style=flat-square)](https://travis-ci.org/AlfredoRamos/parsedown-extra-laravel) [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/parsedown-extra-laravel.svg?style=flat-square)](https://github.com/AlfredoRamos/parsedown-extra-laravel/releases) [![License](https://img.shields.io/packagist/l/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square)](https://packagist.org/packages/alfredo-ramos/parsedown-extra-laravel)
 
 Installation with Composer
 ====================

@@ -3,7 +3,7 @@
     "description": "A Parsedown Extra wrapper for Laravel 4",
 	"keywords": ["markdown", "markdown extra", "parsedown", "parsedown extra", "laravel", "laravel 4", "parser"],
 	"homepage": "https://github.com/AlfredoRamos/parsedown-extra-laravel",
-	"license": "GPLv3",
+	"license": "GPL-3.0+",
     "authors": [
         {
             "name": "Alfredo Ramos",
