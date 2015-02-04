@@ -9,7 +9,7 @@ Installation with Composer
 * Add the following line to the ```require``` block in your ```composer.json``` file:
 
 ```json
-"alfredo-ramos/parsedown-extra-laravel": "dev-master"
+"alfredo-ramos/parsedown-extra-laravel": "~0.1"
 ```
 
 Then run ```composer install``` or ```composer update``` in your terminal.
