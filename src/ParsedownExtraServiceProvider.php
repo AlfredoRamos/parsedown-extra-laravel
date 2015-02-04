@@ -15,19 +15,33 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 namespace AlfredoRamos\ParsedownExtra;
 
-use Illuminate\Support\Facades\Facade;
+use Illuminate\Support\ServiceProvider;
 
-class ParsedownExtraFacade extends Facade {
-	
+class ParsedownExtraServiceProvider extends ServiceProvider {
+
 	/**
-	 * Get the registered name of the component.
+	 * Register the application services.
 	 *
-	 * @return string
+	 * @return void
 	 */
-	protected static function getFacadeAccessor() {
-		return 'parsedownextra';
+	public function register()
+	{
+		$this->app->singleton('AlfredoRamos\ParsedownExtra\ParsedownExtraOverload', function($app){
+			return new ParsedownExtraOverload;
+		});
 	}
-	
+
+	/**
+	 * Get the services provided by the provider.
+	 *
+	 * @return array
+	 */
+	public function provides()
+	{
+		return ['AlfredoRamos\ParsedownExtra\ParsedownExtraOverload'];
+	}
+
 }
