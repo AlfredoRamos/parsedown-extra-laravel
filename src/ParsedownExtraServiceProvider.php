@@ -29,9 +29,11 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app->singleton('AlfredoRamos\ParsedownExtra\ParsedownExtraOverload', function($app){
+		$this->app->singleton('parsedownextra', function($app){
 			return new ParsedownExtraOverload;
 		});
+		
+		$this->app->alias('parsedownextra', 'AlfredoRamos\ParsedownExtra\ParsedownExtraOverload');
 	}
 
 	/**
