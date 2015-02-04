@@ -11,3 +11,8 @@ before_script:
   - travis_retry composer install --prefer-source --no-interaction
 
 script: phpunit
+
+# Ignore HHVM composer timeout
+matrix:
+    allow_failures:
+        - php: hhvm
