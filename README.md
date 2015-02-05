@@ -23,7 +23,7 @@ Then run ```composer install``` or ```composer update``` in your terminal.
 * Then register the facade to the ```aliases``` array in your ```config/app.php``` file
 
 ```php
-'Markdown'          => 'AlfredoRamos\ParsedownExtra\ParsedownExtraFacade'
+'Markdown'  => 'AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra'
 ```
 
 Usage
