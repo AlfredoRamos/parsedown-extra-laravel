@@ -26,6 +26,9 @@ class ParsedownExtraTest extends Orchestra\Testbench\TestCase {
 		return ['Markdown' => 'AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra'];
 	}
 	
+	/**
+	 * @medium
+	 */
 	public function testBasicHtml() {
 		$expected = '<p>Parsedown Extra</p>';
 		
@@ -34,6 +37,9 @@ class ParsedownExtraTest extends Orchestra\Testbench\TestCase {
 		$this->assertSame($expected, $result);
 	}
 	
+	/**
+	 * @medium
+	 */
 	public function testBasicAppendix() {
 		$expected = '<p>Parsedown Extra <sup id="fnref1:1"><a href="#fn:1" class="footnote-ref">1</a></sup></p>'.PHP_EOL.
 					'<div class="footnotes">'.PHP_EOL.
