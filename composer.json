@@ -13,10 +13,13 @@
     ],
     "require": {
         "php": ">=5.4.0",
-		"erusev/parsedown-extra": "*"
+		"erusev/parsedown-extra": "~0.7"
     },
 	"require-dev": {
-		"orchestra/testbench": "3.0.*"
+		"orchestra/testbench": "~3.0"
+	},
+	"suggest": {
+		"mews/purifier": "HTML Purifier wrapper to filter output's HTML tags."
 	},
     "autoload": {
         "psr-4": {
@@ -25,7 +28,7 @@
     },
 	"extra": {
 		"branch-alias": {
-			"dev-master": "0.2-dev"
+			"dev-master": "0.3-dev"
 		}
 	}
 }
