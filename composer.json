@@ -1,6 +1,7 @@
 {
     "name": "alfredo-ramos/parsedown-extra-laravel",
-    "description": "A Parsedown Extra wrapper for Laravel 5",
+	"type": "library",
+    "description": "A Parsedown Extra package for Laravel 5",
 	"keywords": ["markdown", "markdown extra", "parsedown", "parsedown extra", "laravel", "laravel 5", "parser"],
 	"homepage": "https://github.com/AlfredoRamos/parsedown-extra-laravel",
 	"license": "GPL-3.0+",
@@ -8,6 +9,7 @@
         {
             "name": "Alfredo Ramos",
             "email": "alfredo.ramos@yandex.com",
+			"homepage": "https://github.com/AlfredoRamos",
 			"role": "Developer"
         }
     ],
@@ -19,7 +21,7 @@
 		"orchestra/testbench": "~3.0"
 	},
 	"suggest": {
-		"mews/purifier": "HTML Purifier wrapper to filter output's HTML tags."
+		"mews/purifier": "HTML Purifier wrapper to filter HTML tags in the output."
 	},
     "autoload": {
         "psr-4": {

@@ -34,7 +34,7 @@ class ParsedownExtraTest extends Orchestra\Testbench\TestCase {
 		$this->assertSame($expected, $result);
 	}
 	
-	public function testBasicAppendix() {
+	public function testBasicFootNote() {
 		$expected = '<p>Parsedown Extra <sup id="fnref1:1"><a href="#fn:1" class="footnote-ref">1</a></sup></p>'.PHP_EOL.
 					'<div class="footnotes">'.PHP_EOL.
 						'<hr />'.PHP_EOL.
