@@ -50,4 +50,12 @@ class ParsedownExtraTest extends Orchestra\Testbench\TestCase {
 		$this->assertSame($expected, $result);
 	}
 	
+	public function testBasicCssClass() {
+		$expected = '<h1 class="css_class">Header</h1>';
+		
+		$result = Markdown::parse('# Header {.css_class}');
+		
+		$this->assertSame($expected, $result);
+	}
+	
 }

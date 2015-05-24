@@ -23,7 +23,7 @@ class ParsedownExtraOverload extends \ParsedownExtra {
 	 * @deprecated Function overloaded to maintain compatibility.
 	 * @see Parsedown::parse()
 	 *
-	 * @var string
+	 * @param string
 	 *
 	 * @return string
 	 */

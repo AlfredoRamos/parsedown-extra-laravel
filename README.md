@@ -38,3 +38,16 @@ The code above will print:
 ```
 
 For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
+
+## Security
+You should use a filter PHP library to remove all malicious code in the output. You can use [HTML Purifier](http://htmlpurifier.org/), there's a Laravel 5 package available ([Mews/Purifier](https://packagist.org/packages/mews/purifier)).
+
+It will avoid something like this:
+
+```php
+Purifier::clean(Markdown::parse('[Malicious link](javascript:alert("xss"))'));
+```
+
+For install instructions please refer to Mews's [Purifier GitHub repository](https://github.com/mewebstudio/Purifier).
+
+For all configuration options see the official [HTML Purifier config docs](http://htmlpurifier.org/live/configdoc/plain.html).

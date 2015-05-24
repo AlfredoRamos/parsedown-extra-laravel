@@ -1,8 +1,8 @@
 {
 	"name": "alfredo-ramos/parsedown-extra-laravel",
-	"type": "library",
+	"type": "package",
 	"description": "A Parsedown Extra package for Laravel 5",
-	"keywords": ["markdown", "markdown extra", "parsedown", "parsedown extra", "laravel", "laravel 5", "parser"],
+	"keywords": ["markdown extra", "parsedown extra", "laravel 5"],
 	"homepage": "https://github.com/AlfredoRamos/parsedown-extra-laravel",
 	"license": "GPL-3.0+",
 	"authors": [
