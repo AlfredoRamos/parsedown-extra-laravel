@@ -42,7 +42,7 @@ For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
 ## Security
 You should use a filter PHP library to remove all malicious code in the output. You can use [HTML Purifier](http://htmlpurifier.org/), there's a Laravel 5 package available ([Mews/Purifier](https://packagist.org/packages/mews/purifier)).
 
-It will avoid something like this:
+Example:
 
 ```php
 Purifier::clean(Markdown::parse('[Malicious link](javascript:alert("xss"))'));
