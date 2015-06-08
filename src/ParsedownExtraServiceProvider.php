@@ -21,6 +21,12 @@ namespace AlfredoRamos\ParsedownExtra;
 use Illuminate\Support\ServiceProvider;
 
 class ParsedownExtraServiceProvider extends ServiceProvider {
+	
+	public function boot() {
+		$this->publishes([
+			__DIR__ . '/../config/parsedownextra.php' => config_path('parsedownextra.php')
+		]);
+	}
 
 	/**
 	 * Register the application services.
@@ -28,6 +34,10 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function register() {
+		$this->mergeConfigFrom(
+			__DIR__ . '/../config/parsedownextra.php', 'parsedownextra'
+		);
+		
 		$this->app->singleton('parsedownextra', function($app){
 			return new ParsedownExtraOverload;
 		});

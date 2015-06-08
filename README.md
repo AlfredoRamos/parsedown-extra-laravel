@@ -6,8 +6,14 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 ## Installation via Composer
 * Add the following line to the ```require``` block in your ```composer.json``` file:
 
+**Stable version**
 ```json
 "alfredo-ramos/parsedown-extra-laravel": "~0.2"
+```
+
+**Development version**
+```json
+"alfredo-ramos/parsedown-extra-laravel": "0.3-dev"
 ```
 
 Then run ```composer install``` or ```composer update``` in your terminal.
@@ -24,30 +30,52 @@ Then run ```composer install``` or ```composer update``` in your terminal.
 'Markdown'  => 'AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra'
 ```
 
+* And finally deploy the config file on your terminal (only needed in development version):
+```bash
+php artisan vendor:publish
+```
+
+## Configuration
+Development version optionally uses the [mews/purifier](https://packagist.org/packages/mews/purifier) package, so you want to use it you need to install it first. For install instructions please refer to Mews's [Purifier GitHub repository](https://github.com/mewebstudio/Purifier).
+
+By default the ```<KEY>```string is searched in the ```config/purifier.php``` file, if ```<KEY>``` doesn't exists it will search in the ```config/parsedown.php``` file. You can also pass an array directly.
+
+**Using a string**
+```php
+Markdown::parse('Hello world!', 'navbar');
+```
+
+Where ```navbar``` is the key of the array, and exist in ```config/purifier.php@array['settings']``` or ```config/parsedown.php@array['settings']```.
+
+**Using an array**
+```php
+Markdown::parse('Hello world!', ['AutoFormat.RemoveEmpty' => true]);
+```
+
+For all configuration options see the official [HTML Purifier config docs](http://htmlpurifier.org/live/configdoc/plain.html).
+
+**Using the default option**
+```php
+Markdown::parse('Hello world!');
+// Is the same as
+Markdown::parse('Hello world!', 'parsedown');
+```
+
+If you don't want to use HTML Purifier, you can disable it in the ```config/purifier.php``` file.
+
 ## Usage
 
 **sample.blade.php**
 ```php
 {!! Markdown::parse('Hello world') !!}
+{!! Markdown::parse('[Malicious link](javascript::alert("xss")') !!}
 ```
 
 The code above will print:
 
 ```html
 <p>Hello world</p>
+<p><a>Malicious link</a></p>
 ```
 
 For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
-
-## Security
-You should use a filter PHP library to remove all malicious code in the output. You can use [HTML Purifier](http://htmlpurifier.org/), there's a Laravel 5 package available ([Mews/Purifier](https://packagist.org/packages/mews/purifier)).
-
-Example:
-
-```php
-Purifier::clean(Markdown::parse('[Malicious link](javascript:alert("xss"))'));
-```
-
-For install instructions please refer to Mews's [Purifier GitHub repository](https://github.com/mewebstudio/Purifier).
-
-For all configuration options see the official [HTML Purifier config docs](http://htmlpurifier.org/live/configdoc/plain.html).
