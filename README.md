@@ -13,7 +13,7 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 
 **Development version**
 ```json
-"alfredo-ramos/parsedown-extra-laravel": "0.3-dev"
+"alfredo-ramos/parsedown-extra-laravel": "~0.3@dev"
 ```
 
 Then run ```composer install``` or ```composer update``` in your terminal.
