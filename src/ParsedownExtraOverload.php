@@ -30,17 +30,13 @@ class ParsedownExtraOverload extends \ParsedownExtra {
 	 *
 	 * @return string
 	 */
-	function parse($text, $config = 'parsedown') {
+	public function parse($text, $config = null) {
 		$markdown = parent::text($text);
+		$config = isset($config) ? $config : 'parsedown';
 		
 		if (class_exists('Purifier')) {
 			if (Config::get('parsedownextra.purifier.enabled')) {
-				
-				if (is_string($config) && !array_key_exists($config, Config::get('purifier.settings'))) {
-					$config = Config::get('parsedownextra.purifier.settings.' . $config);
-				}
-				
-				$markdown = \Purifier::clean(parent::text($text), $config);
+				$markdown = \Purifier::clean(parent::text($text), Config::get('parsedownextra.purifier.settings.' . $config));
 			}
 		}
 		

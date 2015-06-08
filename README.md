@@ -38,14 +38,14 @@ php artisan vendor:publish
 ## Configuration
 Development version optionally uses the [mews/purifier](https://packagist.org/packages/mews/purifier) package, so you want to use it you need to install it first. For install instructions please refer to Mews's [Purifier GitHub repository](https://github.com/mewebstudio/Purifier).
 
-By default the ```<KEY>```string is searched in the ```config/purifier.php``` file, if ```<KEY>``` doesn't exists it will search in the ```config/parsedown.php``` file. You can also pass an array directly.
+By default the ```<KEY>```string is searched in the ```config/parsedownextra.php``` file. You can also pass an array directly.
 
 **Using a string**
 ```php
 Markdown::parse('Hello world!', 'navbar');
 ```
 
-Where ```navbar``` is the key of the array, and exist in ```config/purifier.php@array['settings']``` or ```config/parsedown.php@array['settings']```.
+Where ```navbar``` is the key of the array, and exists ```config/parsedownextra.php@array['settings']```.
 
 **Using an array**
 ```php
@@ -54,7 +54,7 @@ Markdown::parse('Hello world!', ['AutoFormat.RemoveEmpty' => true]);
 
 For all configuration options see the official [HTML Purifier config docs](http://htmlpurifier.org/live/configdoc/plain.html).
 
-**Using the default option**
+**Using the default settings**
 ```php
 Markdown::parse('Hello world!');
 // Is the same as
