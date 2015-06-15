@@ -61,7 +61,7 @@ Markdown::parse('Hello world!');
 Markdown::parse('Hello world!', 'parsedown');
 ```
 
-If you don't want to use HTML Purifier, you can disable it in the ```config/purifier.php``` file.
+If you don't want to use HTML Purifier, you can disable it in the ```config/parsedownextra.php``` file.
 
 ## Usage
 

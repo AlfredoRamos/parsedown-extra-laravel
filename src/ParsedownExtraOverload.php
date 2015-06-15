@@ -17,8 +17,6 @@
  */
 namespace AlfredoRamos\ParsedownExtra;
 
-use \Config;
-
 class ParsedownExtraOverload extends \ParsedownExtra {
 	
 	/**
@@ -35,8 +33,8 @@ class ParsedownExtraOverload extends \ParsedownExtra {
 		$config = isset($config) ? $config : 'parsedown';
 		
 		if (class_exists('Purifier')) {
-			if (Config::get('parsedownextra.purifier.enabled')) {
-				$markdown = \Purifier::clean(parent::text($text), Config::get('parsedownextra.purifier.settings.' . $config));
+			if (\Config::get('parsedownextra.purifier.enabled')) {
+				$markdown = \Purifier::clean(parent::text($text), \Config::get('parsedownextra.purifier.settings.' . $config));
 			}
 		}
 		
