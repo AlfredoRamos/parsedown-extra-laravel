@@ -1,4 +1,4 @@
-<?php
+<?php namespace AlfredoRamos\Tests\Facades;
 /**
  * Copyright (C) 2015 Alfredo Ramos
  *
@@ -16,36 +16,42 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-class ParsedownExtraTest extends Orchestra\Testbench\TestCase {
+class ParsedownExtraTest extends \Orchestra\Testbench\TestCase {
 	
-	protected function getPackageProviders() {
-		return ['AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider'];
+	protected function getPackageProviders($app) {
+		return [
+			'AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider',
+			'Mews\Purifier\PurifierServiceProvider'
+		];
 	}
 	
-	protected function getPackageAliases() {
-		return ['Markdown' => 'AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra'];
+	protected function getPackageAliases($app) {
+		return [
+			'Markdown' => 'AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra',
+			'Purifier' => 'Mews\Purifier\Facades\Purifier'
+		];
 	}
 	
 	public function testBasicHtml() {
 		$expected = '<p>Parsedown Extra</p>';
 		
-		$result = Markdown::parse('Parsedown Extra');
+		$result = \Markdown::parse('Parsedown Extra');
 		
 		$this->assertSame($expected, $result);
 	}
 	
 	public function testBasicFootNote() {
-		$expected = '<p>Parsedown Extra <sup id="fnref1:1"><a href="#fn:1" class="footnote-ref">1</a></sup></p>'.PHP_EOL.
+		$expected = '<p>Parsedown Extra <sup id="fnref1:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>'.PHP_EOL.
 					'<div class="footnotes">'.PHP_EOL.
-						'<hr />'.PHP_EOL.
-						'<ol>'.PHP_EOL.
+						'<hr />'.
+						'<ol>'.
 							'<li id="fn:1">'.PHP_EOL.
-								'<p><a href="http://parsedown.org/extra/">http://parsedown.org/extra/</a>&#160;<a href="#fnref1:1" rev="footnote" class="footnote-backref">&#8617;</a></p>'.PHP_EOL.
+								'<p><a href="http://parsedown.org/extra/" rel="nofollow" target="_blank">http://parsedown.org/extra/</a>' . html_entity_decode('&#160;') . '<a class="footnote-backref" href="#fnref1:1">↩</a></p>'.PHP_EOL.
 							'</li>'.PHP_EOL.
-						'</ol>'.PHP_EOL.
+						'</ol>'.
 					'</div>';
 		
-		$result  = Markdown::parse('Parsedown Extra [^1]'.PHP_EOL.'[^1]: http://parsedown.org/extra/');
+		$result  = \Markdown::parse('Parsedown Extra [^1]'.PHP_EOL.'[^1]: http://parsedown.org/extra/');
 		
 		$this->assertSame($expected, $result);
 	}
@@ -53,7 +59,15 @@ class ParsedownExtraTest extends Orchestra\Testbench\TestCase {
 	public function testBasicCssClass() {
 		$expected = '<h1 class="css_class">Header</h1>';
 		
-		$result = Markdown::parse('# Header {.css_class}');
+		$result = \Markdown::parse('# Header {.css_class}');
+		
+		$this->assertSame($expected, $result);
+	}
+	
+	public function testCleanLink() {
+		$expected = '<p><a>Link</a></p>';
+		
+		$result = \Markdown::parse('[Link](javascript:alert(\'xss\'))');
 		
 		$this->assertSame($expected, $result);
 	}

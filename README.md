@@ -36,16 +36,14 @@ php artisan vendor:publish
 ```
 
 ## Configuration
-Stable version optionally uses the [mews/purifier](https://packagist.org/packages/mews/purifier) package, so if you want to use it you need to install it first. For install instructions please refer to Mews's [Purifier GitHub repository](https://github.com/mewebstudio/Purifier).
-
-By default the package will look for the ```<KEY>``` string in the ```config/parsedownextra.php``` file to override HTML Purifier settings. You can also pass an array directly.
+Stable version uses the [mews/purifier](https://packagist.org/packages/mews/purifier) package. By default it will look for the ```<KEY>``` string in the ```config/parsedownextra.php``` file to override HTML Purifier default settings, but you can also pass an array directly.
 
 **Using a string**
 ```php
 Markdown::parse('Hello world!', 'navbar');
 ```
 
-Where ```navbar``` is the key of the array, and exists in ```config/parsedownextra.php@array['settings']```.
+Where ```navbar``` is the key of the array, and it exists in ```config/parsedownextra.php@array['settings']```.
 
 **Using an array**
 ```php
@@ -67,8 +65,8 @@ If you don't want to use HTML Purifier, you can disable it in the ```config/pars
 
 **sample.blade.php**
 ```php
-{!! Markdown::parse('Hello world') !!}
-{!! Markdown::parse('[Malicious link](javascript::alert("xss")') !!}
+{!! Markdown::parse("Hello world") !!}
+{!! Markdown::parse("[Malicious link](javascript::alert('xss')") !!}
 ```
 
 The code above will print:
@@ -76,10 +74,10 @@ The code above will print:
 ```html
 <p>Hello world</p>
 
-<-- HTML Purifier is enabled -->
+<-- HTML Purifier enabled -->
 <p><a>Malicious link</a></p>
 
-<-- HTML Purifier is disabled -->
+<-- HTML Purifier disabled -->
 <p><a href="javascript:alert('xss')">Malicious link</a></p>
 ```
 

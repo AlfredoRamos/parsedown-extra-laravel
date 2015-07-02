@@ -1,4 +1,4 @@
-<?php
+<?php namespace AlfredoRamos\ParsedownExtra;
 /**
  * Copyright (C) 2015 Alfredo Ramos
  *
@@ -15,7 +15,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-namespace AlfredoRamos\ParsedownExtra;
 
 class ParsedownExtraOverload extends \ParsedownExtra {
 	
@@ -29,13 +28,11 @@ class ParsedownExtraOverload extends \ParsedownExtra {
 	 * @return string
 	 */
 	public function parse($text, $config = null) {
+		$config = is_null($config) ? 'parsedown' : $config;
 		$markdown = parent::text($text);
-		$config = isset($config) ? $config : 'parsedown';
 		
-		if (class_exists('\\Mews\\Purifier\\Facades\\Purifier')) {
-			if (\Config::get('parsedownextra.purifier.enabled')) {
-				$markdown = \Purifier::clean(parent::text($text), \Config::get('parsedownextra.purifier.settings.' . $config));
-			}
+		if (\Config::get('parsedownextra.purifier.enabled')) {
+			$markdown = \Purifier::clean($markdown, \Config::get('parsedownextra.purifier.settings.' . $config));
 		}
 		
 		return $markdown;

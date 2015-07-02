@@ -14,18 +14,21 @@
 		}
 	],
 	"require": {
-		"php": ">=5.4.0",
-		"erusev/parsedown-extra": "~0.7"
+		"php": ">=5.5.0",
+		"erusev/parsedown-extra": "~0.7",
+		"mews/purifier": "dev-master"
 	},
 	"require-dev": {
 		"orchestra/testbench": "~3.1"
 	},
-	"suggest": {
-		"mews/purifier": "HTML Purifier wrapper to filter HTML tags in the output."
-	},
 	"autoload": {
 		"psr-4": {
 			"AlfredoRamos\\ParsedownExtra\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"AlfredoRamos\\Tests\\": "tests/"
 		}
 	},
 	"extra": {
