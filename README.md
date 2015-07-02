@@ -24,28 +24,28 @@ Then run ```composer install``` or ```composer update``` in your terminal.
 'AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider'
 ```
 
-* Then register the facade to the ```aliases``` array in your ```config/app.php``` file
+* Then register the facade to the ```aliases``` array in your ```config/app.php``` file:
 
 ```php
 'Markdown'  => 'AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra'
 ```
 
-* And finally deploy the config file on your terminal (only needed in development version):
+* And finally deploy the config file on your terminal:
 ```bash
 php artisan vendor:publish
 ```
 
 ## Configuration
-Development version optionally uses the [mews/purifier](https://packagist.org/packages/mews/purifier) package, so you want to use it you need to install it first. For install instructions please refer to Mews's [Purifier GitHub repository](https://github.com/mewebstudio/Purifier).
+Stable version optionally uses the [mews/purifier](https://packagist.org/packages/mews/purifier) package, so if you want to use it you need to install it first. For install instructions please refer to Mews's [Purifier GitHub repository](https://github.com/mewebstudio/Purifier).
 
-By default the ```<KEY>```string is searched in the ```config/parsedownextra.php``` file. You can also pass an array directly.
+By default the package will look for the ```<KEY>``` string in the ```config/parsedownextra.php``` file to override HTML Purifier settings. You can also pass an array directly.
 
 **Using a string**
 ```php
 Markdown::parse('Hello world!', 'navbar');
 ```
 
-Where ```navbar``` is the key of the array, and exists ```config/parsedownextra.php@array['settings']```.
+Where ```navbar``` is the key of the array, and exists in ```config/parsedownextra.php@array['settings']```.
 
 **Using an array**
 ```php
@@ -75,7 +75,12 @@ The code above will print:
 
 ```html
 <p>Hello world</p>
+
+<-- HTML Purifier is enabled -->
 <p><a>Malicious link</a></p>
+
+<-- HTML Purifier is disabled -->
+<p><a href="javascript:alert('xss')">Malicious link</a></p>
 ```
 
 For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).

@@ -32,7 +32,7 @@ class ParsedownExtraOverload extends \ParsedownExtra {
 		$markdown = parent::text($text);
 		$config = isset($config) ? $config : 'parsedown';
 		
-		if (class_exists('Purifier')) {
+		if (class_exists('\\Mews\\Purifier\\Facades\\Purifier')) {
 			if (\Config::get('parsedownextra.purifier.enabled')) {
 				$markdown = \Purifier::clean(parent::text($text), \Config::get('parsedownextra.purifier.settings.' . $config));
 			}

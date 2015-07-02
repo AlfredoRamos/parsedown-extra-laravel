@@ -18,7 +18,7 @@
 		"erusev/parsedown-extra": "~0.7"
 	},
 	"require-dev": {
-		"orchestra/testbench": "~3.0"
+		"orchestra/testbench": "~3.1"
 	},
 	"suggest": {
 		"mews/purifier": "HTML Purifier wrapper to filter HTML tags in the output."
