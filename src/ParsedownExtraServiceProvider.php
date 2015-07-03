@@ -1,4 +1,4 @@
-<?php
+<?php namespace AlfredoRamos\ParsedownExtra;
 /**
  * Copyright (C) 2015 Alfredo Ramos
  *
@@ -16,9 +16,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-namespace AlfredoRamos\ParsedownExtra;
-
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Foundation\AliasLoader;
 
 class ParsedownExtraServiceProvider extends ServiceProvider {
 	
@@ -38,11 +37,15 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 			__DIR__ . '/../config/parsedownextra.php', 'parsedownextra'
 		);
 		
-		$this->app->singleton('parsedownextra', function($app){
+		$this->app->singleton('AlfredoRamos\ParsedownExtra\ParsedownExtraOverload', function($app){
 			return new ParsedownExtraOverload;
 		});
 		
-		$this->app->alias('parsedownextra', 'AlfredoRamos\ParsedownExtra\ParsedownExtraOverload');
+		$this->app->register('Mews\Purifier\PurifierServiceProvider');
+		
+		$loader = AliasLoader::getInstance();
+		
+		$loader->alias('Purifier', 'Mews\Purifier\Facades\Purifier');
 	}
 
 	/**
