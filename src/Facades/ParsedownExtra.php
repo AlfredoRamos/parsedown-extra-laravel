@@ -26,7 +26,7 @@ class ParsedownExtra extends Facade {
 	 * @return string
 	 */
 	protected static function getFacadeAccessor() {
-		return 'AlfredoRamos\ParsedownExtra\ParsedownExtraOverload';
+		return \AlfredoRamos\ParsedownExtra\ParsedownExtraOverload::class;
 	}
 	
 }

@@ -37,15 +37,15 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 			__DIR__ . '/../config/parsedownextra.php', 'parsedownextra'
 		);
 		
-		$this->app->singleton('AlfredoRamos\ParsedownExtra\ParsedownExtraOverload', function($app){
+		$this->app->singleton(\AlfredoRamos\ParsedownExtra\ParsedownExtraOverload::class, function($app){
 			return new ParsedownExtraOverload;
 		});
 		
-		$this->app->register('Mews\Purifier\PurifierServiceProvider');
+		$this->app->register(\Mews\Purifier\PurifierServiceProvider::class);
 		
 		$loader = AliasLoader::getInstance();
 		
-		$loader->alias('Purifier', 'Mews\Purifier\Facades\Purifier');
+		$loader->alias('Purifier', \Mews\Purifier\Facades\Purifier::class);
 	}
 
 	/**
@@ -54,7 +54,7 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 	 * @return array
 	 */
 	public function provides() {
-		return ['AlfredoRamos\ParsedownExtra\ParsedownExtraOverload'];
+		return [\AlfredoRamos\ParsedownExtra\ParsedownExtraOverload::class];
 	}
 
 }

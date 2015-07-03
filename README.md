@@ -21,13 +21,13 @@ Then run ```composer install``` or ```composer update``` in your terminal.
 * Open your ```config/app.php``` file and add the following to your ```providers``` array:
 
 ```php
-'AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider'
+AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class
 ```
 
 * Then register the facade to the ```aliases``` array in your ```config/app.php``` file:
 
 ```php
-'Markdown'  => 'AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra'
+'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class
 ```
 
 * And finally deploy the config file on your terminal:

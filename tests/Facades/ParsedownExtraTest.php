@@ -16,19 +16,21 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-class ParsedownExtraTest extends \Orchestra\Testbench\TestCase {
+use Orchestra\Testbench\TestCase;
+
+class ParsedownExtraTest extends TestCase {
 	
 	protected function getPackageProviders($app) {
 		return [
-			'AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider',
-			'Mews\Purifier\PurifierServiceProvider'
+			\AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
+			\Mews\Purifier\PurifierServiceProvider::class
 		];
 	}
 	
 	protected function getPackageAliases($app) {
 		return [
-			'Markdown' => 'AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra',
-			'Purifier' => 'Mews\Purifier\Facades\Purifier'
+			'Markdown' => \AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class,
+			'Purifier' => \Mews\Purifier\Facades\Purifier::class
 		];
 	}
 	
