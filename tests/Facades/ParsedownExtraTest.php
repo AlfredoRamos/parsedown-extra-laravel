@@ -74,4 +74,11 @@ class ParsedownExtraTest extends TestCase {
 		$this->assertSame($expected, $result);
 	}
 	
+	public function testDisabledExternalLinks() {
+		$expected = '<p><a>DuckDuckGo</a></p>';
+		
+		$result = \Markdown::parse('[DuckDuckGo](https://duckduckgo.com/)', ['URI.Host' => 'localhost', 'URI.DisableExternal' => true]);
+		
+		$this->assertSame($expected, $result);
+	}
 }
