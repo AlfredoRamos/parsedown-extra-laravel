@@ -40,14 +40,14 @@ Stable version uses the [mews/purifier](https://packagist.org/packages/mews/puri
 
 **Using a string**
 ```php
-Markdown::parse('Hello world!', 'navbar');
+Markdown::parse('Hello world!', 'comments');
 ```
 
-Where ```navbar``` is the key of the array, and it exists in ```config/parsedownextra.php@array['settings']```.
+Where ```comments``` is the key of the array ```settings``` in ```config/parsedownextra.php```.
 
 **Using an array**
 ```php
-Markdown::parse('Hello world!', ['AutoFormat.RemoveEmpty' => true]);
+Markdown::parse('[DuckDuckGo](https://duckduckgo.com/)', ['URI.Host' => 'localhost', 'URI.DisableExternal' => true]);
 ```
 
 For all configuration options see the official [HTML Purifier config docs](http://htmlpurifier.org/live/configdoc/plain.html).

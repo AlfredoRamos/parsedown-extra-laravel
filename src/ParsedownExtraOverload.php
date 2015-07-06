@@ -32,7 +32,11 @@ class ParsedownExtraOverload extends \ParsedownExtra {
 		$markdown = parent::text($text);
 		
 		if (\Config::get('parsedownextra.purifier.enabled')) {
-			$markdown = \Purifier::clean($markdown, \Config::get('parsedownextra.purifier.settings.' . $config));
+			if (is_string($config)) {
+				$markdown = \Purifier::clean($markdown, \Config::get('parsedownextra.purifier.settings.' . $config));
+			} elseif (is_array($config)) {
+				$markdown = \Purifier::clean($markdown, $config);
+			}
 		}
 		
 		return $markdown;
