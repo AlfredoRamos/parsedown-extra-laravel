@@ -20,6 +20,13 @@ use Orchestra\Testbench\TestCase;
 
 class ParsedownExtraTest extends TestCase {
 	
+	/**
+	 * Get package providers.
+	 *
+	 * @param  \Illuminate\Foundation\Application  $app
+	 *
+	 * @return array
+	 */
 	protected function getPackageProviders($app) {
 		return [
 			\AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
@@ -27,6 +34,14 @@ class ParsedownExtraTest extends TestCase {
 		];
 	}
 	
+	/**
+	 * Get package aliases.  In a normal app environment these would be added to
+	 * the 'aliases' array in the config/app.php file.
+	 *
+	 * @param  \Illuminate\Foundation\Application  $app
+	 *
+	 * @return array
+	 */
 	protected function getPackageAliases($app) {
 		return [
 			'Markdown' => \AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class,
