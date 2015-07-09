@@ -16,7 +16,7 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 "alfredo-ramos/parsedown-extra-laravel": "~0.3@dev"
 ```
 
-Then run ```composer install``` or ```composer update``` in your terminal.
+* Run ```composer install``` or ```composer update``` in your terminal.
 
 * Open your ```config/app.php``` file and add the following to your ```providers``` array:
 
@@ -24,19 +24,20 @@ Then run ```composer install``` or ```composer update``` in your terminal.
 AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class
 ```
 
-* Then register the facade to the ```aliases``` array in your ```config/app.php``` file:
+* Register the facade to the ```aliases``` array in your ```config/app.php``` file:
 
 ```php
 'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class
 ```
 
 * And finally deploy the config file on your terminal:
+
 ```bash
 php artisan vendor:publish
 ```
 
 ## Configuration
-Stable version uses the [mews/purifier](https://packagist.org/packages/mews/purifier) package. By default it will look for the ```<KEY>``` string in the ```config/parsedownextra.php``` file to override HTML Purifier default settings, but you can also pass an array directly.
+The package [mews/purifier](https://packagist.org/packages/mews/purifier) is used to filter the HTML output. By default a ```<KEY>``` string will be searched in the ```config/parsedownextra.php``` file to override HTML Purifier default settings, you can also pass an array though.
 
 **Using a string**
 ```php
