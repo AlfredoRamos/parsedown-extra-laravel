@@ -16,7 +16,8 @@
 	"require": {
 		"php": ">=5.5.0",
 		"erusev/parsedown-extra": "~0.7",
-		"mews/purifier": "dev-master"
+		"mews/purifier": "dev-master",
+		"heyupdate/emoji": "dev-master"
 	},
 	"require-dev": {
 		"orchestra/testbench": "~3.1"

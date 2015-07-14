@@ -37,7 +37,7 @@ php artisan vendor:publish
 ```
 
 ## Configuration
-The package [mews/purifier](https://packagist.org/packages/mews/purifier) is used to filter the HTML output. By default a ```<KEY>``` string will be searched in the ```config/parsedownextra.php``` file to override HTML Purifier default settings, you can also pass an array though.
+The package [mews/purifier](https://packagist.org/packages/mews/purifier) is used to filter the HTML output. By default a ```<KEY>``` string will be searched in the ```config/parsedownextra.php``` file to override HTML Purifier default settings, you can also pass an array.
 
 **Using a string**
 ```php
@@ -75,11 +75,39 @@ The code above will print:
 ```html
 <p>Hello world</p>
 
-<-- HTML Purifier enabled -->
+<!-- HTML Purifier enabled -->
 <p><a>Malicious link</a></p>
 
-<-- HTML Purifier disabled -->
+<!-- HTML Purifier disabled -->
 <p><a href="javascript:alert('xss')">Malicious link</a></p>
 ```
 
 For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
+
+## Emojis
+Development version uses the [heyupdate/emoji](https://packagist.org/packages/heyupdate/emoji) package to add support for [twemoji](https://github.com/twitter/twemoji).
+
+All the emojis have the ```.emoji``` and ```.emoji-<UTF CODE>``` CSS class in case you need to do some changes in your stylesheets to show them properly. Example:
+
+```css
+/* Global */
+.emoji {
+	min-width: 16px;
+	min-height: 16px;
+	
+	width: 16px;
+	height: 16px;
+	
+	max-width: 72px;
+	max-height: 72px;
+	
+	vertical-align: middle;
+}
+
+/* Specific */
+.emoji-2600 { /* :sunny: */
+	...
+}
+```
+
+Emojis are disabled by default, you can enable them in the ```config/parsedownextra.php``` file.
