@@ -16,9 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-use Orchestra\Testbench\TestCase;
-
-class ParsedownExtraTest extends TestCase {
+class ParsedownExtraTest extends \Orchestra\Testbench\TestCase {
 	
 	/**
 	 * Get package providers.
@@ -93,6 +91,26 @@ class ParsedownExtraTest extends TestCase {
 		$expected = '<p><a>DuckDuckGo</a></p>';
 		
 		$result = \Markdown::parse('[DuckDuckGo](https://duckduckgo.com/)', ['URI.Host' => 'localhost', 'URI.DisableExternal' => true]);
+		
+		$this->assertSame($expected, $result);
+	}
+	
+	public function testEmojiEnabled() {
+		$expected = '<p>Have you ever <img alt=":eyes:" class="emoji emoji-1f440" src="https://twemoji.maxcdn.com/svg/1f440.svg" /> the <img alt=":sweat_drops:" class="emoji emoji-1f4a6" src="https://twemoji.maxcdn.com/svg/1f4a6.svg" /> coming <img alt=":point_down:" class="emoji emoji-1f447" src="https://twemoji.maxcdn.com/svg/1f447.svg" /> on a <img alt=":sunny:" class="emoji emoji-2600" src="https://twemoji.maxcdn.com/svg/2600.svg" /> day?</p>';
+		
+		\Config::set('parsedownextra.twemoji.enabled', true);
+		
+		$result = \Markdown::parse('Have you ever :eyes: the :sweat_drops: coming :point_down: on a :sunny: day?');
+		
+		\Config::set('parsedownextra.twemoji.enabled', false);
+		
+		$this->assertSame($expected, $result);
+	}
+	
+	public function testEmojiDisabled() {
+		$expected = '<p>Have you ever :eyes: the :sweat_drops: coming :point_down: on a :sunny: day?</p>';
+		
+		$result = \Markdown::parse('Have you ever :eyes: the :sweat_drops: coming :point_down: on a :sunny: day?');
 		
 		$this->assertSame($expected, $result);
 	}
