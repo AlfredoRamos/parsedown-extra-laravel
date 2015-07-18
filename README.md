@@ -4,7 +4,7 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 [![Build Status](https://img.shields.io/travis/AlfredoRamos/parsedown-extra-laravel/master.svg?style=flat-square)](https://travis-ci.org/AlfredoRamos/parsedown-extra-laravel) [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/parsedown-extra-laravel.svg?style=flat-square&label=stable)](https://github.com/AlfredoRamos/parsedown-extra-laravel/releases) [![Latest Unstable Version](https://img.shields.io/packagist/vpre/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square&label=unstable)](https://packagist.org/packages/alfredo-ramos/parsedown-extra-laravel) [![License](https://img.shields.io/packagist/l/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square)](https://packagist.org/packages/alfredo-ramos/parsedown-extra-laravel)
 
 ## Installation via Composer
-* Add the following line to the ```require``` block in your ```composer.json``` file:
+* Open your ```composer.json``` file and add the following line in the ```require``` object:
 
 **Stable version**
 ```json
@@ -16,15 +16,15 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 "alfredo-ramos/parsedown-extra-laravel": "~0.3@dev"
 ```
 
-* Run ```composer install``` or ```composer update``` in your terminal.
+* Run ```composer install``` or ```composer update``` on your terminal.
 
-* Open your ```config/app.php``` file and add the following to your ```providers``` array:
+* Open your ```config/app.php``` file and add the following in the ```providers``` array:
 
 ```php
 AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class
 ```
 
-* Register the facade to the ```aliases``` array in your ```config/app.php``` file:
+* Register the facade in the ```aliases``` array (```config/app.php``` file):
 
 ```php
 'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class
@@ -32,8 +32,8 @@ AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class
 
 * And finally deploy the config file on your terminal:
 
-```bash
-php artisan vendor:publish
+```shell
+php artisan vendor:publish --provider='AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider' --tag=config --force
 ```
 
 ## Configuration
@@ -85,29 +85,21 @@ The code above will print:
 For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
 
 ## Emojis
-Development version uses the [heyupdate/emoji](https://packagist.org/packages/heyupdate/emoji) library to add support for [twemoji](https://github.com/twitter/twemoji).
+Development version uses the [heyupdate/emoji](https://packagist.org/packages/heyupdate/emoji) package to add support for [twemoji](https://github.com/twitter/twemoji).
 
-All the emojis have the ```.emoji``` and ```.emoji-<UTF CODE>``` CSS class in case you need to do some changes in your stylesheets to show them properly. Example:
+All the emojis have the ```.emoji``` and ```.emoji-<UTF CODE>``` CSS class in case you need to do some changes in your stylesheets to show them properly.
 
-```css
-/* Global */
-.emoji {
-	min-width: 16px;
-	min-height: 16px;
-	
-	width: 16px;
-	height: 16px;
-	
-	max-width: 72px;
-	max-height: 72px;
-	
-	vertical-align: middle;
-}
+Optionally a default CSS file will be available in your ```public``` directory, you only need to run the following in your terminal:
 
-/* Specific */
-.emoji-2600 { /* :sunny: */
-	...
-}
+```shell
+php artisan vendor:publish --provider='AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider' --tag=public --force
 ```
 
-Emojis are disabled by default, you can enable them in the ```config/parsedownextra.php``` file.
+To use it, just add this in your master view:
+
+**master.blade.php**
+```html
+<link media="all" rel="stylesheet" href="{{{ url('alfredo-ramos/parsedown-extra-laravel/css/emojis.css') }}}" />
+```
+
+Emojis are disabled by default, make sure you've made the changes needed in your stylesheets before enabling them in the ```config/parsedownextra.php``` file.

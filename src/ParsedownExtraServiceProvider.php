@@ -21,10 +21,19 @@ use Illuminate\Foundation\AliasLoader;
 
 class ParsedownExtraServiceProvider extends ServiceProvider {
 	
+	/**
+	 * Perform post-registration booting of services.
+	 *
+	 * @return void
+	 */
 	public function boot() {
 		$this->publishes([
 			__DIR__ . '/../config/parsedownextra.php' => config_path('parsedownextra.php')
-		]);
+		], 'config');
+		
+		$this->publishes([
+			__DIR__ . '/../public/assets' => public_path('alfredo-ramos/parsedown-extra-laravel')
+		], 'public');
 	}
 
 	/**
