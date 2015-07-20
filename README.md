@@ -99,7 +99,7 @@ To use it, just add this in your master view:
 
 **master.blade.php**
 ```html
-<link media="all" rel="stylesheet" href="{{{ url('alfredo-ramos/parsedown-extra-laravel/css/emojis.css') }}}" />
+<link media="all" rel="stylesheet" href="{{{ asset('alfredo-ramos/parsedown-extra-laravel/css/emojis.css') }}}" />
 ```
 
 Emojis are disabled by default, make sure you've made the changes needed in your stylesheets before enabling them in the ```config/parsedownextra.php``` file.
