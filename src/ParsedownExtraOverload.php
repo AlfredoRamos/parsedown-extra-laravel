@@ -39,8 +39,11 @@ class ParsedownExtraOverload extends \ParsedownExtra {
 		 * Emoji markdown
 		 */
 		if (\Config::get('parsedownextra.twemoji.enabled') && $options['emojis']) {
-			$twemoji = new ParsedownExtraEmoji;
-			$twemoji->setIndex(new \HeyUpdate\Emoji\EmojiIndex);
+			$twemoji_index = new EmojiIndexOverload;
+			$twemoji_index->setConfigFile(public_path('alfredo-ramos/parsedown-extra-laravel') . '/twemoji-index.json');
+			
+			$twemoji = new EmojiOverload;
+			$twemoji->setIndex($twemoji_index);
 			$twemoji->setAssetUrlFormat(\Config::get('parsedownextra.twemoji.settings.url_template'));
 			
 			$text = $twemoji->emojiMarkdown($text);

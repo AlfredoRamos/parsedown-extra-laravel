@@ -91,7 +91,7 @@ The code above will print:
 For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
 
 ## Emojis
-Development version uses the [heyupdate/emoji](https://packagist.org/packages/heyupdate/emoji) library to add support for [twemoji](https://github.com/twitter/twemoji).
+The [heyupdate/emoji](https://packagist.org/packages/heyupdate/emoji) library is used to add support for [twemoji](https://github.com/twitter/twemoji).
 
 All the emojis have the ```.emoji``` and ```.emoji-<UTF CODE>``` CSS class in case you need to do some changes in your stylesheets to show them properly.
 

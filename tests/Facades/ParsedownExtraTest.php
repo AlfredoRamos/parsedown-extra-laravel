@@ -19,6 +19,20 @@
 class ParsedownExtraTest extends \Orchestra\Testbench\TestCase {
 	
 	/**
+	 * Setup the test environment.
+	 *
+	 * @return void
+	 */
+	public function setUp() {
+		parent::setUp();
+		
+		\Artisan::call('vendor:publish', [
+			'--provider'	=> \AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
+			'--force'		=> true
+		]);
+	}
+	
+	/**
 	 * Get package providers.
 	 *
 	 * @param  \Illuminate\Foundation\Application  $app

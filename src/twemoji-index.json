@@ -1,0 +1,4227 @@
+[
+	{
+		"unicode": "1f44d",
+		"name": "+1",
+		"aliases": []
+	},
+	{
+		"unicode": "1f44e",
+		"name": "-1",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4af",
+		"name": "100",
+		"aliases": []
+	},
+	{
+		"unicode": "1f522",
+		"name": "1234",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3b1",
+		"name": "8ball",
+		"aliases": []
+	},
+	{
+		"unicode": "1f170",
+		"name": "a",
+		"aliases": []
+	},
+	{
+		"unicode": "1f18e",
+		"name": "ab",
+		"aliases": []
+	},
+	{
+		"unicode": "1f524",
+		"name": "abc",
+		"aliases": []
+	},
+	{
+		"unicode": "1f521",
+		"name": "abcd",
+		"aliases": []
+	},
+	{
+		"unicode": "1f251",
+		"name": "accept",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6a1",
+		"name": "aerial_tramway",
+		"aliases": []
+	},
+	{
+		"unicode": "2708",
+		"name": "airplane",
+		"aliases": []
+	},
+	{
+		"unicode": "23f0",
+		"name": "alarm_clock",
+		"aliases": []
+	},
+	{
+		"unicode": "1f47d",
+		"name": "alien",
+		"aliases": []
+	},
+	{
+		"unicode": "1f691",
+		"name": "ambulance",
+		"aliases": []
+	},
+	{
+		"unicode": "2693",
+		"name": "anchor",
+		"aliases": []
+	},
+	{
+		"unicode": "1f47c",
+		"name": "angel",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4a2",
+		"name": "anger",
+		"aliases": []
+	},
+	{
+		"unicode": "1f620",
+		"name": "angry",
+		"aliases": []
+	},
+	{
+		"unicode": "1f627",
+		"name": "anguished",
+		"aliases": []
+	},
+	{
+		"unicode": "1f41c",
+		"name": "ant",
+		"aliases": []
+	},
+	{
+		"unicode": "1f34e",
+		"name": "apple",
+		"aliases": []
+	},
+	{
+		"unicode": "2652",
+		"name": "aquarius",
+		"aliases": []
+	},
+	{
+		"unicode": "2648",
+		"name": "aries",
+		"aliases": []
+	},
+	{
+		"unicode": "25c0",
+		"name": "arrow_backward",
+		"aliases": []
+	},
+	{
+		"unicode": "23ec",
+		"name": "arrow_double_down",
+		"aliases": []
+	},
+	{
+		"unicode": "23eb",
+		"name": "arrow_double_up",
+		"aliases": []
+	},
+	{
+		"unicode": "2b07",
+		"name": "arrow_down",
+		"aliases": []
+	},
+	{
+		"unicode": "1f53d",
+		"name": "arrow_down_small",
+		"aliases": []
+	},
+	{
+		"unicode": "25b6",
+		"name": "arrow_forward",
+		"aliases": []
+	},
+	{
+		"unicode": "2935",
+		"name": "arrow_heading_down",
+		"aliases": []
+	},
+	{
+		"unicode": "2934",
+		"name": "arrow_heading_up",
+		"aliases": []
+	},
+	{
+		"unicode": "2b05",
+		"name": "arrow_left",
+		"aliases": []
+	},
+	{
+		"unicode": "2199",
+		"name": "arrow_lower_left",
+		"aliases": []
+	},
+	{
+		"unicode": "2198",
+		"name": "arrow_lower_right",
+		"aliases": []
+	},
+	{
+		"unicode": "27a1",
+		"name": "arrow_right",
+		"aliases": []
+	},
+	{
+		"unicode": "21aa",
+		"name": "arrow_right_hook",
+		"aliases": []
+	},
+	{
+		"unicode": "2b06",
+		"name": "arrow_up",
+		"aliases": []
+	},
+	{
+		"unicode": "2195",
+		"name": "arrow_up_down",
+		"aliases": []
+	},
+	{
+		"unicode": "1f53c",
+		"name": "arrow_up_small",
+		"aliases": []
+	},
+	{
+		"unicode": "2196",
+		"name": "arrow_upper_left",
+		"aliases": []
+	},
+	{
+		"unicode": "2197",
+		"name": "arrow_upper_right",
+		"aliases": []
+	},
+	{
+		"unicode": "1f503",
+		"name": "arrows_clockwise",
+		"aliases": []
+	},
+	{
+		"unicode": "1f504",
+		"name": "arrows_counterclockwise",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3a8",
+		"name": "art",
+		"aliases": []
+	},
+	{
+		"unicode": "1f69b",
+		"name": "articulated_lorry",
+		"aliases": []
+	},
+	{
+		"unicode": "1f632",
+		"name": "astonished",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3e7",
+		"name": "atm",
+		"aliases": []
+	},
+	{
+		"unicode": "1f171",
+		"name": "b",
+		"aliases": []
+	},
+	{
+		"unicode": "1f476",
+		"name": "baby",
+		"aliases": []
+	},
+	{
+		"unicode": "1f37c",
+		"name": "baby_bottle",
+		"aliases": []
+	},
+	{
+		"unicode": "1f424",
+		"name": "baby_chick",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6bc",
+		"name": "baby_symbol",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6c4",
+		"name": "baggage_claim",
+		"aliases": []
+	},
+	{
+		"unicode": "1f388",
+		"name": "balloon",
+		"aliases": []
+	},
+	{
+		"unicode": "2611",
+		"name": "ballot_box_with_check",
+		"aliases": []
+	},
+	{
+		"unicode": "1f38d",
+		"name": "bamboo",
+		"aliases": []
+	},
+	{
+		"unicode": "1f34c",
+		"name": "banana",
+		"aliases": []
+	},
+	{
+		"unicode": "203c",
+		"name": "bangbang",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3e6",
+		"name": "bank",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4ca",
+		"name": "bar_chart",
+		"aliases": []
+	},
+	{
+		"unicode": "1f488",
+		"name": "barber",
+		"aliases": []
+	},
+	{
+		"unicode": "26be",
+		"name": "baseball",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3c0",
+		"name": "basketball",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6c0",
+		"name": "bath",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6c1",
+		"name": "bathtub",
+		"aliases": []
+	},
+	{
+		"unicode": "1f50b",
+		"name": "battery",
+		"aliases": []
+	},
+	{
+		"unicode": "1f43b",
+		"name": "bear",
+		"aliases": []
+	},
+	{
+		"unicode": "1f37a",
+		"name": "beer",
+		"aliases": []
+	},
+	{
+		"unicode": "1f37b",
+		"name": "beers",
+		"aliases": []
+	},
+	{
+		"unicode": "1f41e",
+		"name": "beetle",
+		"aliases": []
+	},
+	{
+		"unicode": "1f530",
+		"name": "beginner",
+		"aliases": []
+	},
+	{
+		"unicode": "1f514",
+		"name": "bell",
+		"aliases": []
+	},
+	{
+		"unicode": "1f371",
+		"name": "bento",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6b4",
+		"name": "bicyclist",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6b2",
+		"name": "bike",
+		"aliases": []
+	},
+	{
+		"unicode": "1f459",
+		"name": "bikini",
+		"aliases": []
+	},
+	{
+		"unicode": "1f426",
+		"name": "bird",
+		"aliases": []
+	},
+	{
+		"unicode": "1f382",
+		"name": "birthday",
+		"aliases": []
+	},
+	{
+		"unicode": "26ab",
+		"name": "black_circle",
+		"aliases": []
+	},
+	{
+		"unicode": "1f0cf",
+		"name": "black_joker",
+		"aliases": []
+	},
+	{
+		"unicode": "2712",
+		"name": "black_nib",
+		"aliases": []
+	},
+	{
+		"unicode": "1f532",
+		"name": "black_square_button",
+		"aliases": []
+	},
+	{
+		"unicode": "1f33c",
+		"name": "blossum",
+		"aliases": []
+	},
+	{
+		"unicode": "1f421",
+		"name": "blowfish",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4d8",
+		"name": "blue_book",
+		"aliases": []
+	},
+	{
+		"unicode": "1f699",
+		"name": "blue_car",
+		"aliases": []
+	},
+	{
+		"unicode": "1f499",
+		"name": "blue_heart",
+		"aliases": []
+	},
+	{
+		"unicode": "1f60a",
+		"name": "blush",
+		"aliases": []
+	},
+	{
+		"unicode": "1f417",
+		"name": "boar",
+		"aliases": []
+	},
+	{
+		"unicode": "26f5",
+		"name": "boat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4a3",
+		"name": "bomb",
+		"aliases": []
+	},
+	{
+		"unicode": "1f516",
+		"name": "bookmark",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4d1",
+		"name": "bookmark_tabs",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4da",
+		"name": "books",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4a5",
+		"name": "boom",
+		"aliases": []
+	},
+	{
+		"unicode": "1f462",
+		"name": "boot",
+		"aliases": []
+	},
+	{
+		"unicode": "1f490",
+		"name": "bouquet",
+		"aliases": []
+	},
+	{
+		"unicode": "1f647",
+		"name": "bow",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3b3",
+		"name": "bowling",
+		"aliases": []
+	},
+	{
+		"unicode": "1f466",
+		"name": "boy",
+		"aliases": []
+	},
+	{
+		"unicode": "1f35e",
+		"name": "bread",
+		"aliases": []
+	},
+	{
+		"unicode": "1f470",
+		"name": "bride_with_veil",
+		"aliases": []
+	},
+	{
+		"unicode": "1f309",
+		"name": "bridge_at_night",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4bc",
+		"name": "briefcase",
+		"aliases": []
+	},
+	{
+		"unicode": "1f494",
+		"name": "broken_heart",
+		"aliases": []
+	},
+	{
+		"unicode": "1f41b",
+		"name": "bug",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4a1",
+		"name": "bulb",
+		"aliases": []
+	},
+	{
+		"unicode": "1f685",
+		"name": "bullettrain_front",
+		"aliases": []
+	},
+	{
+		"unicode": "1f684",
+		"name": "bullettrain_side",
+		"aliases": []
+	},
+	{
+		"unicode": "1f68c",
+		"name": "bus",
+		"aliases": []
+	},
+	{
+		"unicode": "1f68f",
+		"name": "busstop",
+		"aliases": []
+	},
+	{
+		"unicode": "1f464",
+		"name": "bust_in_silhouette",
+		"aliases": []
+	},
+	{
+		"unicode": "1f465",
+		"name": "busts_in_silhouette",
+		"aliases": []
+	},
+	{
+		"unicode": "1f335",
+		"name": "cactus",
+		"aliases": []
+	},
+	{
+		"unicode": "1f370",
+		"name": "cake",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4c6",
+		"name": "calendar",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4f2",
+		"name": "calling",
+		"aliases": []
+	},
+	{
+		"unicode": "1f42b",
+		"name": "camel",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4f7",
+		"name": "camera",
+		"aliases": []
+	},
+	{
+		"unicode": "264b",
+		"name": "cancer",
+		"aliases": []
+	},
+	{
+		"unicode": "1f36c",
+		"name": "candy",
+		"aliases": []
+	},
+	{
+		"unicode": "1f520",
+		"name": "capital_abcd",
+		"aliases": []
+	},
+	{
+		"unicode": "2651",
+		"name": "capricorn",
+		"aliases": []
+	},
+	{
+		"unicode": "1f697",
+		"name": "car",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4c7",
+		"name": "card_index",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3a0",
+		"name": "carousel_horse",
+		"aliases": []
+	},
+	{
+		"unicode": "1f408",
+		"name": "cat2",
+		"aliases": []
+	},
+	{
+		"unicode": "1f431",
+		"name": "cat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4bf",
+		"name": "cd",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4b9",
+		"name": "chart",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4c9",
+		"name": "chart_with_downwards_trend",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4c8",
+		"name": "chart_with_upwards_trend",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3c1",
+		"name": "checkered_flag",
+		"aliases": []
+	},
+	{
+		"unicode": "1f352",
+		"name": "cherries",
+		"aliases": []
+	},
+	{
+		"unicode": "1f338",
+		"name": "cherry_blossom",
+		"aliases": []
+	},
+	{
+		"unicode": "1f330",
+		"name": "chestnut",
+		"aliases": []
+	},
+	{
+		"unicode": "1f414",
+		"name": "chicken",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6b8",
+		"name": "children_crossing",
+		"aliases": []
+	},
+	{
+		"unicode": "1f36b",
+		"name": "chocolate_bar",
+		"aliases": []
+	},
+	{
+		"unicode": "1f384",
+		"name": "christmas_tree",
+		"aliases": []
+	},
+	{
+		"unicode": "26ea",
+		"name": "church",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3a6",
+		"name": "cinema",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3aa",
+		"name": "circus_tent",
+		"aliases": []
+	},
+	{
+		"unicode": "1f307",
+		"name": "city_sunrise",
+		"aliases": []
+	},
+	{
+		"unicode": "1f306",
+		"name": "city_sunset",
+		"aliases": []
+	},
+	{
+		"unicode": "1f191",
+		"name": "cl",
+		"aliases": []
+	},
+	{
+		"unicode": "1f44f",
+		"name": "clap",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3ac",
+		"name": "clapper",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4cb",
+		"name": "clipboard",
+		"aliases": []
+	},
+	{
+		"unicode": "1f565",
+		"name": "clock1030",
+		"aliases": []
+	},
+	{
+		"unicode": "1f559",
+		"name": "clock10",
+		"aliases": []
+	},
+	{
+		"unicode": "1f566",
+		"name": "clock1130",
+		"aliases": []
+	},
+	{
+		"unicode": "1f55a",
+		"name": "clock11",
+		"aliases": []
+	},
+	{
+		"unicode": "1f567",
+		"name": "clock1230",
+		"aliases": []
+	},
+	{
+		"unicode": "1f55b",
+		"name": "clock12",
+		"aliases": []
+	},
+	{
+		"unicode": "1f55c",
+		"name": "clock130",
+		"aliases": []
+	},
+	{
+		"unicode": "1f550",
+		"name": "clock1",
+		"aliases": []
+	},
+	{
+		"unicode": "1f55d",
+		"name": "clock230",
+		"aliases": []
+	},
+	{
+		"unicode": "1f551",
+		"name": "clock2",
+		"aliases": []
+	},
+	{
+		"unicode": "1f55e",
+		"name": "clock330",
+		"aliases": []
+	},
+	{
+		"unicode": "1f552",
+		"name": "clock3",
+		"aliases": []
+	},
+	{
+		"unicode": "1f55f",
+		"name": "clock430",
+		"aliases": []
+	},
+	{
+		"unicode": "1f553",
+		"name": "clock4",
+		"aliases": []
+	},
+	{
+		"unicode": "1f560",
+		"name": "clock530",
+		"aliases": []
+	},
+	{
+		"unicode": "1f554",
+		"name": "clock5",
+		"aliases": []
+	},
+	{
+		"unicode": "1f561",
+		"name": "clock630",
+		"aliases": []
+	},
+	{
+		"unicode": "1f555",
+		"name": "clock6",
+		"aliases": []
+	},
+	{
+		"unicode": "1f562",
+		"name": "clock730",
+		"aliases": []
+	},
+	{
+		"unicode": "1f556",
+		"name": "clock7",
+		"aliases": []
+	},
+	{
+		"unicode": "1f563",
+		"name": "clock830",
+		"aliases": []
+	},
+	{
+		"unicode": "1f557",
+		"name": "clock8",
+		"aliases": []
+	},
+	{
+		"unicode": "1f564",
+		"name": "clock930",
+		"aliases": []
+	},
+	{
+		"unicode": "1f558",
+		"name": "clock9",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4d5",
+		"name": "closed_book",
+		"aliases": []
+	},
+	{
+		"unicode": "1f510",
+		"name": "closed_lock_with_key",
+		"aliases": []
+	},
+	{
+		"unicode": "1f302",
+		"name": "closed_umbrella",
+		"aliases": []
+	},
+	{
+		"unicode": "2601",
+		"name": "cloud",
+		"aliases": []
+	},
+	{
+		"unicode": "2663",
+		"name": "clubs",
+		"aliases": []
+	},
+	{
+		"unicode": "1f1e8-1f1f3",
+		"name": "cn",
+		"aliases": []
+	},
+	{
+		"unicode": "1f378",
+		"name": "cocktail",
+		"aliases": []
+	},
+	{
+		"unicode": "2615",
+		"name": "coffee",
+		"aliases": []
+	},
+	{
+		"unicode": "1f630",
+		"name": "cold_sweat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4a5",
+		"name": "collision",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4bb",
+		"name": "computer",
+		"aliases": []
+	},
+	{
+		"unicode": "1f38a",
+		"name": "confetti_ball",
+		"aliases": []
+	},
+	{
+		"unicode": "1f616",
+		"name": "confounded",
+		"aliases": []
+	},
+	{
+		"unicode": "1f615",
+		"name": "confused",
+		"aliases": []
+	},
+	{
+		"unicode": "3297",
+		"name": "congratulations",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6a7",
+		"name": "construction",
+		"aliases": []
+	},
+	{
+		"unicode": "1f477",
+		"name": "construction_worker",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3ea",
+		"name": "convenience_store",
+		"aliases": []
+	},
+	{
+		"unicode": "1f36a",
+		"name": "cookie",
+		"aliases": []
+	},
+	{
+		"unicode": "1f192",
+		"name": "cool",
+		"aliases": []
+	},
+	{
+		"unicode": "1f46e",
+		"name": "cop",
+		"aliases": []
+	},
+	{
+		"unicode": "a9",
+		"name": "copyright",
+		"aliases": []
+	},
+	{
+		"unicode": "1f33d",
+		"name": "corn",
+		"aliases": []
+	},
+	{
+		"unicode": "1f46b",
+		"name": "couple",
+		"aliases": []
+	},
+	{
+		"unicode": "1f491",
+		"name": "couple_with_heart",
+		"aliases": []
+	},
+	{
+		"unicode": "1f48f",
+		"name": "couplekiss",
+		"aliases": []
+	},
+	{
+		"unicode": "1f404",
+		"name": "cow2",
+		"aliases": []
+	},
+	{
+		"unicode": "1f42e",
+		"name": "cow",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4b3",
+		"name": "credit_card",
+		"aliases": []
+	},
+	{
+		"unicode": "1f40a",
+		"name": "crocodile",
+		"aliases": []
+	},
+	{
+		"unicode": "1f38c",
+		"name": "crossed_flags",
+		"aliases": []
+	},
+	{
+		"unicode": "1f451",
+		"name": "crown",
+		"aliases": []
+	},
+	{
+		"unicode": "1f622",
+		"name": "cry",
+		"aliases": []
+	},
+	{
+		"unicode": "1f63f",
+		"name": "crying_cat_face",
+		"aliases": []
+	},
+	{
+		"unicode": "1f52e",
+		"name": "crystal_ball",
+		"aliases": []
+	},
+	{
+		"unicode": "1f498",
+		"name": "cupid",
+		"aliases": []
+	},
+	{
+		"unicode": "27b0",
+		"name": "curly_loop",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4b1",
+		"name": "currency_exchange",
+		"aliases": []
+	},
+	{
+		"unicode": "1f35b",
+		"name": "curry",
+		"aliases": []
+	},
+	{
+		"unicode": "1f36e",
+		"name": "custard",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6c3",
+		"name": "customs",
+		"aliases": []
+	},
+	{
+		"unicode": "1f300",
+		"name": "cyclone",
+		"aliases": []
+	},
+	{
+		"unicode": "1f483",
+		"name": "dancer",
+		"aliases": []
+	},
+	{
+		"unicode": "1f46f",
+		"name": "dancers",
+		"aliases": []
+	},
+	{
+		"unicode": "1f361",
+		"name": "dango",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3af",
+		"name": "dart",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4a8",
+		"name": "dash",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4c5",
+		"name": "date",
+		"aliases": []
+	},
+	{
+		"unicode": "1f1e9-1f1ea",
+		"name": "de",
+		"aliases": []
+	},
+	{
+		"unicode": "1f333",
+		"name": "deciduous_tree",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3ec",
+		"name": "department_store",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4a0",
+		"name": "diamond_shape_with_a_dot_inside",
+		"aliases": []
+	},
+	{
+		"unicode": "2666",
+		"name": "diamonds",
+		"aliases": []
+	},
+	{
+		"unicode": "1f61e",
+		"name": "dissapointed",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4ab",
+		"name": "dizzy",
+		"aliases": []
+	},
+	{
+		"unicode": "1f635",
+		"name": "dizzy_face",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6af",
+		"name": "do_not_litter",
+		"aliases": []
+	},
+	{
+		"unicode": "1f415",
+		"name": "dog2",
+		"aliases": []
+	},
+	{
+		"unicode": "1f436",
+		"name": "dog",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4b5",
+		"name": "dollar",
+		"aliases": []
+	},
+	{
+		"unicode": "1f38e",
+		"name": "dolls",
+		"aliases": []
+	},
+	{
+		"unicode": "1f42c",
+		"name": "dolphin",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6aa",
+		"name": "door",
+		"aliases": []
+	},
+	{
+		"unicode": "1f369",
+		"name": "doughnut",
+		"aliases": []
+	},
+	{
+		"unicode": "1f409",
+		"name": "dragon",
+		"aliases": []
+	},
+	{
+		"unicode": "1f432",
+		"name": "dragon_face",
+		"aliases": []
+	},
+	{
+		"unicode": "1f457",
+		"name": "dress",
+		"aliases": []
+	},
+	{
+		"unicode": "1f42a",
+		"name": "dromedary_camel",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4a7",
+		"name": "droplet",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4c0",
+		"name": "dvd",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4e7",
+		"name": "e-mail",
+		"aliases": []
+	},
+	{
+		"unicode": "1f442",
+		"name": "ear",
+		"aliases": []
+	},
+	{
+		"unicode": "1f33e",
+		"name": "ear_of_rice",
+		"aliases": []
+	},
+	{
+		"unicode": "1f30d",
+		"name": "earth_africa",
+		"aliases": []
+	},
+	{
+		"unicode": "1f30e",
+		"name": "earth_americas",
+		"aliases": []
+	},
+	{
+		"unicode": "1f30f",
+		"name": "earth_asia",
+		"aliases": []
+	},
+	{
+		"unicode": "1f373",
+		"name": "egg",
+		"aliases": []
+	},
+	{
+		"unicode": "1f346",
+		"name": "eggplant",
+		"aliases": []
+	},
+	{
+		"unicode": "38-20e3",
+		"name": "eight",
+		"aliases": []
+	},
+	{
+		"unicode": "2734",
+		"name": "eight_pointed_black_star",
+		"aliases": []
+	},
+	{
+		"unicode": "2733",
+		"name": "eight_spoked_asterisk",
+		"aliases": []
+	},
+	{
+		"unicode": "1f50c",
+		"name": "electric_plug",
+		"aliases": []
+	},
+	{
+		"unicode": "1f418",
+		"name": "elephant",
+		"aliases": []
+	},
+	{
+		"unicode": "2709",
+		"name": "email",
+		"aliases": []
+	},
+	{
+		"unicode": "1f51a",
+		"name": "end",
+		"aliases": []
+	},
+	{
+		"unicode": "2709",
+		"name": "envelope",
+		"aliases": []
+	},
+	{
+		"unicode": "1f1ea-1f1f8",
+		"name": "es",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4b6",
+		"name": "euro",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3f0",
+		"name": "european_castle",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3e4",
+		"name": "european_post_office",
+		"aliases": []
+	},
+	{
+		"unicode": "1f332",
+		"name": "evergreen_tree",
+		"aliases": []
+	},
+	{
+		"unicode": "2757",
+		"name": "exclamation",
+		"aliases": []
+	},
+	{
+		"unicode": "1f611",
+		"name": "expressionless",
+		"aliases": []
+	},
+	{
+		"unicode": "1f453",
+		"name": "eyeglasses",
+		"aliases": []
+	},
+	{
+		"unicode": "1f440",
+		"name": "eyes",
+		"aliases": []
+	},
+	{
+		"unicode": "1f44a",
+		"name": "facepunch",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3ed",
+		"name": "factory",
+		"aliases": []
+	},
+	{
+		"unicode": "1f342",
+		"name": "fallen_leaf",
+		"aliases": []
+	},
+	{
+		"unicode": "1f46a",
+		"name": "family",
+		"aliases": []
+	},
+	{
+		"unicode": "23e9",
+		"name": "fast_forward",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4e0",
+		"name": "fax",
+		"aliases": []
+	},
+	{
+		"unicode": "1f628",
+		"name": "fearful",
+		"aliases": []
+	},
+	{
+		"unicode": "1f463",
+		"name": "feet",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3a1",
+		"name": "ferris_wheel",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4c1",
+		"name": "file_folder",
+		"aliases": []
+	},
+	{
+		"unicode": "1f525",
+		"name": "fire",
+		"aliases": []
+	},
+	{
+		"unicode": "1f692",
+		"name": "fire_engine",
+		"aliases": []
+	},
+	{
+		"unicode": "1f386",
+		"name": "fireworks",
+		"aliases": []
+	},
+	{
+		"unicode": "1f313",
+		"name": "first_quarter_moon",
+		"aliases": []
+	},
+	{
+		"unicode": "1f31b",
+		"name": "first_quarter_moon_with_face",
+		"aliases": []
+	},
+	{
+		"unicode": "1f41f",
+		"name": "fish",
+		"aliases": []
+	},
+	{
+		"unicode": "1f365",
+		"name": "fish_cake",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3a3",
+		"name": "fishing_pole_and_fish",
+		"aliases": []
+	},
+	{
+		"unicode": "270a",
+		"name": "fist",
+		"aliases": []
+	},
+	{
+		"unicode": "35-20e3",
+		"name": "five",
+		"aliases": []
+	},
+	{
+		"unicode": "1f38f",
+		"name": "flags",
+		"aliases": []
+	},
+	{
+		"unicode": "1f526",
+		"name": "flashlight",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4be",
+		"name": "floppy_disk",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3b4",
+		"name": "flower_playing_cards",
+		"aliases": []
+	},
+	{
+		"unicode": "1f633",
+		"name": "flushed",
+		"aliases": []
+	},
+	{
+		"unicode": "1f301",
+		"name": "foggy",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3c8",
+		"name": "football",
+		"aliases": []
+	},
+	{
+		"unicode": "1f374",
+		"name": "fork_and_knife",
+		"aliases": []
+	},
+	{
+		"unicode": "26f2",
+		"name": "fountain",
+		"aliases": []
+	},
+	{
+		"unicode": "34-20e3",
+		"name": "four",
+		"aliases": []
+	},
+	{
+		"unicode": "1f340",
+		"name": "four_leaf_clover",
+		"aliases": []
+	},
+	{
+		"unicode": "1f1eb-1f1f7",
+		"name": "fr",
+		"aliases": []
+	},
+	{
+		"unicode": "1f193",
+		"name": "free",
+		"aliases": []
+	},
+	{
+		"unicode": "1f364",
+		"name": "fried_shrimp",
+		"aliases": []
+	},
+	{
+		"unicode": "1f35f",
+		"name": "fries",
+		"aliases": []
+	},
+	{
+		"unicode": "1f438",
+		"name": "frog",
+		"aliases": []
+	},
+	{
+		"unicode": "1f626",
+		"name": "frowning",
+		"aliases": []
+	},
+	{
+		"unicode": "26fd",
+		"name": "fuelpump",
+		"aliases": []
+	},
+	{
+		"unicode": "1f315",
+		"name": "full_moon",
+		"aliases": []
+	},
+	{
+		"unicode": "1f31d",
+		"name": "full_moon_with_face",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3b2",
+		"name": "game_die",
+		"aliases": []
+	},
+	{
+		"unicode": "1f1ec-1f1e7",
+		"name": "gb",
+		"aliases": []
+	},
+	{
+		"unicode": "1f48e",
+		"name": "gem",
+		"aliases": []
+	},
+	{
+		"unicode": "264a",
+		"name": "gemini",
+		"aliases": []
+	},
+	{
+		"unicode": "1f47b",
+		"name": "ghost",
+		"aliases": []
+	},
+	{
+		"unicode": "1f381",
+		"name": "gift",
+		"aliases": []
+	},
+	{
+		"unicode": "1f49d",
+		"name": "gift_heart",
+		"aliases": []
+	},
+	{
+		"unicode": "1f467",
+		"name": "girl",
+		"aliases": []
+	},
+	{
+		"unicode": "1f310",
+		"name": "globe_with_meridians",
+		"aliases": []
+	},
+	{
+		"unicode": "1f410",
+		"name": "goat",
+		"aliases": []
+	},
+	{
+		"unicode": "26f3",
+		"name": "golf",
+		"aliases": []
+	},
+	{
+		"unicode": "1f347",
+		"name": "grapes",
+		"aliases": []
+	},
+	{
+		"unicode": "1f34f",
+		"name": "green_apple",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4d7",
+		"name": "green_book",
+		"aliases": []
+	},
+	{
+		"unicode": "1f49a",
+		"name": "green_heart",
+		"aliases": []
+	},
+	{
+		"unicode": "2755",
+		"name": "grey_exclamation",
+		"aliases": []
+	},
+	{
+		"unicode": "2754",
+		"name": "grey_question",
+		"aliases": []
+	},
+	{
+		"unicode": "1f62c",
+		"name": "grimacing",
+		"aliases": []
+	},
+	{
+		"unicode": "1f601",
+		"name": "grin",
+		"aliases": []
+	},
+	{
+		"unicode": "1f600",
+		"name": "grinning",
+		"aliases": []
+	},
+	{
+		"unicode": "1f482",
+		"name": "guardsman",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3b8",
+		"name": "guitar",
+		"aliases": []
+	},
+	{
+		"unicode": "1f52b",
+		"name": "gun",
+		"aliases": []
+	},
+	{
+		"unicode": "1f487",
+		"name": "haircut",
+		"aliases": []
+	},
+	{
+		"unicode": "1f354",
+		"name": "hamburger",
+		"aliases": []
+	},
+	{
+		"unicode": "1f528",
+		"name": "hammer",
+		"aliases": []
+	},
+	{
+		"unicode": "1f439",
+		"name": "hamster",
+		"aliases": []
+	},
+	{
+		"unicode": "270b",
+		"name": "hand",
+		"aliases": []
+	},
+	{
+		"unicode": "1f45c",
+		"name": "handbag",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4a9",
+		"name": "hankey",
+		"aliases": []
+	},
+	{
+		"unicode": "23-20e3",
+		"name": "hash",
+		"aliases": []
+	},
+	{
+		"unicode": "1f425",
+		"name": "hatched_chick",
+		"aliases": []
+	},
+	{
+		"unicode": "1f423",
+		"name": "hatching_chick",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3a7",
+		"name": "headphones",
+		"aliases": []
+	},
+	{
+		"unicode": "1f649",
+		"name": "hear_no_evil",
+		"aliases": []
+	},
+	{
+		"unicode": "2764",
+		"name": "heart",
+		"aliases": []
+	},
+	{
+		"unicode": "1f49f",
+		"name": "heart_decoration",
+		"aliases": []
+	},
+	{
+		"unicode": "1f60d",
+		"name": "heart_eyes",
+		"aliases": []
+	},
+	{
+		"unicode": "1f63b",
+		"name": "heart_eyes_cat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f493",
+		"name": "heartbeat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f497",
+		"name": "heartpulse",
+		"aliases": []
+	},
+	{
+		"unicode": "2665",
+		"name": "hearts",
+		"aliases": []
+	},
+	{
+		"unicode": "2714",
+		"name": "heavy_check_mark",
+		"aliases": []
+	},
+	{
+		"unicode": "2797",
+		"name": "heavy_division_sign",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4b2",
+		"name": "heavy_dollar_sign",
+		"aliases": []
+	},
+	{
+		"unicode": "2796",
+		"name": "heavy_minus_sign",
+		"aliases": []
+	},
+	{
+		"unicode": "2716",
+		"name": "heavy_multiplication_x",
+		"aliases": []
+	},
+	{
+		"unicode": "2795",
+		"name": "heavy_plus_sign",
+		"aliases": []
+	},
+	{
+		"unicode": "1f681",
+		"name": "helicopter",
+		"aliases": []
+	},
+	{
+		"unicode": "1f33f",
+		"name": "herb",
+		"aliases": []
+	},
+	{
+		"unicode": "1f33a",
+		"name": "hibiscus",
+		"aliases": []
+	},
+	{
+		"unicode": "1f506",
+		"name": "high_brightness",
+		"aliases": []
+	},
+	{
+		"unicode": "1f460",
+		"name": "high_heel",
+		"aliases": []
+	},
+	{
+		"unicode": "1f52a",
+		"name": "hocho",
+		"aliases": []
+	},
+	{
+		"unicode": "1f36f",
+		"name": "honey_pot",
+		"aliases": []
+	},
+	{
+		"unicode": "1f41d",
+		"name": "honeybee",
+		"aliases": []
+	},
+	{
+		"unicode": "1f434",
+		"name": "horse",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3c7",
+		"name": "horse_racing",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3e5",
+		"name": "hospital",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3e8",
+		"name": "hotel",
+		"aliases": []
+	},
+	{
+		"unicode": "2668",
+		"name": "hotsprings",
+		"aliases": []
+	},
+	{
+		"unicode": "231b",
+		"name": "hourglass",
+		"aliases": []
+	},
+	{
+		"unicode": "23f3",
+		"name": "hourglass_flowing_sand",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3e0",
+		"name": "house",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3e1",
+		"name": "house_with_garden",
+		"aliases": []
+	},
+	{
+		"unicode": "1f62f",
+		"name": "hushed",
+		"aliases": []
+	},
+	{
+		"unicode": "1f368",
+		"name": "ice_cream",
+		"aliases": []
+	},
+	{
+		"unicode": "1f366",
+		"name": "icecream",
+		"aliases": []
+	},
+	{
+		"unicode": "1f194",
+		"name": "id",
+		"aliases": []
+	},
+	{
+		"unicode": "1f250",
+		"name": "ideograph_advantage",
+		"aliases": []
+	},
+	{
+		"unicode": "1f47f",
+		"name": "imp",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4e5",
+		"name": "inbox_tray",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4e8",
+		"name": "incoming_envelope",
+		"aliases": []
+	},
+	{
+		"unicode": "1f481",
+		"name": "information_desk_person",
+		"aliases": []
+	},
+	{
+		"unicode": "2139",
+		"name": "information_source",
+		"aliases": []
+	},
+	{
+		"unicode": "1f607",
+		"name": "innocent",
+		"aliases": []
+	},
+	{
+		"unicode": "2049",
+		"name": "interrobang",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4f1",
+		"name": "iphone",
+		"aliases": []
+	},
+	{
+		"unicode": "1f1ee-1f1f9",
+		"name": "it",
+		"aliases": []
+	},
+	{
+		"unicode": "1f383",
+		"name": "jack_o_lantern",
+		"aliases": []
+	},
+	{
+		"unicode": "1f5fe",
+		"name": "japan",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3ef",
+		"name": "japanese_castle",
+		"aliases": []
+	},
+	{
+		"unicode": "1f47a",
+		"name": "japanese_goblin",
+		"aliases": []
+	},
+	{
+		"unicode": "1f479",
+		"name": "japanese_ogre",
+		"aliases": []
+	},
+	{
+		"unicode": "1f456",
+		"name": "jeans",
+		"aliases": []
+	},
+	{
+		"unicode": "1f602",
+		"name": "joy",
+		"aliases": []
+	},
+	{
+		"unicode": "1f639",
+		"name": "joy_cat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f1ef-1f1f5",
+		"name": "jp",
+		"aliases": []
+	},
+	{
+		"unicode": "1f511",
+		"name": "key",
+		"aliases": []
+	},
+	{
+		"unicode": "1f51f",
+		"name": "keycap_ten",
+		"aliases": []
+	},
+	{
+		"unicode": "1f458",
+		"name": "kimono",
+		"aliases": []
+	},
+	{
+		"unicode": "1f48b",
+		"name": "kiss",
+		"aliases": []
+	},
+	{
+		"unicode": "1f617",
+		"name": "kissing",
+		"aliases": []
+	},
+	{
+		"unicode": "1f63d",
+		"name": "kissing_cat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f61a",
+		"name": "kissing_closed_eyes",
+		"aliases": []
+	},
+	{
+		"unicode": "1f618",
+		"name": "kissing_heart",
+		"aliases": []
+	},
+	{
+		"unicode": "1f619",
+		"name": "kissing_smiling_eyes",
+		"aliases": []
+	},
+	{
+		"unicode": "1f428",
+		"name": "koala",
+		"aliases": []
+	},
+	{
+		"unicode": "1f201",
+		"name": "koko",
+		"aliases": []
+	},
+	{
+		"unicode": "1f1f0-1f1f7",
+		"name": "kr",
+		"aliases": []
+	},
+	{
+		"unicode": "1f535",
+		"name": "large_blue_circle",
+		"aliases": []
+	},
+	{
+		"unicode": "1f537",
+		"name": "large_blue_diamond",
+		"aliases": []
+	},
+	{
+		"unicode": "1f536",
+		"name": "large_orange_diamond",
+		"aliases": []
+	},
+	{
+		"unicode": "1f317",
+		"name": "last_quarter_moon",
+		"aliases": []
+	},
+	{
+		"unicode": "1f31c",
+		"name": "last_quarter_moon_with_face",
+		"aliases": []
+	},
+	{
+		"unicode": "1f606",
+		"name": "laughing",
+		"aliases": []
+	},
+	{
+		"unicode": "1f343",
+		"name": "leaves",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4d2",
+		"name": "ledger",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6c5",
+		"name": "left_luggage",
+		"aliases": []
+	},
+	{
+		"unicode": "2194",
+		"name": "left_right_arrow",
+		"aliases": []
+	},
+	{
+		"unicode": "21a9",
+		"name": "leftwards_arrow_with_hook",
+		"aliases": []
+	},
+	{
+		"unicode": "1f34b",
+		"name": "lemon",
+		"aliases": []
+	},
+	{
+		"unicode": "264c",
+		"name": "leo",
+		"aliases": []
+	},
+	{
+		"unicode": "1f406",
+		"name": "leopard",
+		"aliases": []
+	},
+	{
+		"unicode": "264e",
+		"name": "libra",
+		"aliases": []
+	},
+	{
+		"unicode": "1f688",
+		"name": "light_rail",
+		"aliases": []
+	},
+	{
+		"unicode": "1f517",
+		"name": "link",
+		"aliases": []
+	},
+	{
+		"unicode": "1f444",
+		"name": "lips",
+		"aliases": []
+	},
+	{
+		"unicode": "1f484",
+		"name": "lipstick",
+		"aliases": []
+	},
+	{
+		"unicode": "1f512",
+		"name": "lock",
+		"aliases": []
+	},
+	{
+		"unicode": "1f50f",
+		"name": "lock_with_ink_pen",
+		"aliases": []
+	},
+	{
+		"unicode": "1f36d",
+		"name": "lollipop",
+		"aliases": []
+	},
+	{
+		"unicode": "27bf",
+		"name": "loop",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4e2",
+		"name": "loudspeaker",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3e9",
+		"name": "love_hotel",
+		"aliases": []
+	},
+	{
+		"unicode": "1f48c",
+		"name": "love_letter",
+		"aliases": []
+	},
+	{
+		"unicode": "1f505",
+		"name": "low_brightness",
+		"aliases": []
+	},
+	{
+		"unicode": "24c2",
+		"name": "m",
+		"aliases": []
+	},
+	{
+		"unicode": "1f50d",
+		"name": "mag",
+		"aliases": []
+	},
+	{
+		"unicode": "1f50e",
+		"name": "mag_right",
+		"aliases": []
+	},
+	{
+		"unicode": "1f004",
+		"name": "mahjong",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4eb",
+		"name": "mailbox",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4ea",
+		"name": "mailbox_closed",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4ec",
+		"name": "mailbox_with_mail",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4ed",
+		"name": "mailbox_with_no_mail",
+		"aliases": []
+	},
+	{
+		"unicode": "1f468",
+		"name": "man",
+		"aliases": []
+	},
+	{
+		"unicode": "1f472",
+		"name": "man_with_gua_pi_mao",
+		"aliases": []
+	},
+	{
+		"unicode": "1f473",
+		"name": "man_with_turban",
+		"aliases": []
+	},
+	{
+		"unicode": "1f45e",
+		"name": "mans_shoe",
+		"aliases": []
+	},
+	{
+		"unicode": "1f341",
+		"name": "maple_leaf",
+		"aliases": []
+	},
+	{
+		"unicode": "1f637",
+		"name": "mask",
+		"aliases": []
+	},
+	{
+		"unicode": "1f486",
+		"name": "massage",
+		"aliases": []
+	},
+	{
+		"unicode": "1f356",
+		"name": "meat_on_bone",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4e3",
+		"name": "mega",
+		"aliases": []
+	},
+	{
+		"unicode": "1f348",
+		"name": "melon",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4dd",
+		"name": "memo",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6b9",
+		"name": "mens",
+		"aliases": []
+	},
+	{
+		"unicode": "1f687",
+		"name": "metro",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3a4",
+		"name": "microphone",
+		"aliases": []
+	},
+	{
+		"unicode": "1f52c",
+		"name": "microscope",
+		"aliases": []
+	},
+	{
+		"unicode": "1f30c",
+		"name": "milky_way",
+		"aliases": []
+	},
+	{
+		"unicode": "1f690",
+		"name": "minibus",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4bd",
+		"name": "minidisc",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4f4",
+		"name": "mobile_phone_off",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4b8",
+		"name": "money_with_wings",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4b0",
+		"name": "moneybag",
+		"aliases": []
+	},
+	{
+		"unicode": "1f412",
+		"name": "monkey",
+		"aliases": []
+	},
+	{
+		"unicode": "1f435",
+		"name": "monkey_face",
+		"aliases": []
+	},
+	{
+		"unicode": "1f69d",
+		"name": "monorail",
+		"aliases": []
+	},
+	{
+		"unicode": "1f319",
+		"name": "moon",
+		"aliases": []
+	},
+	{
+		"unicode": "1f393",
+		"name": "mortar_board",
+		"aliases": []
+	},
+	{
+		"unicode": "1f5fb",
+		"name": "mount_fuji",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6b5",
+		"name": "mountain_bicyclist",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6a0",
+		"name": "mountain_cableway",
+		"aliases": []
+	},
+	{
+		"unicode": "1f69e",
+		"name": "mountain_railway",
+		"aliases": []
+	},
+	{
+		"unicode": "1f401",
+		"name": "mouse2",
+		"aliases": []
+	},
+	{
+		"unicode": "1f42d",
+		"name": "mouse",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3a5",
+		"name": "movie_camera",
+		"aliases": []
+	},
+	{
+		"unicode": "1f5ff",
+		"name": "moyai",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4aa",
+		"name": "muscle",
+		"aliases": []
+	},
+	{
+		"unicode": "1f344",
+		"name": "mushroom",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3b9",
+		"name": "musical_keyboard",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3b5",
+		"name": "musical_note",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3bc",
+		"name": "musical_score",
+		"aliases": []
+	},
+	{
+		"unicode": "1f507",
+		"name": "mute",
+		"aliases": []
+	},
+	{
+		"unicode": "1f485",
+		"name": "nail_care",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4db",
+		"name": "name_badge",
+		"aliases": []
+	},
+	{
+		"unicode": "1f454",
+		"name": "necktie",
+		"aliases": []
+	},
+	{
+		"unicode": "274e",
+		"name": "negative_squared_cross_mark",
+		"aliases": []
+	},
+	{
+		"unicode": "1f610",
+		"name": "neutral_face",
+		"aliases": []
+	},
+	{
+		"unicode": "1f195",
+		"name": "new",
+		"aliases": []
+	},
+	{
+		"unicode": "1f311",
+		"name": "new_moon",
+		"aliases": []
+	},
+	{
+		"unicode": "1f31a",
+		"name": "new_moon_with_face",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4f0",
+		"name": "newspaper",
+		"aliases": []
+	},
+	{
+		"unicode": "1f196",
+		"name": "ng",
+		"aliases": []
+	},
+	{
+		"unicode": "39-20e3",
+		"name": "nine",
+		"aliases": []
+	},
+	{
+		"unicode": "1f515",
+		"name": "no_bell",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6b3",
+		"name": "no_bicycles",
+		"aliases": []
+	},
+	{
+		"unicode": "26d4",
+		"name": "no_entry",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6ab",
+		"name": "no_entry_sign",
+		"aliases": []
+	},
+	{
+		"unicode": "1f645",
+		"name": "no_good",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4f5",
+		"name": "no_mobile_phones",
+		"aliases": []
+	},
+	{
+		"unicode": "1f636",
+		"name": "no_mouth",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6b7",
+		"name": "no_pedestrians",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6ad",
+		"name": "no_smoking",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6b1",
+		"name": "non-potable_water",
+		"aliases": []
+	},
+	{
+		"unicode": "1f443",
+		"name": "nose",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4d3",
+		"name": "notebook",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4d4",
+		"name": "notebook_with_decorative_cover",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3b6",
+		"name": "notes",
+		"aliases": []
+	},
+	{
+		"unicode": "1f529",
+		"name": "nut_and_bolt",
+		"aliases": []
+	},
+	{
+		"unicode": "1f17e",
+		"name": "o2",
+		"aliases": []
+	},
+	{
+		"unicode": "2b55",
+		"name": "o",
+		"aliases": []
+	},
+	{
+		"unicode": "1f30a",
+		"name": "ocean",
+		"aliases": []
+	},
+	{
+		"unicode": "1f431",
+		"name": "octocat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f419",
+		"name": "octopus",
+		"aliases": []
+	},
+	{
+		"unicode": "1f362",
+		"name": "oden",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3e2",
+		"name": "office",
+		"aliases": []
+	},
+	{
+		"unicode": "1f197",
+		"name": "ok",
+		"aliases": []
+	},
+	{
+		"unicode": "1f44c",
+		"name": "ok_hand",
+		"aliases": []
+	},
+	{
+		"unicode": "1f646",
+		"name": "ok_woman",
+		"aliases": []
+	},
+	{
+		"unicode": "1f474",
+		"name": "older_man",
+		"aliases": []
+	},
+	{
+		"unicode": "1f475",
+		"name": "older_woman",
+		"aliases": []
+	},
+	{
+		"unicode": "1f51b",
+		"name": "on",
+		"aliases": []
+	},
+	{
+		"unicode": "1f698",
+		"name": "oncoming_automobile",
+		"aliases": []
+	},
+	{
+		"unicode": "1f68d",
+		"name": "oncoming_bus",
+		"aliases": []
+	},
+	{
+		"unicode": "1f694",
+		"name": "oncoming_police_car",
+		"aliases": []
+	},
+	{
+		"unicode": "1f696",
+		"name": "oncoming_taxi",
+		"aliases": []
+	},
+	{
+		"unicode": "31-20e3",
+		"name": "one",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4c2",
+		"name": "open_file_folder",
+		"aliases": []
+	},
+	{
+		"unicode": "1f450",
+		"name": "open_hands",
+		"aliases": []
+	},
+	{
+		"unicode": "1f62e",
+		"name": "open_mouth",
+		"aliases": []
+	},
+	{
+		"unicode": "26ce",
+		"name": "ophiuchus",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4d9",
+		"name": "orange_book",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4e4",
+		"name": "outbox_tray",
+		"aliases": []
+	},
+	{
+		"unicode": "1f402",
+		"name": "ox",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4c4",
+		"name": "page_facing_up",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4c3",
+		"name": "page_with_curl",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4df",
+		"name": "pager",
+		"aliases": []
+	},
+	{
+		"unicode": "1f334",
+		"name": "palm_tree",
+		"aliases": []
+	},
+	{
+		"unicode": "1f43c",
+		"name": "panda_face",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4ce",
+		"name": "paperclip",
+		"aliases": []
+	},
+	{
+		"unicode": "1f17f",
+		"name": "parking",
+		"aliases": []
+	},
+	{
+		"unicode": "303d",
+		"name": "part_alternation_mark",
+		"aliases": []
+	},
+	{
+		"unicode": "26c5",
+		"name": "partly_sunny",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6c2",
+		"name": "passport_control",
+		"aliases": []
+	},
+	{
+		"unicode": "1f43e",
+		"name": "paw_prints",
+		"aliases": []
+	},
+	{
+		"unicode": "1f351",
+		"name": "peach",
+		"aliases": []
+	},
+	{
+		"unicode": "1f350",
+		"name": "pear",
+		"aliases": []
+	},
+	{
+		"unicode": "270f",
+		"name": "pencil2",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4dd",
+		"name": "pencil",
+		"aliases": []
+	},
+	{
+		"unicode": "1f427",
+		"name": "penguin",
+		"aliases": []
+	},
+	{
+		"unicode": "1f614",
+		"name": "pensive",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3ad",
+		"name": "performing_arts",
+		"aliases": []
+	},
+	{
+		"unicode": "1f623",
+		"name": "persevere",
+		"aliases": []
+	},
+	{
+		"unicode": "1f64d",
+		"name": "person_frowning",
+		"aliases": []
+	},
+	{
+		"unicode": "1f471",
+		"name": "person_with_blond_hair",
+		"aliases": []
+	},
+	{
+		"unicode": "1f64e",
+		"name": "person_with_pouting_face",
+		"aliases": []
+	},
+	{
+		"unicode": "260e",
+		"name": "phone",
+		"aliases": []
+	},
+	{
+		"unicode": "1f416",
+		"name": "pig2",
+		"aliases": []
+	},
+	{
+		"unicode": "1f437",
+		"name": "pig",
+		"aliases": []
+	},
+	{
+		"unicode": "1f43d",
+		"name": "pig_nose",
+		"aliases": []
+	},
+	{
+		"unicode": "1f48a",
+		"name": "pill",
+		"aliases": []
+	},
+	{
+		"unicode": "1f34d",
+		"name": "pineapple",
+		"aliases": []
+	},
+	{
+		"unicode": "2653",
+		"name": "pisces",
+		"aliases": []
+	},
+	{
+		"unicode": "1f355",
+		"name": "pizza",
+		"aliases": []
+	},
+	{
+		"unicode": "1f447",
+		"name": "point_down",
+		"aliases": []
+	},
+	{
+		"unicode": "1f448",
+		"name": "point_left",
+		"aliases": []
+	},
+	{
+		"unicode": "1f449",
+		"name": "point_right",
+		"aliases": []
+	},
+	{
+		"unicode": "261d",
+		"name": "point_up",
+		"aliases": []
+	},
+	{
+		"unicode": "1f446",
+		"name": "point_up_2",
+		"aliases": []
+	},
+	{
+		"unicode": "1f693",
+		"name": "police_car",
+		"aliases": []
+	},
+	{
+		"unicode": "1f429",
+		"name": "poodle",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4a9",
+		"name": "poop",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3e3",
+		"name": "post_office",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4ef",
+		"name": "postal_horn",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4ee",
+		"name": "postbox",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6b0",
+		"name": "potable_water",
+		"aliases": []
+	},
+	{
+		"unicode": "1f45d",
+		"name": "pouch",
+		"aliases": []
+	},
+	{
+		"unicode": "1f357",
+		"name": "poultry_leg",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4b7",
+		"name": "pound",
+		"aliases": []
+	},
+	{
+		"unicode": "1f63e",
+		"name": "pouting_cat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f64f",
+		"name": "pray",
+		"aliases": []
+	},
+	{
+		"unicode": "1f478",
+		"name": "princess",
+		"aliases": []
+	},
+	{
+		"unicode": "1f44a",
+		"name": "punch",
+		"aliases": []
+	},
+	{
+		"unicode": "1f49c",
+		"name": "purple_heart",
+		"aliases": []
+	},
+	{
+		"unicode": "1f45b",
+		"name": "purse",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4cc",
+		"name": "pushpin",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6ae",
+		"name": "put_litter_in_its_place",
+		"aliases": []
+	},
+	{
+		"unicode": "2753",
+		"name": "question",
+		"aliases": []
+	},
+	{
+		"unicode": "1f407",
+		"name": "rabbit2",
+		"aliases": []
+	},
+	{
+		"unicode": "1f430",
+		"name": "rabbit",
+		"aliases": []
+	},
+	{
+		"unicode": "1f40e",
+		"name": "racehorse",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4fb",
+		"name": "radio",
+		"aliases": []
+	},
+	{
+		"unicode": "1f518",
+		"name": "radio_button",
+		"aliases": []
+	},
+	{
+		"unicode": "1f621",
+		"name": "rage",
+		"aliases": []
+	},
+	{
+		"unicode": "1f683",
+		"name": "railway_car",
+		"aliases": []
+	},
+	{
+		"unicode": "1f308",
+		"name": "rainbow",
+		"aliases": []
+	},
+	{
+		"unicode": "1f64b",
+		"name": "raised_hand",
+		"aliases": []
+	},
+	{
+		"unicode": "1f64c",
+		"name": "raised_hands",
+		"aliases": []
+	},
+	{
+		"unicode": "1f40f",
+		"name": "ram",
+		"aliases": []
+	},
+	{
+		"unicode": "1f35c",
+		"name": "ramen",
+		"aliases": []
+	},
+	{
+		"unicode": "1f400",
+		"name": "rat",
+		"aliases": []
+	},
+	{
+		"unicode": "267b",
+		"name": "recycle",
+		"aliases": []
+	},
+	{
+		"unicode": "1f697",
+		"name": "red_car",
+		"aliases": []
+	},
+	{
+		"unicode": "1f534",
+		"name": "red_circle",
+		"aliases": []
+	},
+	{
+		"unicode": "ae",
+		"name": "registered",
+		"aliases": []
+	},
+	{
+		"unicode": "263a",
+		"name": "relaxed",
+		"aliases": []
+	},
+	{
+		"unicode": "1f625",
+		"name": "relieved",
+		"aliases": []
+	},
+	{
+		"unicode": "1f501",
+		"name": "repeat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f502",
+		"name": "repeat_one",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6bb",
+		"name": "restroom",
+		"aliases": []
+	},
+	{
+		"unicode": "1f49e",
+		"name": "revolving_hearts",
+		"aliases": []
+	},
+	{
+		"unicode": "23ea",
+		"name": "rewind",
+		"aliases": []
+	},
+	{
+		"unicode": "1f380",
+		"name": "ribbon",
+		"aliases": []
+	},
+	{
+		"unicode": "1f35a",
+		"name": "rice",
+		"aliases": []
+	},
+	{
+		"unicode": "1f359",
+		"name": "rice_ball",
+		"aliases": []
+	},
+	{
+		"unicode": "1f358",
+		"name": "rice_cracker",
+		"aliases": []
+	},
+	{
+		"unicode": "1f391",
+		"name": "rice_scene",
+		"aliases": []
+	},
+	{
+		"unicode": "1f48d",
+		"name": "ring",
+		"aliases": []
+	},
+	{
+		"unicode": "1f680",
+		"name": "rocket",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3a2",
+		"name": "roller_coaster",
+		"aliases": []
+	},
+	{
+		"unicode": "1f413",
+		"name": "rooster",
+		"aliases": []
+	},
+	{
+		"unicode": "1f339",
+		"name": "rose",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6a8",
+		"name": "rotating_light",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4cd",
+		"name": "round_pushpin",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6a3",
+		"name": "rowboat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f1f7-1f1fa",
+		"name": "ru",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3c9",
+		"name": "rugby_football",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3c3",
+		"name": "runner",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3c3",
+		"name": "running",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3bd",
+		"name": "running_shirt_with_sash",
+		"aliases": []
+	},
+	{
+		"unicode": "1f202",
+		"name": "sa",
+		"aliases": []
+	},
+	{
+		"unicode": "2650",
+		"name": "sagittarius",
+		"aliases": []
+	},
+	{
+		"unicode": "26f5",
+		"name": "sailboat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f376",
+		"name": "sake",
+		"aliases": []
+	},
+	{
+		"unicode": "1f461",
+		"name": "sandal",
+		"aliases": []
+	},
+	{
+		"unicode": "1f385",
+		"name": "santa",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4e1",
+		"name": "satellite",
+		"aliases": []
+	},
+	{
+		"unicode": "1f60c",
+		"name": "satisfied",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3b7",
+		"name": "saxophone",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3eb",
+		"name": "school",
+		"aliases": []
+	},
+	{
+		"unicode": "1f392",
+		"name": "school_satchel",
+		"aliases": []
+	},
+	{
+		"unicode": "2702",
+		"name": "scissors",
+		"aliases": []
+	},
+	{
+		"unicode": "264f",
+		"name": "scorpius",
+		"aliases": []
+	},
+	{
+		"unicode": "1f631",
+		"name": "scream",
+		"aliases": []
+	},
+	{
+		"unicode": "1f640",
+		"name": "scream_cat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4dc",
+		"name": "scroll",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4ba",
+		"name": "seat",
+		"aliases": []
+	},
+	{
+		"unicode": "3299",
+		"name": "secret",
+		"aliases": []
+	},
+	{
+		"unicode": "1f648",
+		"name": "see_no_evil",
+		"aliases": []
+	},
+	{
+		"unicode": "1f331",
+		"name": "seedling",
+		"aliases": []
+	},
+	{
+		"unicode": "37-20e3",
+		"name": "seven",
+		"aliases": []
+	},
+	{
+		"unicode": "1f367",
+		"name": "shaved_ice",
+		"aliases": []
+	},
+	{
+		"unicode": "1f411",
+		"name": "sheep",
+		"aliases": []
+	},
+	{
+		"unicode": "1f41a",
+		"name": "shell",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6a2",
+		"name": "ship",
+		"aliases": []
+	},
+	{
+		"unicode": "1f455",
+		"name": "shirt",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4a9",
+		"name": "shit",
+		"aliases": []
+	},
+	{
+		"unicode": "1f45e",
+		"name": "shoe",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6bf",
+		"name": "shower",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4f6",
+		"name": "signal_strength",
+		"aliases": []
+	},
+	{
+		"unicode": "36-20e3",
+		"name": "six",
+		"aliases": []
+	},
+	{
+		"unicode": "1f52f",
+		"name": "six_pointed_star",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3bf",
+		"name": "ski",
+		"aliases": []
+	},
+	{
+		"unicode": "1f480",
+		"name": "skull",
+		"aliases": []
+	},
+	{
+		"unicode": "1f634",
+		"name": "sleeping",
+		"aliases": []
+	},
+	{
+		"unicode": "1f62a",
+		"name": "sleepy",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3b0",
+		"name": "slot_machine",
+		"aliases": []
+	},
+	{
+		"unicode": "1f539",
+		"name": "small_blue_diamond",
+		"aliases": []
+	},
+	{
+		"unicode": "1f538",
+		"name": "small_orange_diamond",
+		"aliases": []
+	},
+	{
+		"unicode": "1f53a",
+		"name": "small_red_triangle",
+		"aliases": []
+	},
+	{
+		"unicode": "1f53b",
+		"name": "small_red_triangle_down",
+		"aliases": []
+	},
+	{
+		"unicode": "1f604",
+		"name": "smile",
+		"aliases": []
+	},
+	{
+		"unicode": "1f638",
+		"name": "smile_cat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f603",
+		"name": "smiley",
+		"aliases": []
+	},
+	{
+		"unicode": "1f63a",
+		"name": "smiley_cat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f608",
+		"name": "smiling_imp",
+		"aliases": []
+	},
+	{
+		"unicode": "1f60f",
+		"name": "smirk",
+		"aliases": []
+	},
+	{
+		"unicode": "1f63c",
+		"name": "smirk_cat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6ac",
+		"name": "smoking",
+		"aliases": []
+	},
+	{
+		"unicode": "1f40c",
+		"name": "snail",
+		"aliases": []
+	},
+	{
+		"unicode": "1f40d",
+		"name": "snake",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3c2",
+		"name": "snowboarder",
+		"aliases": []
+	},
+	{
+		"unicode": "2744",
+		"name": "snowflake",
+		"aliases": []
+	},
+	{
+		"unicode": "26c4",
+		"name": "snowman",
+		"aliases": []
+	},
+	{
+		"unicode": "1f62d",
+		"name": "sob",
+		"aliases": []
+	},
+	{
+		"unicode": "26bd",
+		"name": "soccer",
+		"aliases": []
+	},
+	{
+		"unicode": "1f51c",
+		"name": "soon",
+		"aliases": []
+	},
+	{
+		"unicode": "1f198",
+		"name": "sos",
+		"aliases": []
+	},
+	{
+		"unicode": "1f509",
+		"name": "sound",
+		"aliases": []
+	},
+	{
+		"unicode": "1f47e",
+		"name": "space_invader",
+		"aliases": []
+	},
+	{
+		"unicode": "2660",
+		"name": "spades",
+		"aliases": []
+	},
+	{
+		"unicode": "1f35d",
+		"name": "spaghetti",
+		"aliases": []
+	},
+	{
+		"unicode": "1f387",
+		"name": "sparkler",
+		"aliases": []
+	},
+	{
+		"unicode": "2728",
+		"name": "sparkles",
+		"aliases": []
+	},
+	{
+		"unicode": "1f496",
+		"name": "sparkling_heart",
+		"aliases": []
+	},
+	{
+		"unicode": "1f64a",
+		"name": "speak_no_evil",
+		"aliases": []
+	},
+	{
+		"unicode": "1f50a",
+		"name": "speaker",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4ac",
+		"name": "speech_balloon",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6a4",
+		"name": "speedboat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f31f",
+		"name": "star2",
+		"aliases": []
+	},
+	{
+		"unicode": "2b50",
+		"name": "star",
+		"aliases": []
+	},
+	{
+		"unicode": "1f303",
+		"name": "stars",
+		"aliases": []
+	},
+	{
+		"unicode": "1f689",
+		"name": "station",
+		"aliases": []
+	},
+	{
+		"unicode": "1f5fd",
+		"name": "statue_of_liberty",
+		"aliases": []
+	},
+	{
+		"unicode": "1f682",
+		"name": "steam_locomotive",
+		"aliases": []
+	},
+	{
+		"unicode": "1f372",
+		"name": "stew",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4cf",
+		"name": "straight_ruler",
+		"aliases": []
+	},
+	{
+		"unicode": "1f353",
+		"name": "strawberry",
+		"aliases": []
+	},
+	{
+		"unicode": "1f61b",
+		"name": "stuck_out_tongue",
+		"aliases": []
+	},
+	{
+		"unicode": "1f61d",
+		"name": "stuck_out_tongue_closed_eyes",
+		"aliases": []
+	},
+	{
+		"unicode": "1f61c",
+		"name": "stuck_out_tongue_winking_eye",
+		"aliases": []
+	},
+	{
+		"unicode": "1f31e",
+		"name": "sun_with_face",
+		"aliases": []
+	},
+	{
+		"unicode": "1f33b",
+		"name": "sunflower",
+		"aliases": []
+	},
+	{
+		"unicode": "1f60e",
+		"name": "sunglasses",
+		"aliases": []
+	},
+	{
+		"unicode": "2600",
+		"name": "sunny",
+		"aliases": []
+	},
+	{
+		"unicode": "1f305",
+		"name": "sunrise",
+		"aliases": []
+	},
+	{
+		"unicode": "1f304",
+		"name": "sunrise_over_mountains",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3c4",
+		"name": "surfer",
+		"aliases": []
+	},
+	{
+		"unicode": "1f363",
+		"name": "sushi",
+		"aliases": []
+	},
+	{
+		"unicode": "1f69f",
+		"name": "suspension_railway",
+		"aliases": []
+	},
+	{
+		"unicode": "1f613",
+		"name": "sweat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4a6",
+		"name": "sweat_drops",
+		"aliases": []
+	},
+	{
+		"unicode": "1f605",
+		"name": "sweat_smile",
+		"aliases": []
+	},
+	{
+		"unicode": "1f360",
+		"name": "sweet_potato",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3ca",
+		"name": "swimmer",
+		"aliases": []
+	},
+	{
+		"unicode": "1f523",
+		"name": "symbols",
+		"aliases": []
+	},
+	{
+		"unicode": "1f489",
+		"name": "syringe",
+		"aliases": []
+	},
+	{
+		"unicode": "1f389",
+		"name": "tada",
+		"aliases": []
+	},
+	{
+		"unicode": "1f38b",
+		"name": "tanabata_tree",
+		"aliases": []
+	},
+	{
+		"unicode": "1f34a",
+		"name": "tangerine",
+		"aliases": []
+	},
+	{
+		"unicode": "2649",
+		"name": "taurus",
+		"aliases": []
+	},
+	{
+		"unicode": "1f695",
+		"name": "taxi",
+		"aliases": []
+	},
+	{
+		"unicode": "1f375",
+		"name": "tea",
+		"aliases": []
+	},
+	{
+		"unicode": "260e",
+		"name": "telephone",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4de",
+		"name": "telephone_receiver",
+		"aliases": []
+	},
+	{
+		"unicode": "1f52d",
+		"name": "telescope",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3be",
+		"name": "tennis",
+		"aliases": []
+	},
+	{
+		"unicode": "26fa",
+		"name": "tent",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4ad",
+		"name": "thought_balloon",
+		"aliases": []
+	},
+	{
+		"unicode": "33-20e3",
+		"name": "three",
+		"aliases": []
+	},
+	{
+		"unicode": "1f44e",
+		"name": "thumbsdown",
+		"aliases": []
+	},
+	{
+		"unicode": "1f44d",
+		"name": "thumbsup",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3ab",
+		"name": "ticket",
+		"aliases": []
+	},
+	{
+		"unicode": "1f405",
+		"name": "tiger2",
+		"aliases": []
+	},
+	{
+		"unicode": "1f42f",
+		"name": "tiger",
+		"aliases": []
+	},
+	{
+		"unicode": "1f62b",
+		"name": "tired_face",
+		"aliases": []
+	},
+	{
+		"unicode": "2122",
+		"name": "tm",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6bd",
+		"name": "toilet",
+		"aliases": []
+	},
+	{
+		"unicode": "1f5fc",
+		"name": "tokyo_tower",
+		"aliases": []
+	},
+	{
+		"unicode": "1f345",
+		"name": "tomato",
+		"aliases": []
+	},
+	{
+		"unicode": "1f445",
+		"name": "tongue",
+		"aliases": []
+	},
+	{
+		"unicode": "1f51d",
+		"name": "top",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3a9",
+		"name": "tophat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f69c",
+		"name": "tractor",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6a5",
+		"name": "traffic_light",
+		"aliases": []
+	},
+	{
+		"unicode": "1f686",
+		"name": "train2",
+		"aliases": []
+	},
+	{
+		"unicode": "1f683",
+		"name": "train",
+		"aliases": []
+	},
+	{
+		"unicode": "1f68a",
+		"name": "tram",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6a9",
+		"name": "triangular_flag_on_post",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4d0",
+		"name": "triangular_ruler",
+		"aliases": []
+	},
+	{
+		"unicode": "1f531",
+		"name": "trident",
+		"aliases": []
+	},
+	{
+		"unicode": "1f624",
+		"name": "triumph",
+		"aliases": []
+	},
+	{
+		"unicode": "1f68e",
+		"name": "trolleybus",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3c6",
+		"name": "trophy",
+		"aliases": []
+	},
+	{
+		"unicode": "1f379",
+		"name": "tropical_drink",
+		"aliases": []
+	},
+	{
+		"unicode": "1f420",
+		"name": "tropical_fish",
+		"aliases": []
+	},
+	{
+		"unicode": "1f69a",
+		"name": "truck",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3ba",
+		"name": "trumpet",
+		"aliases": []
+	},
+	{
+		"unicode": "1f455",
+		"name": "tshirt",
+		"aliases": []
+	},
+	{
+		"unicode": "1f337",
+		"name": "tulip",
+		"aliases": []
+	},
+	{
+		"unicode": "1f422",
+		"name": "turtle",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4fa",
+		"name": "tv",
+		"aliases": []
+	},
+	{
+		"unicode": "1f500",
+		"name": "twisted_rightwards_arrows",
+		"aliases": []
+	},
+	{
+		"unicode": "32-20e3",
+		"name": "two",
+		"aliases": []
+	},
+	{
+		"unicode": "1f495",
+		"name": "two_hearts",
+		"aliases": []
+	},
+	{
+		"unicode": "1f46c",
+		"name": "two_men_holding_hands",
+		"aliases": []
+	},
+	{
+		"unicode": "1f46d",
+		"name": "two_women_holding_hands",
+		"aliases": []
+	},
+	{
+		"unicode": "1f239",
+		"name": "u5272",
+		"aliases": []
+	},
+	{
+		"unicode": "1f234",
+		"name": "u5408",
+		"aliases": []
+	},
+	{
+		"unicode": "1f23a",
+		"name": "u55b6",
+		"aliases": []
+	},
+	{
+		"unicode": "1f22f",
+		"name": "u6307",
+		"aliases": []
+	},
+	{
+		"unicode": "1f237",
+		"name": "u6708",
+		"aliases": []
+	},
+	{
+		"unicode": "1f236",
+		"name": "u6709",
+		"aliases": []
+	},
+	{
+		"unicode": "1f235",
+		"name": "u6e80",
+		"aliases": []
+	},
+	{
+		"unicode": "1f21a",
+		"name": "u7121",
+		"aliases": []
+	},
+	{
+		"unicode": "1f238",
+		"name": "u7533",
+		"aliases": []
+	},
+	{
+		"unicode": "1f232",
+		"name": "u7981",
+		"aliases": []
+	},
+	{
+		"unicode": "1f233",
+		"name": "u7a7a",
+		"aliases": []
+	},
+	{
+		"unicode": "1f1ec-1f1e7",
+		"name": "uk",
+		"aliases": []
+	},
+	{
+		"unicode": "2614",
+		"name": "umbrella",
+		"aliases": []
+	},
+	{
+		"unicode": "1f612",
+		"name": "unamused",
+		"aliases": []
+	},
+	{
+		"unicode": "1f51e",
+		"name": "underage",
+		"aliases": []
+	},
+	{
+		"unicode": "1f513",
+		"name": "unlock",
+		"aliases": []
+	},
+	{
+		"unicode": "1f199",
+		"name": "up",
+		"aliases": []
+	},
+	{
+		"unicode": "1f1fa-1f1f8",
+		"name": "us",
+		"aliases": []
+	},
+	{
+		"unicode": "270c",
+		"name": "v",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6a6",
+		"name": "vertical_traffic_light",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4fc",
+		"name": "vhs",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4f3",
+		"name": "vibration_mode",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4f9",
+		"name": "video_camera",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3ae",
+		"name": "video_game",
+		"aliases": []
+	},
+	{
+		"unicode": "1f3bb",
+		"name": "violin",
+		"aliases": []
+	},
+	{
+		"unicode": "264d",
+		"name": "virgo",
+		"aliases": []
+	},
+	{
+		"unicode": "1f30b",
+		"name": "volcano",
+		"aliases": []
+	},
+	{
+		"unicode": "1f19a",
+		"name": "vs",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6b6",
+		"name": "walking",
+		"aliases": []
+	},
+	{
+		"unicode": "1f318",
+		"name": "waning_crescent_moon",
+		"aliases": []
+	},
+	{
+		"unicode": "1f316",
+		"name": "waning_gibbous_moon",
+		"aliases": []
+	},
+	{
+		"unicode": "26a0",
+		"name": "warning",
+		"aliases": []
+	},
+	{
+		"unicode": "231a",
+		"name": "watch",
+		"aliases": []
+	},
+	{
+		"unicode": "1f403",
+		"name": "water_buffalo",
+		"aliases": []
+	},
+	{
+		"unicode": "1f349",
+		"name": "watermelon",
+		"aliases": []
+	},
+	{
+		"unicode": "1f44b",
+		"name": "wave",
+		"aliases": []
+	},
+	{
+		"unicode": "3030",
+		"name": "wavy_dash",
+		"aliases": []
+	},
+	{
+		"unicode": "1f312",
+		"name": "waxing_crescent_moon",
+		"aliases": []
+	},
+	{
+		"unicode": "1f314",
+		"name": "waxing_gibbous_moon",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6be",
+		"name": "wc",
+		"aliases": []
+	},
+	{
+		"unicode": "1f629",
+		"name": "weary",
+		"aliases": []
+	},
+	{
+		"unicode": "1f492",
+		"name": "wedding",
+		"aliases": []
+	},
+	{
+		"unicode": "1f40b",
+		"name": "whale2",
+		"aliases": []
+	},
+	{
+		"unicode": "1f433",
+		"name": "whale",
+		"aliases": []
+	},
+	{
+		"unicode": "267f",
+		"name": "wheelchair",
+		"aliases": []
+	},
+	{
+		"unicode": "2705",
+		"name": "white_check_mark",
+		"aliases": []
+	},
+	{
+		"unicode": "26aa",
+		"name": "white_circle",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4ae",
+		"name": "white_flower",
+		"aliases": []
+	},
+	{
+		"unicode": "1f533",
+		"name": "white_square_button",
+		"aliases": []
+	},
+	{
+		"unicode": "1f390",
+		"name": "wind_chime",
+		"aliases": []
+	},
+	{
+		"unicode": "1f377",
+		"name": "wine_glass",
+		"aliases": []
+	},
+	{
+		"unicode": "1f61c",
+		"name": "wink2",
+		"aliases": []
+	},
+	{
+		"unicode": "1f609",
+		"name": "wink",
+		"aliases": []
+	},
+	{
+		"unicode": "1f43a",
+		"name": "wolf",
+		"aliases": []
+	},
+	{
+		"unicode": "1f469",
+		"name": "woman",
+		"aliases": []
+	},
+	{
+		"unicode": "1f45a",
+		"name": "womans_clothes",
+		"aliases": []
+	},
+	{
+		"unicode": "1f452",
+		"name": "womans_hat",
+		"aliases": []
+	},
+	{
+		"unicode": "1f6ba",
+		"name": "womens",
+		"aliases": []
+	},
+	{
+		"unicode": "1f61f",
+		"name": "worried",
+		"aliases": []
+	},
+	{
+		"unicode": "1f527",
+		"name": "wrench",
+		"aliases": []
+	},
+	{
+		"unicode": "274c",
+		"name": "x",
+		"aliases": []
+	},
+	{
+		"unicode": "1f49b",
+		"name": "yellow_heart",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4b4",
+		"name": "yen",
+		"aliases": []
+	},
+	{
+		"unicode": "1f60b",
+		"name": "yum",
+		"aliases": []
+	},
+	{
+		"unicode": "26a1",
+		"name": "zap",
+		"aliases": []
+	},
+	{
+		"unicode": "30-20e3",
+		"name": "zero",
+		"aliases": []
+	},
+	{
+		"unicode": "1f4a4",
+		"name": "zzz",
+		"aliases": []
+	}
+]
