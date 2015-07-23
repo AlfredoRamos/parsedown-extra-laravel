@@ -41,14 +41,14 @@ The package [mews/purifier](https://packagist.org/packages/mews/purifier) is use
 
 **Using a string**
 ```php
-Markdown::parse('Hello world!', 'comments');
+Markdown::parse('Hello world!', ['config' => 'comments']);
 ```
 
 Where ```comments``` is the key of the array ```settings``` in ```config/parsedownextra.php```.
 
 **Using an array**
 ```php
-Markdown::parse('[DuckDuckGo](https://duckduckgo.com/)', ['URI.Host' => 'localhost', 'URI.DisableExternal' => true]);
+Markdown::parse('[DuckDuckGo](https://duckduckgo.com/)', ['config' => ['URI.Host' => 'localhost', 'URI.DisableExternal' => true]]);
 ```
 
 For all configuration options see the official [HTML Purifier config docs](http://htmlpurifier.org/live/configdoc/plain.html).
@@ -57,7 +57,13 @@ For all configuration options see the official [HTML Purifier config docs](http:
 ```php
 Markdown::parse('Hello world!');
 // Is the same as
-Markdown::parse('Hello world!', 'parsedown');
+Markdown::parse('Hello world!', ['config' => 'parsedown']);
+```
+
+If HTML purifier is enabled, you can temporarily disable it by setting the option ```purifier``` to ```false```:
+
+```php
+Markdown::parse('Text', ['purifier' => false]);
 ```
 
 If you don't want to use HTML Purifier, you can disable it in the ```config/parsedownextra.php``` file.
@@ -67,7 +73,7 @@ If you don't want to use HTML Purifier, you can disable it in the ```config/pars
 **sample.blade.php**
 ```php
 {!! Markdown::parse("Hello world") !!}
-{!! Markdown::parse("[Malicious link](javascript:alert('xss')") !!}
+{!! Markdown::parse("[XSS link](javascript:alert('xss')") !!}
 ```
 
 The code above will print:
@@ -76,10 +82,10 @@ The code above will print:
 <p>Hello world</p>
 
 <!-- HTML Purifier enabled -->
-<p><a>Malicious link</a></p>
+<p><a>XSS link</a></p>
 
 <!-- HTML Purifier disabled -->
-<p><a href="javascript:alert('xss')">Malicious link</a></p>
+<p><a href="javascript:alert('xss')">XSS link</a></p>
 ```
 
 For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
@@ -100,6 +106,12 @@ To use it, just add this in your master view:
 **master.blade.php**
 ```html
 <link media="all" rel="stylesheet" href="{{{ asset('alfredo-ramos/parsedown-extra-laravel/css/emojis.css') }}}" />
+```
+
+If emojis are enabled, you can temporarily disable them by setting the option ```emojis``` to ```false```:
+
+```php
+Markdown::parse(':eyeglasses:', ['emojis' => false]);
 ```
 
 Emojis are disabled by default, make sure you've made the changes needed in your stylesheets before enabling them in the ```config/parsedownextra.php``` file.

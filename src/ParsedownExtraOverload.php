@@ -23,15 +23,22 @@ class ParsedownExtraOverload extends \ParsedownExtra {
 	 * @see Parsedown::parse()
 	 *
 	 * @param string $text
-	 * @param string|array $config
+	 * @param array $options
 	 *
 	 * @return string
 	 */
-	public function parse($text, $config = null) {
+	public function parse($text, $options = []) {
+		/**
+		 * Default options
+		 */
+		$options['config']		= isset($options['config']) ? $options['config'] : 'parsedown';
+		$options['purifier']	= isset($options['purifier']) ? $options['purifier'] : true;
+		$options['emojis']		= isset($options['emojis']) ? $options['emojis'] : true;
+		
 		/**
 		 * Emoji markdown
 		 */
-		if (\Config::get('parsedownextra.twemoji.enabled')) {
+		if (\Config::get('parsedownextra.twemoji.enabled') && $options['emojis']) {
 			$twemoji = new ParsedownExtraEmoji;
 			$twemoji->setIndex(new \HeyUpdate\Emoji\EmojiIndex);
 			$twemoji->setAssetUrlFormat(\Config::get('parsedownextra.twemoji.settings.url_template'));
@@ -45,22 +52,14 @@ class ParsedownExtraOverload extends \ParsedownExtra {
 		$markdown = parent::text($text);
 		
 		/**
-		 * Load settings
-		 */
-		$config = is_null($config) ? 'parsedown' : $config;
-		
-		/**
 		 * HTML Purifier
 		 */
-		if (\Config::get('parsedownextra.purifier.enabled')) {
-			if (is_string($config) && \Config::has('parsedownextra.purifier.settings.' . $config)) {
-				/**
-				 * HTML Purifier settings
-				 */
-				$config = \Config::get('parsedownextra.purifier.settings.' . $config);
+		if (\Config::get('parsedownextra.purifier.enabled') && $options['purifier']) {
+			if (is_string($options['config']) && \Config::has('parsedownextra.purifier.settings.' . $options['config'])) {
+				$options['config'] = \Config::get('parsedownextra.purifier.settings.' . $options['config']);
 			}
 			
-			$markdown = \Purifier::clean($markdown, $config);
+			$markdown = \Purifier::clean($markdown, $options['config']);
 		}
 		
 		return $markdown;

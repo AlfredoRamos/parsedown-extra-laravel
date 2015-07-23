@@ -24,54 +24,56 @@ class ParsedownExtraEmoji extends \HeyUpdate\Emoji\Emoji {
 	public function __construct() {}
 	
 	/**
-	 * Emoji in the image markdown syntax
-	 * @param $string
+	 * Image markdown syntax
+	 * @param string $text
 	 *
 	 * @return string
 	 */
-	public function emojiMarkdown($string = '') {
+	public function emojiMarkdown($text = '') {
 		/**
 		 * Laravel config
 		 */
-		$imageSize = config('parsedownextra.twemoji.settings.svg_image') ? 'svg' : config('parsedownextra.twemoji.settings.image_size') . 'x' . config('parsedownextra.twemoji.settings.image_size');
-		$imageFormat = config('parsedownextra.twemoji.settings.svg_image') ? 'svg' : 'png';
-		$imageUrl = url($this->assetUrlFormat);
+		$image = [
+			'size'		=> config('parsedownextra.twemoji.settings.svg_image') ? 'svg' : config('parsedownextra.twemoji.settings.image_size') . 'x' . config('parsedownextra.twemoji.settings.image_size'),
+			'format'	=> config('parsedownextra.twemoji.settings.svg_image') ? 'svg' : 'png',
+			'url'		=> asset($this->assetUrlFormat, config('parsedownextra.twemoji.settings.secure_url'))
+		];
 		
 		/**
 		 * Emoji config
 		 */
 		$index = $this->getIndex();
-		$markdownTemplate = '![:%s:](' . $imageUrl . '){.emoji .emoji-%s}';
+		$markdownTemplate = '![:%s:](' . $image['url'] . '){.emoji .emoji-%s}';
 		
 		/**
 		 * Replace named emoji
 		 */
-		$string = preg_replace_callback($index->getEmojiNameRegex(), function ($matches) use ($index, $markdownTemplate, $imageSize, $imageFormat) {
+		$text = preg_replace_callback($index->getEmojiNameRegex(), function ($matches) use ($index, $markdownTemplate, $image) {
 			$emoji = $index->findByName($matches[1]);
 			return vsprintf($markdownTemplate, [
 				$emoji['name'],
-				$imageSize,
+				$image['size'],
 				$emoji['unicode'],
-				$imageFormat,
+				$image['format'],
 				$emoji['unicode']
 			]);
-		}, $string);
+		}, $text);
 		
 		/**
 		 * Replace unicode emoji
 		 */
-		$string = preg_replace_callback($index->getEmojiUnicodeRegex(), function ($matches) use ($index, $markdownTemplate, $imageSize, $imageFormat) {
+		$text = preg_replace_callback($index->getEmojiUnicodeRegex(), function ($matches) use ($index, $markdownTemplate, $image) {
 			$emoji = $index->findByUnicode($matches[0]);
 			return vsprintf($markdownTemplate, [
 				$emoji['name'],
-				$imageSize,
+				$image['size'],
 				$emoji['unicode'],
-				$imageFormat,
+				$image['format'],
 				$emoji['unicode']
 			]);
-		}, $string);
+		}, $text);
 		
-		return $string;
+		return $text;
 	}
 	
 }

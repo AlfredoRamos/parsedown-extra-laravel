@@ -80,9 +80,9 @@ class ParsedownExtraTest extends \Orchestra\Testbench\TestCase {
 	}
 	
 	public function testCleanLink() {
-		$expected = '<p><a>Link</a></p>';
+		$expected = '<p><a>XSS Link</a></p>';
 		
-		$result = \Markdown::parse('[Link](javascript:alert(\'xss\'))');
+		$result = \Markdown::parse('[XSS Link](javascript:alert(\'xss\'))');
 		
 		$this->assertSame($expected, $result);
 	}
@@ -90,7 +90,7 @@ class ParsedownExtraTest extends \Orchestra\Testbench\TestCase {
 	public function testDisabledExternalLinks() {
 		$expected = '<p><a>DuckDuckGo</a></p>';
 		
-		$result = \Markdown::parse('[DuckDuckGo](https://duckduckgo.com/)', ['URI.Host' => 'localhost', 'URI.DisableExternal' => true]);
+		$result = \Markdown::parse('[DuckDuckGo](https://duckduckgo.com/)', ['config' => ['URI.Host' => 'localhost', 'URI.DisableExternal' => true]]);
 		
 		$this->assertSame($expected, $result);
 	}
@@ -111,6 +111,26 @@ class ParsedownExtraTest extends \Orchestra\Testbench\TestCase {
 		$expected = '<p>Have you ever :eyes: the :sweat_drops: coming :point_down: on a :sunny: day?</p>';
 		
 		$result = \Markdown::parse('Have you ever :eyes: the :sweat_drops: coming :point_down: on a :sunny: day?');
+		
+		$this->assertSame($expected, $result);
+	}
+	
+	public function testHtmlPurifierTemporarilyDisabled() {
+		$expected = '<p><a href="javascript:alert(\'xss\')">Link</a></p>';
+		
+		$result = \Markdown::parse('[Link](javascript:alert(\'xss\'))', ['purifier' => false]);
+		
+		$this->assertSame($expected, $result);
+	}
+	
+	public function testEmojisTemporarilyDisabled() {
+		$expected = '<p>:eyeglasses:</p>';
+		
+		\Config::set('parsedownextra.twemoji.enabled', true);
+		
+		$result = \Markdown::parse(':eyeglasses:', ['emojis' => false]);
+		
+		\Config::set('parsedownextra.twemoji.enabled', false);
 		
 		$this->assertSame($expected, $result);
 	}

@@ -24,7 +24,8 @@ return [
 		'enabled'	=> false,
 		'settings'	=> [
 			/**
-			 * Emoji URL template, it can be a relative path (under the public path)
+			 * Emoji URL template.
+			 * It can be a relative path (under the public path) or an external URL (prefixed with 'http://' or 'https://').
 			 * URL template must have 3 placeholders: image size, file name (unicode hexadecimal digits) and image format.
 			 *
 			 * Relative path example: 'twemoji/%s/%s.%s'
@@ -33,13 +34,27 @@ return [
 			'url_template'	=> 'https://twemoji.maxcdn.com/%s/%s.%s',
 			
 			/**
-			 * Use svg image format instead of png
+			 * Generate a secure URL.
+			 * This value will be sent to the asset() helper function.
+			 * This option only has effect if 'url_template' is a relative path.
+			 *
+			 * Default: null
 			 */
-			'svg_image'	=> true,
+			'secure_url'	=> null,
 			
 			/**
-			 * Image size in pixels, this option won't have effect if 'svg_image' is set to true.
+			 * Use svg image format instead of png
+			 *
+			 * Default: true
+			 */
+			'svg_image'		=> true,
+			
+			/**
+			 * Image size in pixels.
+			 * This option won't have any effect if 'svg_image' is set to true.
+			 *
 			 * Supported sizes: 16, 36, 72
+			 * Default: 16
 			 */
 			'image_size'	=> 16
 		]
