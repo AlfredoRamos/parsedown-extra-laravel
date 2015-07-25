@@ -114,7 +114,7 @@ Emojis are disabled by default, make sure you've made the changes needed in your
 ## Syntax highlighting
 The [highlight.js](https://highlightjs.org/) library is used to add support for syntax highlighting.
 
-To use it, just add this feature just add the following code anywhere between ```<head>``` and ```</head>```:
+To use this feature just add the following code anywhere between ```<head>``` and ```</head>```:
 
 **master.blade.php**
 
@@ -138,7 +138,7 @@ You can either use any of the bundled initialization scripts (see the example be
 @include('parsedownextra::highlightjs-init-jquery')
 ```
 
-You only need to especify the language in the the [fenced code block](http://parsedown.org/tests/fenced_code_block), just like here on GitHub:
+You only need to specify the language in the the [fenced code block](http://parsedown.org/tests/fenced_code_block), just like here on GitHub:
 
 ![Syntax highlighting source](https://i.imgur.com/f6nUn8k.png)
 
@@ -148,4 +148,4 @@ It'll show something like:
 
 *Railscasts style*
 
-Syntax highlighting is disabled by default, you can disable it in the ```config/parsedownextra.php``` file.
+Syntax highlighting is disabled by default, you can enable it in the ```config/parsedownextra.php``` file.
