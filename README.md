@@ -138,4 +138,14 @@ You can either use any of the bundled initialization scripts (see the example be
 @include('parsedownextra::highlightjs-init-jquery')
 ```
 
+You only need to especify the language in the the [fenced code block](http://parsedown.org/tests/fenced_code_block), just like here on GitHub:
+
+![Syntax highlighting source](https://i.imgur.com/f6nUn8k.png)
+
+It'll show something like:
+
+![Syntax highlighting preview](https://i.imgur.com/1o1pi2y.png)
+
+*Railscasts style*
+
 Syntax highlighting is disabled by default, you can disable it in the ```config/parsedownextra.php``` file.
