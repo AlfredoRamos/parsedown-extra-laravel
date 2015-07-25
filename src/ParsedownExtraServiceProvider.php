@@ -27,6 +27,10 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function boot() {
+		$this->loadViewsFrom(
+			__DIR__ . '/../resources/views', 'parsedownextra'
+		);
+		
 		$this->publishes([
 			__DIR__ . '/../config/parsedownextra.php' => config_path('parsedownextra.php')
 		], 'config');
@@ -34,6 +38,10 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 		$this->publishes([
 			__DIR__ . '/../public/assets' => public_path('alfredo-ramos/parsedown-extra-laravel')
 		], 'public');
+		
+		$this->publishes([
+			__DIR__ . '/../resources/views' => base_path('resources/views/vendor/parsedownextra')
+		], 'resources');
 	}
 
 	/**

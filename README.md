@@ -30,13 +30,35 @@ AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class
 'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class
 ```
 
-* And finally deploy the config file on your terminal:
+* And finally deploy all the files needed on your terminal:
 
 ```shell
-php artisan vendor:publish --provider='AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider' --tag=config --force
+php artisan vendor:publish --provider='AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider' --force
 ```
 
-## Configuration
+## Usage
+
+**sample.blade.php**
+```php
+{!! Markdown::parse("Hello world") !!}
+{!! Markdown::parse("[XSS link](javascript:alert('xss')") !!}
+```
+
+The code above will print:
+
+```html
+<p>Hello world</p>
+
+<!-- HTML Purifier enabled -->
+<p><a>XSS link</a></p>
+
+<!-- HTML Purifier disabled -->
+<p><a href="javascript:alert('xss')">XSS link</a></p>
+```
+
+For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
+
+## HTML Purifier
 The package [mews/purifier](https://packagist.org/packages/mews/purifier) is used to filter the HTML output. By default a ```<KEY>``` string will be searched in the ```config/parsedownextra.php``` file to override HTML Purifier default settings, you can also pass an array.
 
 **Using a string**
@@ -68,44 +90,17 @@ Markdown::parse('Text', ['purifier' => false]);
 
 If you don't want to use HTML Purifier, you can disable it in the ```config/parsedownextra.php``` file.
 
-## Usage
-
-**sample.blade.php**
-```php
-{!! Markdown::parse("Hello world") !!}
-{!! Markdown::parse("[XSS link](javascript:alert('xss')") !!}
-```
-
-The code above will print:
-
-```html
-<p>Hello world</p>
-
-<!-- HTML Purifier enabled -->
-<p><a>XSS link</a></p>
-
-<!-- HTML Purifier disabled -->
-<p><a href="javascript:alert('xss')">XSS link</a></p>
-```
-
-For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
-
 ## Emojis
 The [heyupdate/emoji](https://packagist.org/packages/heyupdate/emoji) library is used to add support for [twemoji](https://github.com/twitter/twemoji).
 
 All the emojis have the ```.emoji``` and ```.emoji-<UTF CODE>``` CSS class in case you need to do some changes in your stylesheets to show them properly.
 
-Optionally a default CSS file will be available in your ```public``` directory, you only need to run the following in your terminal:
-
-```shell
-php artisan vendor:publish --provider='AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider' --tag=public --force
-```
-
-To use it, just add this in your master view:
+Optionally a default CSS file will be available in your ```public``` directory, to use it, just add the following code anywhere between ```<head>``` and ```</head>```:
 
 **master.blade.php**
+
 ```html
-<link media="all" rel="stylesheet" href="{{{ asset('alfredo-ramos/parsedown-extra-laravel/css/emojis.css') }}}" />
+@include('parsedownextra::emojis-stylesheet')
 ```
 
 If emojis are enabled, you can temporarily disable them by setting the option ```emojis``` to ```false```:
@@ -115,3 +110,32 @@ Markdown::parse(':eyeglasses:', ['emojis' => false]);
 ```
 
 Emojis are disabled by default, make sure you've made the changes needed in your stylesheets before enabling them in the ```config/parsedownextra.php``` file.
+
+## Syntax highlighting
+The [highlight.js](https://highlightjs.org/) library is used to add support for syntax highlighting.
+
+To use it, just add this feature just add the following code anywhere between ```<head>``` and ```</head>```:
+
+**master.blade.php**
+
+```html
+@include('parsedownextra::highlightjs-stylesheet')
+```
+
+And the following (preferably) just before ```</body>```:
+
+```html
+@include('parsedownextra::highlightjs-script')
+```
+
+You can either use any of the bundled initialization scripts (see the example below) or write your own when and where you need it.
+
+```html
+<!-- JavaScript (no jQuery needed) -->
+@include('parsedownextra::highlightjs-init')
+
+<!-- jQuery >= 1.7 -->
+@include('parsedownextra::highlightjs-init-jquery')
+```
+
+Syntax highlighting is disabled by default, you can disable it in the ```config/parsedownextra.php``` file.
