@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-class EmojiOverload extends \HeyUpdate\Emoji\Emoji {
+class EmojiParsedown extends \HeyUpdate\Emoji\Emoji {
 	
 	/**
 	 * Allow create instances without parameters

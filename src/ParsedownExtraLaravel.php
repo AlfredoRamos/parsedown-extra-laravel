@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-class ParsedownExtraOverload extends \ParsedownExtra {
+class ParsedownExtraLaravel extends \ParsedownExtra {
 	
 	/**
 	 * @deprecated Function overloaded to maintain compatibility.
@@ -39,10 +39,10 @@ class ParsedownExtraOverload extends \ParsedownExtra {
 		 * Emoji markdown
 		 */
 		if (\Config::get('parsedownextra.twemoji.enabled') && $options['emojis']) {
-			$twemoji_index = new EmojiIndexOverload;
+			$twemoji_index = new EmojiIndexParsedown;
 			$twemoji_index->setConfigFile(public_path('alfredo-ramos/parsedown-extra-laravel') . '/twemoji-index.json');
 			
-			$twemoji = new EmojiOverload;
+			$twemoji = new EmojiParsedown;
 			$twemoji->setIndex($twemoji_index);
 			$twemoji->setAssetUrlFormat(\Config::get('parsedownextra.twemoji.settings.url_template'));
 			

@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-class EmojiIndexOverload extends \HeyUpdate\Emoji\EmojiIndex {
+class EmojiIndexParsedown extends \HeyUpdate\Emoji\EmojiIndex {
 	
 	/**
 	 * Use a custom config file
