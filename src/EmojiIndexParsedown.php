@@ -39,4 +39,17 @@ class EmojiIndexParsedown extends \HeyUpdate\Emoji\EmojiIndex {
 		return $this->configFile;
 	}
 	
+	/**
+	 * Overwrite emoji regex
+	 */
+	protected function loadConfig() {
+		parent::loadConfig();
+		
+		$emojiNameRegexTemplate = '/(?<=^|[\n .]):(%s):(?![^<>]*>)/';
+		
+		$this->emojiNameRegex = sprintf($emojiNameRegexTemplate, implode('|', array_map(function ($name) {
+			return preg_quote($name, '/');
+		}, array_keys($this->emojiNames))));
+	}
+	
 }
