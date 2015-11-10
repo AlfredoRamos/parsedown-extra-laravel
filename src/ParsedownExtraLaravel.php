@@ -28,35 +28,19 @@ class ParsedownExtraLaravel extends \ParsedownExtra {
 	 * @return string
 	 */
 	public function parse($text, $options = []) {
-		/**
-		 * Default options
-		 */
-		$options['config']		= isset($options['config']) ? $options['config'] : 'parsedown';
-		$options['purifier']	= isset($options['purifier']) ? $options['purifier'] : true;
-		$options['emojis']		= isset($options['emojis']) ? $options['emojis'] : true;
+		// Default options
+		$defaults = [
+			'config'	=> 'parsedown',
+			'purifier'	=> true
+		];
 		
-		/**
-		 * Emoji markdown
-		 */
-		if (\Config::get('parsedownextra.twemoji.enabled') && $options['emojis']) {
-			$twemoji_index = new EmojiIndexParsedown;
-			$twemoji_index->setConfigFile(public_path('alfredo-ramos/parsedown-extra-laravel') . '/twemoji-index.json');
-			
-			$twemoji = new EmojiParsedown;
-			$twemoji->setIndex($twemoji_index);
-			$twemoji->setAssetUrlFormat(\Config::get('parsedownextra.twemoji.settings.url_template'));
-			
-			$text = $twemoji->emojiMarkdown($text);
-		}
+		// Extend defaults
+		$options = array_merge($defaults, $options);
 		
-		/**
-		 * HTML markup
-		 */
+		// Parsedown Extra
 		$markdown = parent::text($text);
 		
-		/**
-		 * HTML Purifier
-		 */
+		// HTML Purifier
 		if (\Config::get('parsedownextra.purifier.enabled') && $options['purifier']) {
 			if (is_string($options['config']) && \Config::has('parsedownextra.purifier.settings.' . $options['config'])) {
 				$options['config'] = \Config::get('parsedownextra.purifier.settings.' . $options['config']);

@@ -1,7 +1,7 @@
 {
 	"name": "alfredo-ramos/parsedown-extra-laravel",
 	"type": "package",
-	"description": "A Parsedown Extra package for Laravel 5",
+	"description": "A Parsedown Extra package for Laravel 5.1.x",
 	"keywords": ["markdown extra", "parsedown extra", "laravel 5"],
 	"homepage": "https://github.com/AlfredoRamos/parsedown-extra-laravel",
 	"license": "GPL-3.0+",
@@ -14,10 +14,9 @@
 		}
 	],
 	"require": {
-		"php": ">=5.5.0",
+		"php": ">=5.5.9",
 		"erusev/parsedown-extra": "~0.7",
-		"mews/purifier": "dev-master",
-		"heyupdate/emoji": "dev-master"
+		"mews/purifier": "~2.0"
 	},
 	"require-dev": {
 		"orchestra/testbench": "~3.1"
@@ -34,7 +33,7 @@
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-master": "0.3-dev"
+			"dev-master": "0.4-dev"
 		}
 	}
 }

@@ -109,42 +109,10 @@ class ParsedownExtraTest extends \Orchestra\Testbench\TestCase {
 		$this->assertSame($expected, $result);
 	}
 	
-	public function testEmojiEnabled() {
-		$expected = '<p>Have you ever <img alt=":eyes:" class="emoji emoji-1f440" src="https://twemoji.maxcdn.com/svg/1f440.svg" /> the <img alt=":sweat_drops:" class="emoji emoji-1f4a6" src="https://twemoji.maxcdn.com/svg/1f4a6.svg" /> coming <img alt=":point_down:" class="emoji emoji-1f447" src="https://twemoji.maxcdn.com/svg/1f447.svg" /> on a <img alt=":sunny:" class="emoji emoji-2600" src="https://twemoji.maxcdn.com/svg/2600.svg" /> day?</p>';
-		
-		\Config::set('parsedownextra.twemoji.enabled', true);
-		
-		$result = \Markdown::parse('Have you ever :eyes: the :sweat_drops: coming :point_down: on a :sunny: day?');
-		
-		\Config::set('parsedownextra.twemoji.enabled', false);
-		
-		$this->assertSame($expected, $result);
-	}
-	
-	public function testEmojiDisabled() {
-		$expected = '<p>Have you ever :eyes: the :sweat_drops: coming :point_down: on a :sunny: day?</p>';
-		
-		$result = \Markdown::parse('Have you ever :eyes: the :sweat_drops: coming :point_down: on a :sunny: day?');
-		
-		$this->assertSame($expected, $result);
-	}
-	
 	public function testHtmlPurifierTemporarilyDisabled() {
 		$expected = '<p><a href="javascript:alert(\'xss\')">Link</a></p>';
 		
 		$result = \Markdown::parse('[Link](javascript:alert(\'xss\'))', ['purifier' => false]);
-		
-		$this->assertSame($expected, $result);
-	}
-	
-	public function testEmojisTemporarilyDisabled() {
-		$expected = '<p>:eyeglasses:</p>';
-		
-		\Config::set('parsedownextra.twemoji.enabled', true);
-		
-		$result = \Markdown::parse(':eyeglasses:', ['emojis' => false]);
-		
-		\Config::set('parsedownextra.twemoji.enabled', false);
 		
 		$this->assertSame($expected, $result);
 	}
