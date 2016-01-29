@@ -1,6 +1,6 @@
 ## Parsedown Extra for Laravel
 
-A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Laravel 5.1.x
+A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Laravel 5.2.x
 
 [![Build Status](https://img.shields.io/travis/AlfredoRamos/parsedown-extra-laravel/master.svg?style=flat-square)](https://travis-ci.org/AlfredoRamos/parsedown-extra-laravel) [![Latest Stable Version](https://img.shields.io/packagist/v/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square&label=stable)](https://github.com/AlfredoRamos/parsedown-extra-laravel/releases) [![Latest Unstable Version](https://img.shields.io/packagist/vpre/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square&label=unstable)](https://packagist.org/packages/alfredo-ramos/parsedown-extra-laravel) [![License](https://img.shields.io/packagist/l/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/parsedown-extra-laravel/master/LICENSE)
 
@@ -46,7 +46,7 @@ php artisan vendor:publish --provider='AlfredoRamos\ParsedownExtra\ParsedownExtr
 
 ```php
 {!! Markdown::parse("Hello world") !!}
-{!! Markdown::parse("[XSS link](javascript:alert('xss')") !!}
+{!! Markdown::parse("[XSS link](javascript:alert('xss'))") !!}
 ```
 
 The code above will print:
