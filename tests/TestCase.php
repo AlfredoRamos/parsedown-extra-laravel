@@ -1,4 +1,4 @@
-<?php namespace AlfredoRamos\Tests\Facades;
+<?php namespace AlfredoRamos\Tests;
 /**
  * Copyright (C) 2015 Alfredo Ramos
  *
@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-class ParsedownExtraTest extends \Orchestra\Testbench\TestCase {
+class TestCase extends \Orchestra\Testbench\TestCase {
 	
 	/**
 	 * Setup the test environment.
