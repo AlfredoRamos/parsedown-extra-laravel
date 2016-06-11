@@ -6,7 +6,7 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 
 ## Installation via Composer
 
-* Open your ```composer.json``` file and add the following line in the ```require``` object:
+* Open your `composer.json` file and add the following line in the `require` object:
 
 **Stable version**
 
@@ -20,15 +20,15 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 "alfredo-ramos/parsedown-extra-laravel": "~0.5@dev"
 ```
 
-* Run ```composer install``` or ```composer update``` on your terminal.
+* Run `composer install` or `composer update` on your terminal.
 
-* Open your ```config/app.php``` file and add the following in the ```providers``` array:
+* Open your `config/app.php` file and add the following in the `providers` array:
 
 ```php
 AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class
 ```
 
-* Register the facade in the ```aliases``` array (```config/app.php``` file):
+* Register the facade in the `aliases` array (`config/app.php` file):
 
 ```php
 'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class
@@ -65,7 +65,7 @@ For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
 
 ## HTML Purifier
 
-The package [mews/purifier](https://packagist.org/packages/mews/purifier) is used to filter the HTML output. By default a ```<KEY>``` string will be searched in the ```config/parsedownextra.php``` file to override HTML Purifier default settings, you can also pass an array.
+The package [mews/purifier](https://packagist.org/packages/mews/purifier) is used to filter the HTML output. By default a `<KEY>` string will be searched in the `config/parsedownextra.php` file to override HTML Purifier default settings, you can also pass an array.
 
 **Using a string**
 
@@ -73,7 +73,7 @@ The package [mews/purifier](https://packagist.org/packages/mews/purifier) is use
 Markdown::parse('Hello world!', ['config' => 'comments']);
 ```
 
-Where ```comments``` is the key of the array ```settings``` in ```config/parsedownextra.php```.
+Where `comments` is the key of the array `settings` in `config/parsedownextra.php`.
 
 **Using an array**
 
@@ -91,10 +91,10 @@ Markdown::parse('Hello world!');
 Markdown::parse('Hello world!', ['config' => 'parsedown']);
 ```
 
-You can temporarily disable it by setting the option ```purifier``` to ```false```:
+You can temporarily disable it by setting the option `purifier` to `false`:
 
 ```php
 Markdown::parse('Text', ['purifier' => false]);
 ```
 
-HTML Purifier can be disabled permanently in the ```config/parsedownextra.php``` file.
+HTML Purifier can be disabled permanently in the `config/parsedownextra.php` file.

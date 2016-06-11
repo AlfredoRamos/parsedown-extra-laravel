@@ -1,4 +1,5 @@
 <?php namespace AlfredoRamos\ParsedownExtra;
+
 /**
  * Copyright (C) 2015 Alfredo Ramos
  *
@@ -20,7 +21,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
 
 class ParsedownExtraServiceProvider extends ServiceProvider {
-	
+
 	/**
 	 * Perform post-registration booting of services.
 	 *
@@ -41,15 +42,15 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 		$this->mergeConfigFrom(
 			__DIR__ . '/../config/parsedownextra.php', 'parsedownextra'
 		);
-		
+
 		$this->app->singleton(\AlfredoRamos\ParsedownExtra\ParsedownExtraLaravel::class, function($app){
 			return new ParsedownExtraLaravel;
 		});
-		
+
 		$this->app->register(\Mews\Purifier\PurifierServiceProvider::class);
-		
+
 		$loader = AliasLoader::getInstance();
-		
+
 		$loader->alias('Purifier', \Mews\Purifier\Facades\Purifier::class);
 	}
 

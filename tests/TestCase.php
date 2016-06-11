@@ -1,4 +1,5 @@
 <?php namespace AlfredoRamos\Tests;
+
 /**
  * Copyright (C) 2015 Alfredo Ramos
  *
@@ -17,7 +18,7 @@
  */
 
 class TestCase extends \Orchestra\Testbench\TestCase {
-	
+
 	/**
 	 * Setup the test environment.
 	 *
@@ -25,13 +26,13 @@ class TestCase extends \Orchestra\Testbench\TestCase {
 	 */
 	public function setUp() {
 		parent::setUp();
-		
+
 		\Artisan::call('vendor:publish', [
 			'--provider'	=> \AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
 			'--force'		=> true
 		]);
 	}
-	
+
 	/**
 	 * Get package providers.
 	 *
@@ -45,7 +46,7 @@ class TestCase extends \Orchestra\Testbench\TestCase {
 			\Mews\Purifier\PurifierServiceProvider::class
 		];
 	}
-	
+
 	/**
 	 * Get package aliases.  In a normal app environment these would be added to
 	 * the 'aliases' array in the config/app.php file.
@@ -60,60 +61,69 @@ class TestCase extends \Orchestra\Testbench\TestCase {
 			'Purifier' => \Mews\Purifier\Facades\Purifier::class
 		];
 	}
-	
+
 	public function testBasicHtml() {
 		$expected = '<p>Parsedown Extra</p>';
-		
+
 		$result = \Markdown::parse('Parsedown Extra');
-		
+
 		$this->assertSame($expected, $result);
 	}
-	
+
 	public function testBasicFootNote() {
 		$expected = '<p>Parsedown Extra <sup id="fnref1:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>'.PHP_EOL.
 					'<div class="footnotes">'.PHP_EOL.
 						'<hr />'.
 						'<ol>'.
 							'<li id="fn:1">'.PHP_EOL.
-								'<p><a href="http://parsedown.org/extra/" rel="nofollow" target="_blank">http://parsedown.org/extra/</a>' . html_entity_decode('&#160;') . '<a class="footnote-backref" href="#fnref1:1">↩</a></p>'.PHP_EOL.
+							'<p>'.
+								'<a href="http://parsedown.org/extra/" rel="nofollow" target="_blank">http://parsedown.org/extra/</a>'.
+								html_entity_decode('&#160;').
+								'<a class="footnote-backref" href="#fnref1:1">↩</a>'.
+							'</p>'.PHP_EOL.
 							'</li>'.PHP_EOL.
 						'</ol>'.
 					'</div>';
-		
+
 		$result  = \Markdown::parse('Parsedown Extra [^1]'.PHP_EOL.'[^1]: http://parsedown.org/extra/');
-		
+
 		$this->assertSame($expected, $result);
 	}
-	
+
 	public function testBasicCssClass() {
 		$expected = '<h1 class="css_class">Header</h1>';
-		
+
 		$result = \Markdown::parse('# Header {.css_class}');
-		
+
 		$this->assertSame($expected, $result);
 	}
-	
+
 	public function testCleanLink() {
 		$expected = '<p><a>XSS Link</a></p>';
-		
+
 		$result = \Markdown::parse('[XSS Link](javascript:alert(\'xss\'))');
-		
+
 		$this->assertSame($expected, $result);
 	}
-	
+
 	public function testDisabledExternalLinks() {
 		$expected = '<p><a>DuckDuckGo</a></p>';
-		
-		$result = \Markdown::parse('[DuckDuckGo](https://duckduckgo.com/)', ['config' => ['URI.Host' => 'localhost', 'URI.DisableExternal' => true]]);
-		
+
+		$result = \Markdown::parse('[DuckDuckGo](https://duckduckgo.com/)', [
+			'config' => [
+				'URI.Host' => 'localhost',
+				'URI.DisableExternal' => true
+			]
+		]);
+
 		$this->assertSame($expected, $result);
 	}
-	
+
 	public function testHtmlPurifierTemporarilyDisabled() {
 		$expected = '<p><a href="javascript:alert(\'xss\')">Link</a></p>';
-		
+
 		$result = \Markdown::parse('[Link](javascript:alert(\'xss\'))', ['purifier' => false]);
-		
+
 		$this->assertSame($expected, $result);
 	}
 }

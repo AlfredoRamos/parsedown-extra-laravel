@@ -1,4 +1,5 @@
 <?php namespace AlfredoRamos\ParsedownExtra;
+
 /**
  * Copyright (C) 2015 Alfredo Ramos
  *
@@ -17,7 +18,7 @@
  */
 
 class ParsedownExtraLaravel extends \ParsedownExtra {
-	
+
 	/**
 	 * @deprecated Function overloaded to maintain compatibility.
 	 * @see Parsedown::parse()
@@ -33,23 +34,23 @@ class ParsedownExtraLaravel extends \ParsedownExtra {
 			'config'	=> 'parsedown',
 			'purifier'	=> true
 		];
-		
+
 		// Extend defaults
 		$options = array_merge($defaults, $options);
-		
+
 		// Parsedown Extra
 		$markdown = parent::text($text);
-		
+
 		// HTML Purifier
 		if (\Config::get('parsedownextra.purifier.enabled') && $options['purifier']) {
 			if (is_string($options['config']) && \Config::has('parsedownextra.purifier.settings.' . $options['config'])) {
 				$options['config'] = \Config::get('parsedownextra.purifier.settings.' . $options['config']);
 			}
-			
+
 			$markdown = \Purifier::clean($markdown, $options['config']);
 		}
-		
+
 		return $markdown;
 	}
-	
+
 }

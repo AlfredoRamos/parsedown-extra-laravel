@@ -1,4 +1,5 @@
 <?php namespace AlfredoRamos\ParsedownExtra\Facades;
+
 /**
  * Copyright (C) 2015 Alfredo Ramos
  *
@@ -19,7 +20,7 @@
 use Illuminate\Support\Facades\Facade;
 
 class ParsedownExtra extends Facade {
-	
+
 	/**
 	 * Get the registered name of the component.
 	 *
@@ -28,5 +29,5 @@ class ParsedownExtra extends Facade {
 	protected static function getFacadeAccessor() {
 		return \AlfredoRamos\ParsedownExtra\ParsedownExtraLaravel::class;
 	}
-	
+
 }
