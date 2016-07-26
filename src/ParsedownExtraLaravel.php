@@ -17,11 +17,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-class ParsedownExtraLaravel extends \ParsedownExtra {
+use ParsedownExtra;
+use Purifier;
+use Config;
+
+class ParsedownExtraLaravel extends ParsedownExtra {
 
 	/**
 	 * @deprecated Function overloaded to maintain compatibility.
-	 * @see Parsedown::parse()
+	 * @see \Parsedown::parse()
 	 *
 	 * @param string $text
 	 * @param array $options
@@ -29,25 +33,27 @@ class ParsedownExtraLaravel extends \ParsedownExtra {
 	 * @return string
 	 */
 	public function parse($text, $options = []) {
-		// Default options
-		$defaults = [
+		// Extend default options
+		$options = array_merge([
 			'config'	=> 'parsedown',
 			'purifier'	=> true
-		];
-
-		// Extend defaults
-		$options = array_merge($defaults, $options);
+		], $options);
 
 		// Parsedown Extra
 		$markdown = parent::text($text);
 
 		// HTML Purifier
-		if (\Config::get('parsedownextra.purifier.enabled') && $options['purifier']) {
-			if (is_string($options['config']) && \Config::has('parsedownextra.purifier.settings.' . $options['config'])) {
-				$options['config'] = \Config::get('parsedownextra.purifier.settings.' . $options['config']);
+		if (Config::get('parsedownextra.purifier.enabled') && $options['purifier']) {
+			// HTML Purifier configuration
+			if (is_string($options['config']) && !empty($options['config'])) {
+				$options['config'] = Config::get(sprintf(
+					'parsedownextra.purifier.settings.%s',
+					$options['config']
+				));
 			}
 
-			$markdown = \Purifier::clean($markdown, $options['config']);
+			// Filter HTML
+			$markdown = Purifier::clean($markdown, $options['config']);
 		}
 
 		return $markdown;

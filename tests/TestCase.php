@@ -17,7 +17,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-class TestCase extends \Orchestra\Testbench\TestCase {
+use Orchestra\Testbench\TestCase as BaseTestCase;
+use Artisan;
+use Markdown;
+
+class TestCase extends BaseTestCase {
 
 	/**
 	 * Setup the test environment.
@@ -27,8 +31,9 @@ class TestCase extends \Orchestra\Testbench\TestCase {
 	public function setUp() {
 		parent::setUp();
 
-		\Artisan::call('vendor:publish', [
+		Artisan::call('vendor:publish', [
 			'--provider'	=> \AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
+			'--tag'			=> 'config',
 			'--force'		=> true
 		]);
 	}
@@ -57,15 +62,14 @@ class TestCase extends \Orchestra\Testbench\TestCase {
 	 */
 	protected function getPackageAliases($app) {
 		return [
-			'Markdown' => \AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class,
-			'Purifier' => \Mews\Purifier\Facades\Purifier::class
+			'Markdown' => \AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class
 		];
 	}
 
 	public function testBasicHtml() {
 		$expected = '<p>Parsedown Extra</p>';
 
-		$result = \Markdown::parse('Parsedown Extra');
+		$result = Markdown::parse('Parsedown Extra');
 
 		$this->assertSame($expected, $result);
 	}
@@ -76,16 +80,16 @@ class TestCase extends \Orchestra\Testbench\TestCase {
 						'<hr />'.
 						'<ol>'.
 							'<li id="fn:1">'.PHP_EOL.
-							'<p>'.
-								'<a href="http://parsedown.org/extra/" rel="nofollow" target="_blank">http://parsedown.org/extra/</a>'.
-								html_entity_decode('&#160;').
-								'<a class="footnote-backref" href="#fnref1:1">↩</a>'.
-							'</p>'.PHP_EOL.
+								'<p>'.
+									'<a href="http://parsedown.org/extra/" rel="nofollow" target="_blank">http://parsedown.org/extra/</a>'.
+									html_entity_decode('&#160;').
+									'<a class="footnote-backref" href="#fnref1:1">↩</a>'.
+								'</p>'.PHP_EOL.
 							'</li>'.PHP_EOL.
 						'</ol>'.
 					'</div>';
 
-		$result  = \Markdown::parse('Parsedown Extra [^1]'.PHP_EOL.'[^1]: http://parsedown.org/extra/');
+		$result  = Markdown::parse('Parsedown Extra [^1]'.PHP_EOL.'[^1]: http://parsedown.org/extra/');
 
 		$this->assertSame($expected, $result);
 	}
@@ -93,7 +97,7 @@ class TestCase extends \Orchestra\Testbench\TestCase {
 	public function testBasicCssClass() {
 		$expected = '<h1 class="css_class">Header</h1>';
 
-		$result = \Markdown::parse('# Header {.css_class}');
+		$result = Markdown::parse('# Header {.css_class}');
 
 		$this->assertSame($expected, $result);
 	}
@@ -101,7 +105,7 @@ class TestCase extends \Orchestra\Testbench\TestCase {
 	public function testCleanLink() {
 		$expected = '<p><a>XSS Link</a></p>';
 
-		$result = \Markdown::parse('[XSS Link](javascript:alert(\'xss\'))');
+		$result = Markdown::parse('[XSS Link](javascript:alert(\'xss\'))');
 
 		$this->assertSame($expected, $result);
 	}
@@ -109,7 +113,7 @@ class TestCase extends \Orchestra\Testbench\TestCase {
 	public function testDisabledExternalLinks() {
 		$expected = '<p><a>DuckDuckGo</a></p>';
 
-		$result = \Markdown::parse('[DuckDuckGo](https://duckduckgo.com/)', [
+		$result = Markdown::parse('[DuckDuckGo](https://duckduckgo.com/)', [
 			'config' => [
 				'URI.Host' => 'localhost',
 				'URI.DisableExternal' => true
@@ -122,8 +126,9 @@ class TestCase extends \Orchestra\Testbench\TestCase {
 	public function testHtmlPurifierTemporarilyDisabled() {
 		$expected = '<p><a href="javascript:alert(\'xss\')">Link</a></p>';
 
-		$result = \Markdown::parse('[Link](javascript:alert(\'xss\'))', ['purifier' => false]);
+		$result = Markdown::parse('[Link](javascript:alert(\'xss\'))', ['purifier' => false]);
 
 		$this->assertSame($expected, $result);
 	}
+
 }

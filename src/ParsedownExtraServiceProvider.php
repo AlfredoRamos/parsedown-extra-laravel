@@ -47,10 +47,9 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 			return new ParsedownExtraLaravel;
 		});
 
+		// Register HTML Purifier
 		$this->app->register(\Mews\Purifier\PurifierServiceProvider::class);
-
 		$loader = AliasLoader::getInstance();
-
 		$loader->alias('Purifier', \Mews\Purifier\Facades\Purifier::class);
 	}
 
