@@ -1,4 +1,4 @@
-<?php namespace AlfredoRamos\ParsedownExtra;
+<?php
 
 /**
  * Copyright (C) 2015 Alfredo Ramos
@@ -16,6 +16,8 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+namespace AlfredoRamos\ParsedownExtra;
 
 use ParsedownExtra;
 use Purifier;

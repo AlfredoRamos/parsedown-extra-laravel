@@ -1,4 +1,4 @@
-<?php namespace AlfredoRamos\ParsedownExtra;
+<?php
 
 /**
  * Copyright (C) 2015 Alfredo Ramos
@@ -16,6 +16,8 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+namespace AlfredoRamos\ParsedownExtra;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
@@ -43,7 +45,7 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 			__DIR__ . '/../config/parsedownextra.php', 'parsedownextra'
 		);
 
-		$this->app->singleton(\AlfredoRamos\ParsedownExtra\ParsedownExtraLaravel::class, function($app){
+		$this->app->singleton(ParsedownExtraLaravel::class, function($app){
 			return new ParsedownExtraLaravel;
 		});
 
@@ -59,7 +61,7 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 	 * @return array
 	 */
 	public function provides() {
-		return [\AlfredoRamos\ParsedownExtra\ParsedownExtraLaravel::class];
+		return [ParsedownExtraLaravel::class];
 	}
 
 }
