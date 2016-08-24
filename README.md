@@ -4,6 +4,14 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 
 [![Build Status](https://img.shields.io/travis/AlfredoRamos/parsedown-extra-laravel/master.svg?style=flat-square&maxAge=3600)](https://travis-ci.org/AlfredoRamos/parsedown-extra-laravel) [![Latest Stable Version](https://img.shields.io/packagist/v/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square&label=stable&maxAge=3600)](https://github.com/AlfredoRamos/parsedown-extra-laravel/releases) [![Latest Unstable Version](https://img.shields.io/packagist/vpre/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square&label=unstable&maxAge=3600)](https://packagist.org/packages/alfredo-ramos/parsedown-extra-laravel) [![License](https://img.shields.io/packagist/l/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/parsedown-extra-laravel/master/LICENSE)
 
+## Compatibility table
+
+Laravel  | `parsedown-extra-laravel`
+:-------:|:------------------------:
+5.1.x    | 0.3.x
+5.2.x    | 0.4.x
+5.3.x    | 0.5.x
+
 ## Installation via Composer
 
 * Open your `composer.json` file and add the following line in the `require` object:
@@ -11,13 +19,13 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 **Stable version**
 
 ```json
-"alfredo-ramos/parsedown-extra-laravel": "~0.4"
+"alfredo-ramos/parsedown-extra-laravel": "~0.5"
 ```
 
 **Development version**
 
 ```json
-"alfredo-ramos/parsedown-extra-laravel": "~0.5@dev"
+"alfredo-ramos/parsedown-extra-laravel": "~0.6@dev"
 ```
 
 * Run `composer install` or `composer update` on your terminal.
