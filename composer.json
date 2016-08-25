@@ -19,7 +19,7 @@
 		"mews/purifier": "~2.0"
 	},
 	"require-dev": {
-		"orchestra/testbench": "3.3.x-dev",
+		"orchestra/testbench": "~3.3",
 		"phpunit/phpunit": "~5.5"
 	},
 	"autoload": {
