@@ -25,6 +25,13 @@ use Illuminate\Foundation\AliasLoader;
 class ParsedownExtraServiceProvider extends ServiceProvider {
 
 	/**
+	 * Indicates if loading of the provider is deferred.
+	 *
+	 * @var bool
+	 */
+	protected $defer = true;
+
+	/**
 	 * Perform post-registration booting of services.
 	 *
 	 * @return void
@@ -36,7 +43,7 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 	}
 
 	/**
-	 * Register the application services.
+	 * Register bindings in the container.
 	 *
 	 * @return void
 	 */
@@ -51,8 +58,7 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 
 		// Register HTML Purifier
 		$this->app->register(\Mews\Purifier\PurifierServiceProvider::class);
-		$loader = AliasLoader::getInstance();
-		$loader->alias('Purifier', \Mews\Purifier\Facades\Purifier::class);
+		AliasLoader::getInstance()->alias('Purifier', \Mews\Purifier\Facades\Purifier::class);
 	}
 
 	/**
