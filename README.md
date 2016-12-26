@@ -45,7 +45,9 @@ AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class
 * And finally deploy all the files needed on your terminal:
 
 ```shell
-php artisan vendor:publish --provider='AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider' --tag=config --force
+php artisan vendor:publish \
+	--provider='AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider' \
+	--tag=config --force
 ```
 
 ## Usage
@@ -78,7 +80,7 @@ The package [mews/purifier](https://packagist.org/packages/mews/purifier) is use
 **Using a string**
 
 ```php
-Markdown::parse('Hello world!', ['config' => 'comments']);
+Markdown::parse('Hello world!', ['config' => 'comments'])
 ```
 
 Where `comments` is the key of the array `settings` in `config/parsedownextra.php`.
@@ -86,7 +88,10 @@ Where `comments` is the key of the array `settings` in `config/parsedownextra.ph
 **Using an array**
 
 ```php
-Markdown::parse('[DuckDuckGo](https://duckduckgo.com/)', ['config' => ['URI.Host' => 'localhost', 'URI.DisableExternal' => true]]);
+Markdown::parse('[DuckDuckGo](https://duckduckgo.com/)', ['config' => [
+	'URI.Host' => 'localhost',
+	'URI.DisableExternal' => true
+]])
 ```
 
 For all configuration options see the official [HTML Purifier config docs](http://htmlpurifier.org/live/configdoc/plain.html).
@@ -94,15 +99,15 @@ For all configuration options see the official [HTML Purifier config docs](http:
 **Using the default settings**
 
 ```php
-Markdown::parse('Hello world!');
+Markdown::parse('Hello world!')
 // Is the same as
-Markdown::parse('Hello world!', ['config' => 'parsedown']);
+Markdown::parse('Hello world!', ['config' => 'parsedown'])
 ```
 
 You can temporarily disable it by setting the option `purifier` to `false`:
 
 ```php
-Markdown::parse('Text', ['purifier' => false]);
+Markdown::parse('Text', ['purifier' => false])
 ```
 
 HTML Purifier can be disabled permanently in the `config/parsedownextra.php` file.
