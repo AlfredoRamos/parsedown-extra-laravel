@@ -26,13 +26,13 @@ use Config;
 class ParsedownExtraLaravel extends ParsedownExtra {
 
 	/**
-	 * @deprecated Function overloaded to maintain compatibility.
+	 * Convert Markdown text to HTML and sanitize the output.
 	 * @see \Parsedown::parse()
 	 *
-	 * @param string $text
-	 * @param array $options
+	 * @param string $text    The Markdown text to convert.
+	 * @param array  $options Options for HTML Purifier.
 	 *
-	 * @return string
+	 * @return string The resulting HTML from the Markdown text conversion.
 	 */
 	public function parse($text, $options = []) {
 		// Extend default options
