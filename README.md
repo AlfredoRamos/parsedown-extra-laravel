@@ -43,14 +43,6 @@ AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class
 'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class
 ```
 
-* And finally deploy all the files needed on your terminal:
-
-```shell
-php artisan vendor:publish \
-	--provider='AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider' \
-	--tag=config --force
-```
-
 ## Usage
 
 **sample.blade.php**
@@ -76,7 +68,16 @@ For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
 
 ## HTML Purifier
 
-[HTML Purifier](https://github.com/ezyang/htmlpurifier) is used to filter the HTML output. By default a `<KEY>` string will be searched in the `config/parsedownextra.php` file to override HTML Purifier default settings, you can also pass an array.
+[HTML Purifier](https://github.com/ezyang/htmlpurifier) is used to filter the HTML output. You can pass an array with the configuration options or a string that will be the key of the settings array in your confuguration file.
+
+To add new or edit the default configuration options, run the following command to make a copy of the confuration file:
+
+```shell
+php artisan vendor:publish \
+	--provider='AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider' \
+	--tag=config --force
+```
+
 
 **Using a string**
 
@@ -84,7 +85,19 @@ For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
 Markdown::parse('Hello world!', ['config' => 'comments'])
 ```
 
-Where `comments` is the key of the array `settings` in `config/parsedownextra.php`.
+Where `comments` is the key of the array `settings`.
+
+```php
+return [
+	'purifier'	=> [
+		'enabled'	=> true,
+		'settings'	=> [
+			'default' => [...],
+			'comments' => [...]
+		]
+	]
+];
+```
 
 **Using an array**
 

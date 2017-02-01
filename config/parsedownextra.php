@@ -4,10 +4,13 @@ return [
 	'purifier'	=> [
 		'enabled'	=> true,
 		'settings'	=> [
-			'default'	=> [
+			// Do not edit or remove
+			'global'	=> [
 				'Cache.SerializerPath'			=> storage_path('app/htmlpurifier'),
-				'Cache.SerializerPermissions'	=> 0755,
+			],
 
+			// Parsedown Extra default settings
+			'default'	=> [
 				'Attr.EnableID'				=> true,
 
 				'AutoFormat.RemoveEmpty'	=> true,

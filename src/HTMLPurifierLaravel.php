@@ -91,6 +91,12 @@ class HTMLPurifierLaravel {
 			));
 		}
 
+		// Merge both global and default settings
+		$data = array_replace_recursive(
+			(array) config('parsedownextra.purifier.settings.global'),
+			(array) $data
+		);
+
 		// At this point $data should be an array
 		if (is_array($data)) {
 			$config->loadArray($data);
