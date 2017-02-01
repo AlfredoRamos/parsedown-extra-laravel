@@ -20,7 +20,6 @@
 namespace AlfredoRamos\ParsedownExtra;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Foundation\AliasLoader;
 
 class ParsedownExtraServiceProvider extends ServiceProvider {
 
@@ -52,13 +51,13 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 			__DIR__ . '/../config/parsedownextra.php', 'parsedownextra'
 		);
 
-		$this->app->singleton(ParsedownExtraLaravel::class, function($app){
+		$this->app->singleton(ParsedownExtraLaravel::class, function($app) {
 			return new ParsedownExtraLaravel;
 		});
 
-		// Register HTML Purifier
-		$this->app->register(\Mews\Purifier\PurifierServiceProvider::class);
-		AliasLoader::getInstance()->alias('Purifier', \Mews\Purifier\Facades\Purifier::class);
+		$this->app->singleton(HTMLPurifierLaravel::class, function($app) {
+			return new HTMLPurifierLaravel;
+		});
 	}
 
 	/**
@@ -67,7 +66,10 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 	 * @return array
 	 */
 	public function provides() {
-		return [ParsedownExtraLaravel::class];
+		return [
+			ParsedownExtraLaravel::class,
+			HTMLPurifierLaravel::class
+		];
 	}
 
 }

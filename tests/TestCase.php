@@ -19,9 +19,11 @@
 
 namespace AlfredoRamos\Tests;
 
-use Orchestra\Testbench\TestCase as BaseTestCase;
 use Artisan;
 use Markdown;
+use Orchestra\Testbench\TestCase as BaseTestCase;
+use AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider;
+use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as ParsedownExtraFacade;
 
 class TestCase extends BaseTestCase {
 
@@ -34,7 +36,7 @@ class TestCase extends BaseTestCase {
 		parent::setUp();
 
 		Artisan::call('vendor:publish', [
-			'--provider'	=> \AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
+			'--provider'	=> ParsedownExtraServiceProvider::class,
 			'--tag'			=> 'config',
 			'--force'		=> true
 		]);
@@ -49,8 +51,7 @@ class TestCase extends BaseTestCase {
 	 */
 	protected function getPackageProviders($app) {
 		return [
-			\AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
-			\Mews\Purifier\PurifierServiceProvider::class
+			ParsedownExtraServiceProvider::class
 		];
 	}
 
@@ -64,7 +65,7 @@ class TestCase extends BaseTestCase {
 	 */
 	protected function getPackageAliases($app) {
 		return [
-			'Markdown' => \AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class
+			'Markdown' => ParsedownExtraFacade::class
 		];
 	}
 

@@ -20,8 +20,7 @@
 namespace AlfredoRamos\ParsedownExtra;
 
 use ParsedownExtra;
-use Purifier;
-use Config;
+use AlfredoRamos\ParsedownExtra\HTMLPurifierLaravel;
 
 class ParsedownExtraLaravel extends ParsedownExtra {
 
@@ -37,7 +36,7 @@ class ParsedownExtraLaravel extends ParsedownExtra {
 	public function parse($text, $options = []) {
 		// Extend default options
 		$options = array_merge([
-			'config'	=> 'parsedown',
+			'config'	=> [],
 			'purifier'	=> true
 		], $options);
 
@@ -45,17 +44,11 @@ class ParsedownExtraLaravel extends ParsedownExtra {
 		$markdown = parent::text($text);
 
 		// HTML Purifier
-		if (Config::get('parsedownextra.purifier.enabled') && $options['purifier']) {
-			// HTML Purifier configuration
-			if (is_string($options['config']) && !empty($options['config'])) {
-				$options['config'] = Config::get(sprintf(
-					'parsedownextra.purifier.settings.%s',
-					$options['config']
-				));
-			}
+		if (config('parsedownextra.purifier.enabled') && $options['purifier']) {
+			$purifier = resolve(HTMLPurifierLaravel::class);
 
 			// Filter HTML
-			$markdown = Purifier::clean($markdown, $options['config']);
+			$markdown = $purifier->purify($markdown, $options['config']);
 		}
 
 		return $markdown;

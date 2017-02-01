@@ -4,7 +4,10 @@ return [
 	'purifier'	=> [
 		'enabled'	=> true,
 		'settings'	=> [
-			'parsedown'	=> [
+			'default'	=> [
+				'Cache.SerializerPath'			=> storage_path('app/htmlpurifier'),
+				'Cache.SerializerPermissions'	=> 0755,
+
 				'Attr.EnableID'				=> true,
 
 				'AutoFormat.RemoveEmpty'	=> true,
