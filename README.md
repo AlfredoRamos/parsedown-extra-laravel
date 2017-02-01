@@ -6,11 +6,12 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 
 ## Compatibility table
 
-Laravel  | `parsedown-extra-laravel`
-:-------:|:------------------------:
-5.1.x    | 0.3.x
-5.2.x    | 0.4.x
-5.3.x    | 0.5.x
+Laravel | `parsedown-extra-laravel`
+:------:|:------------------------:
+5.1.x   | 0.3.x
+5.2.x   | 0.4.x
+5.3.x   | 0.5.x
+5.4.x   | 0.6.x
 
 ## Installation via Composer
 
@@ -19,13 +20,13 @@ Laravel  | `parsedown-extra-laravel`
 **Stable version**
 
 ```json
-"alfredo-ramos/parsedown-extra-laravel": "~0.5"
+"alfredo-ramos/parsedown-extra-laravel": "~0.6.0"
 ```
 
 **Development version**
 
 ```json
-"alfredo-ramos/parsedown-extra-laravel": "~0.6@dev"
+"alfredo-ramos/parsedown-extra-laravel": "dev-master"
 ```
 
 * Run `composer install` or `composer update` on your terminal.
@@ -36,7 +37,7 @@ Laravel  | `parsedown-extra-laravel`
 AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class
 ```
 
-* Register the facade in the `aliases` array (`config/app.php` file):
+* In the same file, register the facade in the `aliases` array:
 
 ```php
 'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class
@@ -75,7 +76,7 @@ For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
 
 ## HTML Purifier
 
-The package [mews/purifier](https://packagist.org/packages/mews/purifier) is used to filter the HTML output. By default a `<KEY>` string will be searched in the `config/parsedownextra.php` file to override HTML Purifier default settings, you can also pass an array.
+[HTML Purifier](https://github.com/ezyang/htmlpurifier) is used to filter the HTML output. By default a `<KEY>` string will be searched in the `config/parsedownextra.php` file to override HTML Purifier default settings, you can also pass an array.
 
 **Using a string**
 
@@ -101,7 +102,7 @@ For all configuration options see the official [HTML Purifier config docs](http:
 ```php
 Markdown::parse('Hello world!')
 // Is the same as
-Markdown::parse('Hello world!', ['config' => 'parsedown'])
+Markdown::parse('Hello world!', ['config' => 'default'])
 ```
 
 You can temporarily disable it by setting the option `purifier` to `false`:
