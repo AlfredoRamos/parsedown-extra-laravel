@@ -6,7 +6,7 @@ return [
 		'settings'	=> [
 			// Do not edit or remove
 			'global'	=> [
-				'Cache.SerializerPath'			=> storage_path('app/htmlpurifier'),
+				'Cache.SerializerPath'	=> storage_path('app/htmlpurifier'),
 			],
 
 			// Parsedown Extra default settings

@@ -68,9 +68,9 @@ For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
 
 ## HTML Purifier
 
-[HTML Purifier](https://github.com/ezyang/htmlpurifier) is used to filter the HTML output. You can pass an array with the configuration options or a string that will be the key of the settings array in your confuguration file.
+[HTML Purifier](https://github.com/ezyang/htmlpurifier) is used to filter the HTML output. You can pass an array or a string that will be the key of the settings array in your configuration file.
 
-To add new or edit the default configuration options, run the following command to make a copy of the confuration file:
+To add new or edit the default options, run the following command to make a copy of the confuration file:
 
 ```shell
 php artisan vendor:publish \
