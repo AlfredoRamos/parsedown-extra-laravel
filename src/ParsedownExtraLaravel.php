@@ -20,7 +20,6 @@
 namespace AlfredoRamos\ParsedownExtra;
 
 use ParsedownExtra;
-use AlfredoRamos\ParsedownExtra\HTMLPurifierLaravel;
 
 class ParsedownExtraLaravel extends ParsedownExtra {
 
