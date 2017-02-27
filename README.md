@@ -1,10 +1,10 @@
-## Parsedown Extra for Laravel
+### About
 
 A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Laravel 5
 
 [![Build Status](https://img.shields.io/travis/AlfredoRamos/parsedown-extra-laravel.svg?style=flat-square&maxAge=3600)](https://travis-ci.org/AlfredoRamos/parsedown-extra-laravel) [![Latest Stable Version](https://img.shields.io/packagist/v/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square&label=stable&maxAge=3600)](https://github.com/AlfredoRamos/parsedown-extra-laravel/releases) [![License](https://img.shields.io/packagist/l/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/parsedown-extra-laravel/master/LICENSE)
 
-## Compatibility table
+### Compatibility table
 
 Laravel | `parsedown-extra-laravel`
 :------:|:------------------------:
@@ -13,7 +13,7 @@ Laravel | `parsedown-extra-laravel`
 5.3.x   | 0.5.x
 5.4.x   | 0.6.x
 
-## Installation via Composer
+### Installation
 
 * Open your `composer.json` file and add the following line in the `require` object:
 
@@ -43,7 +43,7 @@ AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class
 'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class
 ```
 
-## Usage
+### Usage
 
 **sample.blade.php**
 
@@ -66,7 +66,7 @@ The code above will print:
 
 For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
 
-## HTML Purifier
+### Configuration
 
 [HTML Purifier](https://github.com/ezyang/htmlpurifier) is used to filter the HTML output. You can pass an array or a string that will be the key of the settings array in your configuration file.
 
