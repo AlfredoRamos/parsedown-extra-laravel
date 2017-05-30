@@ -21,7 +21,6 @@ return [
 
 				'Output.SortAttr'			=> true,
 
-				// List by https://linkdecrypter.com/
 				'URI.HostBlacklist'			=> [
 					'00.uz', '0rz.tw', '0url.in', '10001mb.com', '123link.it', '123url.org', 
 					'1cl.in', '1ke.com.ar', '1kh.de', '1short.us', '1tiny.net', '1tk.us', 
