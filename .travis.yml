@@ -10,7 +10,7 @@ matrix:
 branches:
   only:
     - master
-    - /^laravel\/v\d\.\d\.(?:\d{1,2}|x)/
+    - /^v\d\.\d\.(?:\d{1,2}|x)/
 
 before_script:
   - travis_retry composer self-update
