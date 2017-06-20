@@ -32,5 +32,15 @@
 		"psr-4": {
 			"AlfredoRamos\\Tests\\": "tests/"
 		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"AlfredoRamos\\ParsedownExtra\\ParsedownExtraServiceProvider"
+			],
+			"aliases": {
+				"Markdown": "AlfredoRamos\\ParsedownExtra\\Facades\\ParsedownExtra"
+			}
+		}
 	}
 }
