@@ -6,12 +6,12 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 
 ### Compatibility table
 
-Laravel | `parsedown-extra-laravel`
-:------:|:------------------------:
-5.1.x   | 0.3.x
-5.2.x   | 0.4.x
-5.3.x   | 0.5.x
-5.4.x   | 0.6.x
+Version | Laravel | Status
+:------:|:-------:|:------:
+0.3.x   | 5.1.x   | End of life
+0.4.x   | 5.2.x   | End of life
+0.5.x   | 5.3.x   | Security fixes only
+0.6.x   | 5.4.x   | Active support
 
 ### Installation
 
