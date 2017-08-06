@@ -20,7 +20,7 @@ Version | Laravel | Status
 **Stable version**
 
 ```json
-"alfredo-ramos/parsedown-extra-laravel": "~0.6.0"
+"alfredo-ramos/parsedown-extra-laravel": "~0.7.0"
 ```
 
 **Development version**
@@ -31,17 +31,7 @@ Version | Laravel | Status
 
 * Run `composer update` on your terminal.
 
-* Open your `config/app.php` file and add the following in the `providers` array:
-
-```php
-AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class
-```
-
-* In the same file, register the facade in the `aliases` array:
-
-```php
-'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class
-```
+* Service providers and aliases will be registered automatically, thanks to the new package auto-discovery feature of Laravel 5.5.x
 
 ### Usage
 
