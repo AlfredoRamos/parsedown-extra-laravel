@@ -42,5 +42,7 @@
 				"Markdown": "AlfredoRamos\\ParsedownExtra\\Facades\\ParsedownExtra"
 			}
 		}
-	}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }
