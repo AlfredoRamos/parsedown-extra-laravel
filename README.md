@@ -10,28 +10,21 @@ Version | Laravel | Status
 :------:|:-------:|:------:
 0.3.x   | 5.1.x   | End of life
 0.4.x   | 5.2.x   | End of life
-0.5.x   | 5.3.x   | Security fixes only
-0.6.x   | 5.4.x   | Active support
+0.5.x   | 5.3.x   | End of life
+0.6.x   | 5.4.x   | Security fixes only
+0.7.x   | 5.5.x   | Active support
 
 ### Installation
 
 * Open your `composer.json` file and add the following line in the `require` object:
 
-**Stable version**
-
 ```json
 "alfredo-ramos/parsedown-extra-laravel": "~0.7.0"
 ```
 
-**Development version**
+* Run `composer update` on your terminal
 
-```json
-"alfredo-ramos/parsedown-extra-laravel": "dev-master"
-```
-
-* Run `composer update` on your terminal.
-
-* Service providers and aliases will be registered automatically, thanks to the new package auto-discovery feature of Laravel 5.5.x
+* Service providers and aliases will be registered automatically, thanks to the new package auto-discovery feature of Laravel `5.5.x`
 
 ### Usage
 
