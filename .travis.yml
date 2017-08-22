@@ -12,7 +12,7 @@ matrix:
 branches:
   only:
     - master
-    - /^v\d\.\d\.(?:\d{1,2}|x)/
+    - /\d\.\d\.(?:\d{1,2}|x)/
 
 before_script:
   - travis_retry composer self-update
