@@ -25,7 +25,10 @@ use Illuminate\Filesystem\Filesystem;
 
 class HTMLPurifierLaravel {
 
+	/** @var \Illuminate\Filesystem\Filesystem $filesystem */
 	protected $filesystem;
+
+	/** @var \HTMLPurifier $purifier */
 	protected $purifier;
 
 	/**
@@ -54,10 +57,10 @@ class HTMLPurifierLaravel {
 	 * Filter HTML
 	 * @see \HTMLPurifier::purify()
 	 *
-	 * @param	string			$html		The HTML to be cleaned
-	 * @param	array|string	$config		HTMLPurifier configuration
+	 * @param string		$html	The HTML to be cleaned
+	 * @param array|string	$config	HTMLPurifier configuration
 	 *
-	 * @return	string	Filtered HTML
+	 * @return string Filtered HTML
 	 */
 	public function purify($html = '', $config = []) {
 		return $this->purifier->purify(
@@ -69,9 +72,9 @@ class HTMLPurifierLaravel {
 	/**
 	 * Get HTMLPurifier config
 	 *
-	 * @param	array|string	$data	HTMLPurifier configuration
+	 * @param array|string $data	HTMLPurifier configuration
 	 *
-	 * @return	HTMLPurifier_Config
+	 * @return HTMLPurifier_Config
 	 */
 	protected function getConfig($data = []) {
 		// HTMLPurifier configuration

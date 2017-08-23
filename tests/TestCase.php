@@ -45,7 +45,7 @@ class TestCase extends BaseTestCase {
 	/**
 	 * Get package providers.
 	 *
-	 * @param  \Illuminate\Foundation\Application  $app
+	 * @param \Illuminate\Foundation\Application $app
 	 *
 	 * @return array
 	 */
@@ -59,7 +59,7 @@ class TestCase extends BaseTestCase {
 	 * Get package aliases.  In a normal app environment these would be added to
 	 * the 'aliases' array in the config/app.php file.
 	 *
-	 * @param  \Illuminate\Foundation\Application  $app
+	 * @param \Illuminate\Foundation\Application $app
 	 *
 	 * @return array
 	 */
