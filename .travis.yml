@@ -14,6 +14,10 @@ branches:
     - master
     - /\d\.\d\.(?:\d{1,2}|x)/
 
+cache:
+  directories:
+    - $HOME/.composer/cache/files
+
 before_script:
   - travis_retry composer self-update
   - travis_retry composer install --prefer-dist --no-interaction
