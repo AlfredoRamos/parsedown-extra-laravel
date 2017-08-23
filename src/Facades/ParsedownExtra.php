@@ -20,6 +20,7 @@
 namespace AlfredoRamos\ParsedownExtra\Facades;
 
 use Illuminate\Support\Facades\Facade;
+use AlfredoRamos\ParsedownExtra\ParsedownExtraLaravel;
 
 class ParsedownExtra extends Facade {
 
@@ -29,7 +30,7 @@ class ParsedownExtra extends Facade {
 	 * @return string
 	 */
 	protected static function getFacadeAccessor() {
-		return \AlfredoRamos\ParsedownExtra\ParsedownExtraLaravel::class;
+		return ParsedownExtraLaravel::class;
 	}
 
 }
