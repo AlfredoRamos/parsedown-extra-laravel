@@ -74,7 +74,7 @@ class HTMLPurifierLaravel {
 	 *
 	 * @param array|string $data	HTMLPurifier configuration
 	 *
-	 * @return HTMLPurifier_Config
+	 * @return \HTMLPurifier_Config
 	 */
 	protected function getConfig($data = []) {
 		// HTMLPurifier configuration
