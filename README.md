@@ -16,15 +16,13 @@ Version | Laravel | Status
 
 ### Installation
 
-- Open your `composer.json` file and add the following line in the `require` object:
+Open your `composer.json` file and add the following line in the `require` object:
 
 ```json
 "alfredo-ramos/parsedown-extra-laravel": "~0.7.0"
 ```
 
-- Run `composer update` on your terminal
-
-- Service providers and aliases will be registered automatically, thanks to the new package auto-discovery feature of Laravel `5.5.x`
+Run `composer update` on your terminal. Service providers and aliases will be registered automatically, thanks to the new package auto-discovery feature of Laravel `5.5.x`
 
 ### Usage
 
