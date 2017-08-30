@@ -9,7 +9,7 @@ return [
 				'Cache.SerializerPath'	=> storage_path('app/htmlpurifier')
 			],
 
-			// Parsedown Extra default settings
+			// Default settings
 			'default'	=> [
 				'Attr.EnableID'				=> true,
 
