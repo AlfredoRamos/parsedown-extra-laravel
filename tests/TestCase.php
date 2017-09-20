@@ -84,7 +84,8 @@ class TestCase extends BaseTestCase {
 			'<ol>'.
 			'<li id="fn:1">'.PHP_EOL.
 			'<p>'.
-			'<a href="http://parsedown.org/extra/" rel="nofollow noreferrer noopener" target="_blank">http://parsedown.org/extra/</a>'.
+			'<a href="http://parsedown.org/extra/" rel="nofollow noreferrer noopener" target="_blank">'.
+			'http://parsedown.org/extra/</a>'.
 			html_entity_decode('&#160;').
 			'<a class="footnote-backref" href="#fnref1:1">↩</a>'.
 			'</p>'.PHP_EOL.
