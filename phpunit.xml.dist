@@ -21,4 +21,7 @@
 			<directory suffix=".php">./src/</directory>
 		</whitelist>
 	</filter>
+	<logging>
+		<log type="coverage-xml" target="./build/coverage-xml/" />
+	</logging>
 </phpunit>
