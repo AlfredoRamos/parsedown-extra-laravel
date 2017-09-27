@@ -14,7 +14,7 @@ matrix:
 branches:
   only:
     - master
-    - /\d\.\d\.(?:\d{1,2}|x)/
+    - /^\d+\.\d+\.(?:\d+|x)/
 
 cache:
   directories:
