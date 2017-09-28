@@ -19,55 +19,12 @@
 
 namespace AlfredoRamos\Tests;
 
-use Artisan;
 use Markdown;
-use Orchestra\Testbench\TestCase as BaseTestCase;
-use AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider;
-use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as ParsedownExtraFacade;
 
-class TestCase extends BaseTestCase {
-
-	/**
-	 * Setup the test environment.
-	 *
-	 * @return void
-	 */
-	public function setUp() {
-		parent::setUp();
-
-		Artisan::call('vendor:publish', [
-			'--provider'	=> ParsedownExtraServiceProvider::class,
-			'--tag'			=> 'config',
-			'--force'		=> true
-		]);
-	}
-
-	/**
-	 * Get package providers.
-	 *
-	 * @param \Illuminate\Foundation\Application $app
-	 *
-	 * @return array
-	 */
-	protected function getPackageProviders($app) {
-		return [
-			ParsedownExtraServiceProvider::class
-		];
-	}
-
-	/**
-	 * Get package aliases.  In a normal app environment these would be added to
-	 * the 'aliases' array in the config/app.php file.
-	 *
-	 * @param \Illuminate\Foundation\Application $app
-	 *
-	 * @return array
-	 */
-	protected function getPackageAliases($app) {
-		return [
-			'Markdown' => ParsedownExtraFacade::class
-		];
-	}
+/**
+ * @group basic
+ */
+class ParsedownExtraTest extends AbstractTestCase {
 
 	public function testBasicHtml() {
 		$expected = '<p>Parsedown Extra</p>';
