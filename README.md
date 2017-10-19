@@ -1,18 +1,18 @@
 ### About
 
-A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Laravel 5
+A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Laravel and Lumen
 
 [![Build Status](https://img.shields.io/travis/AlfredoRamos/parsedown-extra-laravel.svg?style=flat-square&maxAge=3600)](https://travis-ci.org/AlfredoRamos/parsedown-extra-laravel) [![Latest Stable Version](https://img.shields.io/packagist/v/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square&label=stable&maxAge=3600)](https://github.com/AlfredoRamos/parsedown-extra-laravel/releases) [![Code Quality](https://img.shields.io/codacy/grade/8d3f114c909c4c548cc1f60a0b910bcc.svg?style=flat-square&maxAge=3600)](https://www.codacy.com/app/AlfredoRamos/parsedown-extra-laravel) [![Code Coverage](https://img.shields.io/codacy/coverage/8d3f114c909c4c548cc1f60a0b910bcc.svg?style=flat-square&maxAge=3600)](https://www.codacy.com/app/AlfredoRamos/parsedown-extra-laravel) [![License](https://img.shields.io/packagist/l/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/parsedown-extra-laravel/master/LICENSE)
 
 ### Compatibility
 
-Version | Laravel | Status
-:------:|:-------:|:------:
-0.3.x   | 5.1.x   | End of life
-0.4.x   | 5.2.x   | End of life
-0.5.x   | 5.3.x   | End of life
-0.6.x   | 5.4.x   | Security fixes only
-0.7.x   | 5.5.x   | Active support
+Version | Laravel | Lumen | Status
+:------:|:-------:|:-----:|:------:
+0.3.x   | 5.1.x   | N/A   | End of life
+0.4.x   | 5.2.x   | N/A   | End of life
+0.5.x   | 5.3.x   | N/A   | End of life
+0.6.x   | 5.4.x   | N/A   | Security fixes only
+0.7.x   | 5.5.x   | 5.5.x | Active support
 
 ### Installation
 
@@ -22,7 +22,26 @@ Open your `composer.json` file and add the following line in the `require` objec
 "alfredo-ramos/parsedown-extra-laravel": "~0.7.0"
 ```
 
+#### Laravel
+
 Run `composer update` on your terminal. Service providers and aliases will be registered automatically, thanks to the new package auto-discovery feature of Laravel `5.5.x`
+
+#### Lumen
+
+- Open `bootstrap\app.php`
+- Register the service provider:
+
+```php
+$app->register(AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class);
+```
+
+- Register the facade alias:
+
+```php
+$app->withFacades(true, [
+	AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class => 'Markdown'
+]);
+```
 
 ### Usage
 
