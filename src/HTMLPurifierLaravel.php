@@ -31,7 +31,7 @@ class HTMLPurifierLaravel {
 		$config = $this->getConfig();
 
 		// Filesystem
-		$this->filesystem = resolve(Filesystem::class);
+		$this->filesystem = app(Filesystem::class);
 
 		// Create cache directory
 		if (!$this->filesystem->isDirectory($config->get('Cache.SerializerPath'))) {

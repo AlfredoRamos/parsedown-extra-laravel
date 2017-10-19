@@ -36,7 +36,7 @@ class ParsedownExtraLaravel extends ParsedownExtra {
 
 		// HTML Purifier
 		if (config('parsedownextra.purifier.enabled') && $options['purifier']) {
-			$purifier = resolve(HTMLPurifierLaravel::class);
+			$purifier = app(HTMLPurifierLaravel::class);
 
 			// Filter HTML
 			$markdown = $purifier->purify($markdown, $options['config']);
