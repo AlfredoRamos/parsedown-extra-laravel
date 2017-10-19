@@ -16,19 +16,21 @@ Version | Laravel | Lumen | Status
 
 ### Installation
 
-Open your `composer.json` file and add the following line in the `require` object:
+- Open your `composer.json` file and add the package in the `require` object:
 
 ```json
 "alfredo-ramos/parsedown-extra-laravel": "~0.7.0"
 ```
 
+Then run `composer update` on your terminal.
+
 #### Laravel
 
-Run `composer update` on your terminal. Service providers and aliases will be registered automatically, thanks to the new package auto-discovery feature of Laravel `5.5.x`
+Service providers and aliases will be registered automatically thanks to the new package auto-discovery feature of Laravel `5.5.x`
 
 #### Lumen
 
-- Open `bootstrap\app.php`
+- Open your `bootstrap\app.php` file
 - Register the service provider:
 
 ```php
