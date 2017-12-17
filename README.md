@@ -16,7 +16,7 @@ Version | Laravel | Lumen | Status
 
 ### Installation
 
-- Open your `composer.json` file and add the package in the `require` object:
+Open your `composer.json` file and add the package in the `require` object:
 
 ```json
 "alfredo-ramos/parsedown-extra-laravel": "~0.7.0"
@@ -30,14 +30,13 @@ Service providers and aliases will be registered automatically thanks to the new
 
 #### Lumen
 
-- Open your `bootstrap\app.php` file
-- Register the service provider:
+In your `bootstrap\app.php` file and register the service provider:
 
 ```php
 $app->register(AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class);
 ```
 
-- Register the facade alias:
+Then register the facade alias:
 
 ```php
 $app->withFacades(true, [
