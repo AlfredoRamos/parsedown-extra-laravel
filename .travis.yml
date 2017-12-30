@@ -28,5 +28,5 @@ install:
 script:
   - vendor/bin/phpunit
 
-after_script:
-  - vendor/bin/codacycoverage phpunit
+after_success:
+  - vendor/bin/codacycoverage clover
