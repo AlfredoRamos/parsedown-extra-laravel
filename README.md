@@ -8,7 +8,6 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 
 Version | Laravel | Lumen | Status
 :------:|:-------:|:-----:|:------:
-0.3.x   | 5.1.x   | N/A   | End of life
 0.4.x   | 5.2.x   | N/A   | End of life
 0.5.x   | 5.3.x   | N/A   | End of life
 0.6.x   | 5.4.x   | N/A   | Security fixes only
@@ -20,7 +19,7 @@ Version | Laravel | Lumen | Status
 Open your `composer.json` file and add the package in the `require` object:
 
 ```json
-"alfredo-ramos/parsedown-extra-laravel": "~0.8.0"
+"alfredo-ramos/parsedown-extra-laravel": "^0.8.0"
 ```
 
 Then run `composer update` on your terminal.
