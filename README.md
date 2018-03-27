@@ -10,7 +10,7 @@ Version | Laravel | Lumen | Status
 :------:|:-------:|:-----:|:------:
 0.4.x   | 5.2.x   | N/A   | End of life
 0.5.x   | 5.3.x   | N/A   | End of life
-0.6.x   | 5.4.x   | N/A   | Security fixes only
+0.6.x   | 5.4.x   | N/A   | End of life
 0.7.x   | 5.5.x   | 5.5.x | Security fixes only
 0.8.x   | 5.6.x   | 5.6.x | Active support
 
