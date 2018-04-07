@@ -17,6 +17,7 @@ class ParsedownExtraLaravel extends ParsedownExtra {
 
 	/**
 	 * Convert Markdown text to HTML and sanitize the output.
+	 *
 	 * @see \Parsedown::parse()
 	 *
 	 * @param string	$text		The Markdown text to convert.

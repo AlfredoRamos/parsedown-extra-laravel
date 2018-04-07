@@ -46,7 +46,9 @@ abstract class AbstractTestCase extends TestCase {
 	}
 
 	/**
-	 * Get package aliases.  In a normal app environment these would be added to
+	 * Get package aliases.
+	 *
+	 * In a normal app environment these would be added to
 	 * the 'aliases' array in the config/app.php file.
 	 *
 	 * @param \Illuminate\Foundation\Application $app
