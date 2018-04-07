@@ -25,7 +25,7 @@ class ParsedownExtraLaravel extends ParsedownExtra {
 	 *
 	 * @return string The resulting HTML from the Markdown text conversion.
 	 */
-	public function parse($text, $options = []) {
+	public function parse($text = '', $options = []) {
 		// Extend default options
 		$options = array_merge([
 			'config'	=> [],
