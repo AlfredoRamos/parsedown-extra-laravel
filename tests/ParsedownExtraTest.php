@@ -84,4 +84,12 @@ class ParsedownExtraTest extends AbstractTestCase {
 		$this->assertSame($expected, $result);
 	}
 
+	public function testHelperFunction() {
+		$expected = '<p><strong>Parsedown Extra</strong> helper function</p>';
+
+		$result = markdown('**Parsedown Extra** helper function');
+
+		$this->assertSame($expected, $result);
+	}
+
 }
