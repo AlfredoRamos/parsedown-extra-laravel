@@ -65,11 +65,17 @@ The code above will print:
 <p><a href="javascript:alert('xss')">XSS link</a></p>
 ```
 
+For your convenience, the `markdown()` helper function is also available. It accepts the same parameters as the facade.
+
+```php
+markdown('Hello world', ['purifier' => false])
+```
+
 For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
 
 ### Configuration
 
-[HTML Purifier](https://github.com/ezyang/htmlpurifier) is used to filter the HTML output. You can pass an array or a string that will be the key of the settings array in your configuration file.
+[HTML Purifier](https://github.com/ezyang/htmlpurifier) is used to filter the HTML output, protecting your application for insecure content. You can pass an array or a string that will be the key of the settings array in your configuration file.
 
 To add new or edit the default options, run the following command to make a copy of the configuration file:
 
@@ -83,7 +89,7 @@ php artisan vendor:publish \
 **Using a string**
 
 ```php
-Markdown::parse('Hello world!', ['config' => 'comments'])
+Markdown::parse('Hello world', ['config' => 'comments'])
 ```
 
 Where `comments` is the key of the array `settings`.
