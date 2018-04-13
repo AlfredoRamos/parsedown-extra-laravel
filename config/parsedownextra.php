@@ -23,7 +23,7 @@ return [
 					'li', 'p', 'br', 'span',
 					'img[width|height|alt|src]', 'code', 'pre', 'hr',
 					'sup', 'table', 'thead', 'tbody',
-					'tr', 'th', 'td'
+					'tr', 'th', 'td', 'th[style]', 'td[style]'
 				]),
 				'HTML.Nofollow'				=> true,
 				'HTML.TargetBlank'			=> true,

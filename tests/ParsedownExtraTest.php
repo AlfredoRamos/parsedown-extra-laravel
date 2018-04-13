@@ -42,7 +42,10 @@ class ParsedownExtraTest extends AbstractTestCase {
 			'</ol>'.
 			'</div>';
 
-		$result  = Markdown::parse('Parsedown Extra [^1]'.PHP_EOL.'[^1]: http://parsedown.org/extra/');
+		$result  = Markdown::parse(
+			'Parsedown Extra [^1]'.PHP_EOL.
+			'[^1]: http://parsedown.org/extra/'
+		);
 
 		$this->assertSame($expected, $result);
 	}
@@ -77,7 +80,7 @@ class ParsedownExtraTest extends AbstractTestCase {
 	}
 
 	public function testHtmlPurifierTemporarilyDisabled() {
-		$expected = '<p><a href="javascript:alert(\'xss\')">Link</a></p>';
+		$expected = '<p><a href="javascript:alert(&#039;xss&#039;)">Link</a></p>';
 
 		$result = Markdown::parse('[Link](javascript:alert(\'xss\'))', ['purifier' => false]);
 
