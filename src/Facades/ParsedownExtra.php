@@ -5,7 +5,7 @@
  *
  * @author Alfredo Ramos <alfredo.ramos@yandex.com>
  * @copyright 2015 Alfredo Ramos
- * @license GPL-3.0+
+ * @license GPL-3.0-or-later
  * @link https://github.com/AlfredoRamos/parsedown-extra-laravel
  */
 
