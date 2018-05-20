@@ -15,8 +15,7 @@
 	],
 	"require": {
 		"php": "^7.0.0",
-		"erusev/parsedown": "@dev",
-		"erusev/parsedown-extra": "@dev",
+		"erusev/parsedown-extra": "^0.8.0",
 		"ezyang/htmlpurifier": "^4.10.0",
 		"illuminate/config": "^5.5.0",
 		"illuminate/support": "^5.5.0",
@@ -53,5 +52,5 @@
 			}
 		}
 	},
-	"minimum-stability": "dev"
+	"minimum-stability": "beta"
 }
