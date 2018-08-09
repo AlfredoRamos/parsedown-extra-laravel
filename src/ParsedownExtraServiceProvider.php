@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Parsedown Extra package for Laravel
+ * Parsedown Extra package for Laravel.
  *
  * @author Alfredo Ramos <alfredo.ramos@yandex.com>
  * @copyright 2015 Alfredo Ramos

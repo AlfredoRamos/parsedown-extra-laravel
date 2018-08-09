@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Parsedown Extra package for Laravel
+ * Parsedown Extra package for Laravel.
  *
  * @author Alfredo Ramos <alfredo.ramos@yandex.com>
  * @copyright 2015 Alfredo Ramos
@@ -52,8 +52,8 @@ class HTMLPurifierLaravel {
 	 *
 	 * @see \HTMLPurifier::purify()
 	 *
-	 * @param string		$html	The HTML to be cleaned
-	 * @param array|string	$config	HTMLPurifier configuration
+	 * @param string		$html	The HTML to be cleaned.
+	 * @param array|string	$config	HTMLPurifier configuration.
 	 *
 	 * @return string Filtered HTML.
 	 */
@@ -67,7 +67,7 @@ class HTMLPurifierLaravel {
 	/**
 	 * Get HTMLPurifier config.
 	 *
-	 * @param array|string $data HTMLPurifier configuration
+	 * @param array|string $data HTMLPurifier configuration.
 	 *
 	 * @return \HTMLPurifier_Config Configuration object.
 	 */
