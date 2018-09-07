@@ -2,7 +2,14 @@
 	"name": "alfredo-ramos/parsedown-extra-laravel",
 	"type": "package",
 	"description": "A Parsedown Extra package for Laravel and Lumen",
-	"keywords": ["markdown", "markdown-extra", "parsedown", "parsedown-extra", "laravel", "lumen"],
+	"keywords": [
+		"markdown",
+		"markdown-extra",
+		"parsedown",
+		"parsedown-extra",
+		"laravel",
+		"lumen"
+	],
 	"homepage": "https://github.com/AlfredoRamos/parsedown-extra-laravel",
 	"license": "GPL-3.0-or-later",
 	"authors": [
