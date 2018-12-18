@@ -16,7 +16,6 @@ use HTMLPurifier_Config;
 use Illuminate\Filesystem\Filesystem;
 
 class HTMLPurifierLaravel {
-
 	/** @var \Illuminate\Filesystem\Filesystem */
 	protected $filesystem;
 
@@ -102,5 +101,4 @@ class HTMLPurifierLaravel {
 
 		return $config;
 	}
-
 }

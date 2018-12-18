@@ -16,7 +16,6 @@ use AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider;
 use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as ParsedownExtraFacade;
 
 abstract class AbstractTestCase extends TestCase {
-
 	/**
 	 * Setup the test environment.
 	 *
@@ -60,5 +59,4 @@ abstract class AbstractTestCase extends TestCase {
 			'Markdown' => ParsedownExtraFacade::class
 		];
 	}
-
 }

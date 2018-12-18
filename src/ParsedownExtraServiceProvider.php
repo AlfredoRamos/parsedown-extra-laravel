@@ -13,11 +13,9 @@ namespace AlfredoRamos\ParsedownExtra;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\Application as LaravelApplication;
-
 use Laravel\Lumen\Application as LumenApplication;
 
 class ParsedownExtraServiceProvider extends ServiceProvider {
-
 	/**
 	 * Indicates if loading of the provider is deferred.
 	 *
@@ -74,5 +72,4 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 			HTMLPurifierLaravel::class
 		];
 	}
-
 }

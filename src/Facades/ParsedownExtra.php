@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Facade;
 use AlfredoRamos\ParsedownExtra\ParsedownExtraLaravel;
 
 class ParsedownExtra extends Facade {
-
 	/**
 	 * Get the registered name of the component.
 	 *
@@ -24,5 +23,4 @@ class ParsedownExtra extends Facade {
 	protected static function getFacadeAccessor() {
 		return ParsedownExtraLaravel::class;
 	}
-
 }

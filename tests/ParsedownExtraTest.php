@@ -17,7 +17,6 @@ use Markdown;
  * @group basic
  */
 class ParsedownExtraTest extends AbstractTestCase {
-
 	public function testBasicHtml() {
 		$expected = '<p>Parsedown Extra</p>';
 
@@ -94,5 +93,4 @@ class ParsedownExtraTest extends AbstractTestCase {
 
 		$this->assertSame($expected, $result);
 	}
-
 }

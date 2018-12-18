@@ -14,7 +14,6 @@ namespace AlfredoRamos\ParsedownExtra;
 use ParsedownExtra;
 
 class ParsedownExtraLaravel extends ParsedownExtra {
-
 	/**
 	 * Convert Markdown text to HTML and sanitize the output.
 	 *
@@ -45,5 +44,4 @@ class ParsedownExtraLaravel extends ParsedownExtra {
 
 		return $markdown;
 	}
-
 }

@@ -20,7 +20,6 @@ use ReflectionClass;
  * @group facades
  */
 class ParsedownExtraTest extends AbstractTestCase {
-
 	public function testFacade() {
 		$class = new ReflectionClass(ParsedownExtraFacade::class);
 		$facade = new ReflectionClass(Facade::class);
@@ -33,5 +32,4 @@ class ParsedownExtraTest extends AbstractTestCase {
 
 		$this->assertTrue($class->isSubclassOf($facade), $msg);
 	}
-
 }
