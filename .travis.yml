@@ -1,4 +1,5 @@
 language: php
+dist: xenial
 
 matrix:
   include:
