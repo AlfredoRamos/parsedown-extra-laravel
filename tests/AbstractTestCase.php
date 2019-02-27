@@ -13,50 +13,41 @@ namespace AlfredoRamos\Tests;
 
 use Orchestra\Testbench\TestCase;
 use AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider;
-use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as ParsedownExtraFacade;
 
-abstract class AbstractTestCase extends TestCase {
-	/**
-	 * Setup the test environment.
-	 *
-	 * @return void
-	 */
-	protected function setUp(): void {
-		parent::setUp();
+if (version_compare(PHP_VERSION, '7.1.0', '>=')) {
+	abstract class AbstractTestCase extends TestCase {
+		use TestCaseTrait;
 
-		$this->artisan('vendor:publish', [
-			'--provider'	=> ParsedownExtraServiceProvider::class,
-			'--tag'			=> 'config',
-			'--force'		=> true
-		]);
+		/**
+		 * Setup the test environment.
+		 *
+		 * @return void
+		 */
+		protected function setUp(): void {
+			parent::setUp();
+			$this->artisan('vendor:publish', [
+				'--provider'	=> ParsedownExtraServiceProvider::class,
+				'--tag'			=> 'config',
+				'--force'		=> true
+			]);
+		}
 	}
+} else {
+	abstract class AbstractTestCase extends TestCase {
+		use TestCaseTrait;
 
-	/**
-	 * Get package providers.
-	 *
-	 * @param \Illuminate\Foundation\Application $app
-	 *
-	 * @return array
-	 */
-	protected function getPackageProviders($app) {
-		return [
-			ParsedownExtraServiceProvider::class
-		];
-	}
-
-	/**
-	 * Get package aliases.
-	 *
-	 * In a normal app environment these would be added to
-	 * the 'aliases' array in the config/app.php file.
-	 *
-	 * @param \Illuminate\Foundation\Application $app
-	 *
-	 * @return array
-	 */
-	protected function getPackageAliases($app) {
-		return [
-			'Markdown' => ParsedownExtraFacade::class
-		];
+		/**
+		 * Setup the test environment.
+		 *
+		 * @return void
+		 */
+		protected function setUp() {
+			parent::setUp();
+			$this->artisan('vendor:publish', [
+				'--provider'	=> ParsedownExtraServiceProvider::class,
+				'--tag'			=> 'config',
+				'--force'		=> true
+			]);
+		}
 	}
 }

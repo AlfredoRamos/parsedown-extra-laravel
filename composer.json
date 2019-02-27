@@ -21,7 +21,7 @@
 		}
 	],
 	"require": {
-		"php": "^7.0.0 || ^8.0.0",
+		"php": "^7.0.0",
 		"erusev/parsedown": "^1.7.0 || ^1.8.0-beta-5",
 		"erusev/parsedown-extra": "^0.7.0 || ^0.8.0-beta-1",
 		"ezyang/htmlpurifier": "^4.10.0",
