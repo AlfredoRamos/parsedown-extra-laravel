@@ -8,7 +8,15 @@ matrix:
     - php: 7.2
     - php: 7.3
     - php: 7.4snapshot
+      addons:
+        apt:
+          packages:
+            - libonig-dev
     - php: nightly
+      addons:
+        apt:
+          packages:
+            - libonig-dev
   allow_failures:
     - php: 7.4snapshot
     - php: nightly
