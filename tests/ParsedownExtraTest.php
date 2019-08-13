@@ -28,7 +28,7 @@ class ParsedownExtraTest extends AbstractTestCase {
 	public function testBasicFootNote() {
 		$expected = '<p>Parsedown Extra <sup id="fnref1:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>'.PHP_EOL.
 			'<div class="footnotes">'.PHP_EOL.
-			'<hr />'.
+			'<hr>'.
 			'<ol>'.
 			'<li id="fn:1">'.PHP_EOL.
 			'<p>'.

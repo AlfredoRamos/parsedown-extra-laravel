@@ -77,7 +77,9 @@ For a live demo, go to [Parsedown Extra Demo](http://parsedown.org/extra/).
 
 ### Configuration
 
-[HTML Purifier](https://github.com/ezyang/htmlpurifier) is used to filter the HTML output, protecting your application for insecure content. You can pass an array or a string that will be the key of the settings array in your configuration file.
+[HTML Purifier](https://github.com/ezyang/htmlpurifier) is used to filter the HTML output, protecting your application for insecure content. Additionally, [HTML5 Definitions for HTML Purifier](https://github.com/xemlock/htmlpurifier-html5) is used to add new definitions and sanitization for HTML5.
+
+You can pass an `array` or a `string` that will be the key of the settings array in your configuration file.
 
 To add new or edit the default options, run the following command to make a copy of the configuration file:
 
