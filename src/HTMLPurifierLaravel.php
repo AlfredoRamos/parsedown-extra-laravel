@@ -13,6 +13,7 @@ namespace AlfredoRamos\ParsedownExtra;
 
 use HTMLPurifier;
 use HTMLPurifier_Config;
+use HTMLPurifier_HTML5Config;
 use Illuminate\Filesystem\Filesystem;
 
 class HTMLPurifierLaravel {
@@ -72,7 +73,7 @@ class HTMLPurifierLaravel {
 	 */
 	protected function getConfig($data = []) {
 		// HTMLPurifier configuration
-		$config = HTMLPurifier_Config::createDefault();
+		$config = HTMLPurifier_HTML5Config::createDefault();
 		$config->autofinalize = false;
 
 		// Set default settings, 'default' key must exist
