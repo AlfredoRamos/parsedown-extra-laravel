@@ -12,7 +12,6 @@
 namespace AlfredoRamos\ParsedownExtra;
 
 use HTMLPurifier;
-use HTMLPurifier_Config;
 use HTMLPurifier_HTML5Config;
 use Illuminate\Filesystem\Filesystem;
 
