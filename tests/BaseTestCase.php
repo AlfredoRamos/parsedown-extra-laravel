@@ -11,10 +11,25 @@
 
 namespace AlfredoRamos\Tests;
 
+use Orchestra\Testbench\TestCase;
 use AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider;
 use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as ParsedownExtraFacade;
 
-trait TestCaseTrait {
+class BaseTestCase extends TestCase {
+	/**
+	 * Setup the test environment.
+	 *
+	 * @return void
+	 */
+	protected function setUp(): void {
+		parent::setUp();
+		$this->artisan('vendor:publish', [
+			'--provider'	=> ParsedownExtraServiceProvider::class,
+			'--tag'			=> 'config',
+			'--force'		=> true
+		]);
+	}
+
 	/**
 	 * Get package providers.
 	 *
