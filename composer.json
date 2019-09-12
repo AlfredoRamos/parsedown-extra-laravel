@@ -26,14 +26,14 @@
 		"erusev/parsedown-extra": "^0.7.0 || ^0.8.0-beta-1",
 		"ezyang/htmlpurifier": "^4.10.0",
 		"xemlock/htmlpurifier-html5": "^0.1.11",
-		"illuminate/config": "^5.5.0",
-		"illuminate/support": "^5.5.0",
-		"illuminate/filesystem": "^5.5.0"
+		"illuminate/config": "^5.5.0 || ^6.0.0",
+		"illuminate/support": "^5.5.0 || ^6.0.0",
+		"illuminate/filesystem": "^5.5.0 || ^6.0.0"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "^6.5.0 || ^7.5.0 || ^8.1.0",
 		"mockery/mockery": "^1.2.0",
-		"orchestra/testbench": "^3.5.0",
+		"orchestra/testbench": "^3.5.0 || ^4.0.0",
 		"codacy/coverage": "^1.4.0"
 	},
 	"suggest": {
