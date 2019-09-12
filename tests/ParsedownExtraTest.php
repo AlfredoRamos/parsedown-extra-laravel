@@ -16,7 +16,7 @@ use Markdown;
 /**
  * @group basic
  */
-class ParsedownExtraTest extends AbstractTestCase {
+class ParsedownExtraTest extends BaseTestCase {
 	public function testBasicHtml() {
 		$expected = '<p>Parsedown Extra</p>';
 

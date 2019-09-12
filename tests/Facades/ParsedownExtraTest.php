@@ -11,7 +11,7 @@
 
 namespace AlfredoRamos\Tests\Facades;
 
-use AlfredoRamos\Tests\AbstractTestCase;
+use AlfredoRamos\Tests\BaseTestCase;
 use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as ParsedownExtraFacade;
 use Illuminate\Support\Facades\Facade;
 use ReflectionClass;
@@ -19,7 +19,7 @@ use ReflectionClass;
 /**
  * @group facades
  */
-class ParsedownExtraTest extends AbstractTestCase {
+class ParsedownExtraTest extends BaseTestCase {
 	public function testFacade() {
 		$class = new ReflectionClass(ParsedownExtraFacade::class);
 		$facade = new ReflectionClass(Facade::class);
