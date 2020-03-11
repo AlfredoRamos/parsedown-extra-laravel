@@ -4,8 +4,6 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 
 [![Build Status](https://img.shields.io/travis/com/AlfredoRamos/parsedown-extra-laravel.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/parsedown-extra-laravel)
 [![Latest Stable Version](https://img.shields.io/packagist/v/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square&label=stable)](https://packagist.org/packages/alfredo-ramos/parsedown-extra-laravel)
-[![Code Quality](https://img.shields.io/codacy/grade/8d3f114c909c4c548cc1f60a0b910bcc.svg?style=flat-square)](https://www.codacy.com/app/AlfredoRamos/parsedown-extra-laravel)
-[![Code Coverage](https://img.shields.io/codacy/coverage/8d3f114c909c4c548cc1f60a0b910bcc.svg?style=flat-square)](https://www.codacy.com/app/AlfredoRamos/parsedown-extra-laravel)
 [![License](https://img.shields.io/packagist/l/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/parsedown-extra-laravel/master/LICENSE)
 
 ### Compatibility
