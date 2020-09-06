@@ -1,9 +1,11 @@
 language: php
-dist: bionic
+dist: focal
 
 jobs:
   include:
-    - php: 7.3
+    - os: linux
+      dist: bionic
+      php: 7.3
     - php: 7.4
     - php: nightly
   allow_failures:
