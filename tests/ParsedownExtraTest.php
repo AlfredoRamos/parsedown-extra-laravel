@@ -35,20 +35,6 @@ class ParsedownExtraTest extends BaseTestCase {
 </ol></div>
 EOT;
 
-		if (version_compare(PHP_VERSION, '7.4.0', '>=')) {
-			$expected = <<<EOT
-<p>Parsedown Extra <sup id="fnref1:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
-<div class="footnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p><a href="http://parsedown.org/extra/" rel="nofollow noreferrer noopener" target="_blank">http://parsedown.org/extra/</a>\xc2\xa0<a class="footnote-backref" href="#fnref1:1">↩</a></p>
-</li>
-</ol>
-</div>
-EOT;
-		}
-
 		$result  = Markdown::parse(
 			'Parsedown Extra [^1]'.PHP_EOL.
 			'[^1]: http://parsedown.org/extra/'
