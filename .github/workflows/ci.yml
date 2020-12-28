@@ -27,7 +27,7 @@ jobs:
         with:
           php-version: ${{ matrix.php-version }}
           tools: composer:v2
-          coverage: none
+          coverage: pcov
 
       - name: Setup Composer
         id: setup-composer
@@ -47,3 +47,11 @@ jobs:
 
       - name: Run PHPUnit
         run: vendor/bin/phpunit
+
+      - name: Send code coverage
+        if: ${{ success() }}
+        continue-on-error: true
+        uses: codacy/codacy-coverage-reporter-action@master
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          coverage-reports: build/log/clover.xml
