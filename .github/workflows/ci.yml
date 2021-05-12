@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@2.11.0
         with:
           php-version: ${{ matrix.php-version }}
           tools: composer:v2
