@@ -13,8 +13,6 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 
 Version | Laravel           | Lumen             | Status
 :------:|:-----------------:|:-----------------:|:-------------------:
-0.6.x   | 5.4.x             | N/A               | End of life
-0.7.x   | 5.5.x             | 5.5.x             | End of life
 0.8.x   | >= 5.5.x, < 6.x.x | >= 5.5.x, < 6.x.x | End of life
 1.x.x   | 6.x.x             | 6.x.x             | End of life
 2.x.x   | 7.x.x             | 7.x.x             | Security fixes only
