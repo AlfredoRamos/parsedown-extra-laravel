@@ -2,13 +2,8 @@ name: CI
 
 on:
   push:
-    branches:
-      - master
+    branches: [master]
   pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
 
 jobs:
   test:
@@ -20,7 +15,7 @@ jobs:
         php-version: ['7.3', '7.4', '8.0']
     steps:
       - name: Checkout sources
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -31,8 +26,7 @@ jobs:
 
       - name: Setup Composer
         id: setup-composer
-        run: |
-          echo "::set-output name=dir::$(composer config cache-files-dir)"
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
 
       - name: Setup Cache
         uses: actions/cache@v2
