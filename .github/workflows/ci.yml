@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php-version: ['7.3', '7.4', '8.0', '8.1']
+        php-version: ['8.0', '8.1']
     steps:
       - name: Checkout sources
         uses: actions/checkout@v2
@@ -45,7 +45,7 @@ jobs:
       - name: Send code coverage
         if: ${{ success() }}
         continue-on-error: true
-        uses: codacy/codacy-coverage-reporter-action@master
+        uses: codacy/codacy-coverage-reporter-action@v1
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           coverage-reports: build/log/clover.xml
