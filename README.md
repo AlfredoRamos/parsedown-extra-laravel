@@ -15,15 +15,16 @@ Version | Laravel           | Lumen             | Status
 :------:|:-----------------:|:-----------------:|:-------------------:
 0.8.x   | >= 5.5.x, < 6.x.x | >= 5.5.x, < 6.x.x | End of life
 1.x.x   | 6.x.x             | 6.x.x             | End of life
-2.x.x   | 7.x.x             | 7.x.x             | Security fixes only
-3.x.x   | 8.x.x             | 8.x.x             | Active support
+2.x.x   | 7.x.x             | 7.x.x             | End of life
+3.x.x   | 8.x.x             | 8.x.x             | Security fixes only
+4.x.x   | 9.x.x             | 9.x.x             | Active support
 
 ### Installation
 
 Open your `composer.json` file and add the package in the `require` object:
 
 ```json
-"alfredo-ramos/parsedown-extra-laravel": "^3.0.0"
+"alfredo-ramos/parsedown-extra-laravel": "^4.0.0"
 ```
 
 Then run `composer update` on your terminal.
