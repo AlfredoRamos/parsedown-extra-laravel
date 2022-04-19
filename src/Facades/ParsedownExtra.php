@@ -3,7 +3,7 @@
 /**
  * Parsedown Extra package for Laravel.
  *
- * @author Alfredo Ramos <alfredo.ramos@yandex.com>
+ * @author Alfredo Ramos <alfredo.ramos@protonmail.com>
  * @copyright 2015 Alfredo Ramos
  * @license GPL-3.0-or-later
  * @link https://github.com/AlfredoRamos/parsedown-extra-laravel
