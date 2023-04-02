@@ -4,27 +4,28 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 
 [HTML Purifier](https://github.com/ezyang/htmlpurifier) is also used to filter the HTML output, protecting your application for insecure content. Additionally, [HTML5 Definitions for HTML Purifier](https://github.com/xemlock/htmlpurifier-html5) is used to add new definitions and sanitization for HTML5.
 
-[![Build Status](https://img.shields.io/github/workflow/status/AlfredoRamos/parsedown-extra-laravel/GitHub%20Actions%20CI?style=flat-square)](https://github.com/AlfredoRamos/parsedown-extra-laravel/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/AlfredoRamos/parsedown-extra-laravel/ci.yml?style=flat-square)](https://github.com/AlfredoRamos/parsedown-extra-laravel/actions)
 [![Latest Stable Version](https://img.shields.io/packagist/v/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square&label=stable)](https://packagist.org/packages/alfredo-ramos/parsedown-extra-laravel)
 [![Code Quality](https://img.shields.io/codacy/grade/56dd8413204e4b1ba3a715cc57bd8fee.svg?style=flat-square)](https://app.codacy.com/manual/AlfredoRamos/parsedown-extra-laravel/dashboard)
 [![License](https://img.shields.io/packagist/l/alfredo-ramos/parsedown-extra-laravel.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/parsedown-extra-laravel/master/LICENSE)
 
 ### Compatibility
 
-Version | Laravel           | Lumen             | Status
-:------:|:-----------------:|:-----------------:|:-------------------:
-0.8.x   | >= 5.5.x, < 6.x.x | >= 5.5.x, < 6.x.x | End of life
-1.x.x   | 6.x.x             | 6.x.x             | End of life
-2.x.x   | 7.x.x             | 7.x.x             | End of life
-3.x.x   | 8.x.x             | 8.x.x             | Security fixes only
-4.x.x   | 9.x.x             | 9.x.x             | Active support
+| Version |      Laravel      |       Lumen       |       Status        |
+| :-----: | :---------------: | :---------------: | :-----------------: |
+|  0.8.x  | >= 5.5.x, < 6.x.x | >= 5.5.x, < 6.x.x |     End of life     |
+|  1.x.x  |       6.x.x       |       6.x.x       |     End of life     |
+|  2.x.x  |       7.x.x       |       7.x.x       |     End of life     |
+|  3.x.x  |       8.x.x       |       8.x.x       |     End of life     |
+|  4.x.x  |       9.x.x       |       9.x.x       | Security fixes only |
+|  5.x.x  |      10.x.x       |      10.x.x       |   Active support    |
 
 ### Installation
 
 Open your `composer.json` file and add the package in the `require` object:
 
 ```json
-"alfredo-ramos/parsedown-extra-laravel": "^4.0.0"
+"alfredo-ramos/parsedown-extra-laravel": "^5.0.0"
 ```
 
 Then run `composer update` on your terminal.
@@ -57,10 +58,10 @@ The `Markdown::parse()` method is responsible to transform the Markdown syntax i
 Markdown::parse(string $text = '', array $config = [])
 ```
 
-Parameter | Data type         | Default value | Required | Description
-:--------:|:-----------------:|:-------------:|:--------:|:-----------
-`$text`   | `string`          | `''`          | Yes      | Markdown text
-`$config`  | `array`, `string` | `[]`          | No       | Extra configuration for HTML Purifier
+| Parameter |     Data type     | Default value | Required | Description                           |
+| :-------: | :---------------: | :-----------: | :------: | :------------------------------------ |
+|  `$text`  |     `string`      |     `''`      |   Yes    | Markdown text                         |
+| `$config` | `array`, `string` |     `[]`      |    No    | Extra configuration for HTML Purifier |
 
 **Notes:**
 
