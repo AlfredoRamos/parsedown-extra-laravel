@@ -20,13 +20,14 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 |  4.x.x  |       9.x.x       |       9.x.x       |  End of life   |
 |  5.x.x  |      10.x.x       |      10.x.x       |  End of life   |
 |  6.x.x  |      11.x.x       |      11.x.x       | Active support |
+|  7.x.x  |      12.x.x       |        N/A        | Active support |
 
 ### Installation
 
 Open your `composer.json` file and add the package in the `require` object:
 
 ```json
-"alfredo-ramos/parsedown-extra-laravel": "^6.0.0"
+"alfredo-ramos/parsedown-extra-laravel": "^7.0.0"
 ```
 
 Then run `composer update` on your terminal.
@@ -37,19 +38,7 @@ Service providers and aliases will be registered automatically since Laravel `5.
 
 #### Lumen
 
-In your `bootstrap\app.php` file and register the service provider:
-
-```php
-$app->register(AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class);
-```
-
-Then register the facade alias:
-
-```php
-$app->withFacades(true, [
-	AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class => 'Markdown'
-]);
-```
+Support for Lumen has been dropped since version `11.x.x`. If you need this package for Lumen, please install the previous major version [`6.0.0`](https://github.com/AlfredoRamos/parsedown-extra-laravel/tree/6.0.0)
 
 ### Usage
 
