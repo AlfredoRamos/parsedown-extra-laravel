@@ -12,8 +12,6 @@
 namespace AlfredoRamos\ParsedownExtra;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Foundation\Application as LaravelApplication;
-use Laravel\Lumen\Application as LumenApplication;
 
 class ParsedownExtraServiceProvider extends ServiceProvider {
 	/**
@@ -29,17 +27,9 @@ class ParsedownExtraServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function boot() {
-		// Laravel
-		if ($this->app instanceof LaravelApplication) {
-			$this->publishes([
-				__DIR__ . '/../config/parsedownextra.php' => config_path('parsedownextra.php')
-			], 'config');
-		}
-
-		// Lumen
-		if ($this->app instanceof LumenApplication) {
-			$this->app->configure('parsedownextra');
-		}
+		$this->publishes([
+			__DIR__ . '/../config/parsedownextra.php' => config_path('parsedownextra.php')
+		], 'config');
 	}
 
 	/**

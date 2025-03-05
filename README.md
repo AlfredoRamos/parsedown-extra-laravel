@@ -1,6 +1,6 @@
 ### About
 
-A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Laravel and Lumen.
+A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Laravel.
 
 [HTML Purifier](https://github.com/ezyang/htmlpurifier) is also used to filter the HTML output, protecting your application for insecure content. Additionally, [HTML5 Definitions for HTML Purifier](https://github.com/xemlock/htmlpurifier-html5) is used to add new definitions and sanitization for HTML5.
 
@@ -38,7 +38,7 @@ Service providers and aliases will be registered automatically since Laravel `5.
 
 #### Lumen
 
-Support for Lumen has been dropped since version `11.x.x`. If you need this package for Lumen, please install the previous major version [`6.0.0`](https://github.com/AlfredoRamos/parsedown-extra-laravel/tree/6.0.0)
+Support for Lumen has been dropped since version `7.x.x`. If you need this package for Lumen up to version `11.x.x`, please install the previous major version [`6.0.0`](https://github.com/AlfredoRamos/parsedown-extra-laravel/tree/6.0.0)
 
 ### Usage
 

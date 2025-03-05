@@ -1,14 +1,13 @@
 {
 	"name": "alfredo-ramos/parsedown-extra-laravel",
 	"type": "package",
-	"description": "A Parsedown Extra package for Laravel and Lumen",
+	"description": "A Parsedown Extra package for Laravel",
 	"keywords": [
 		"markdown",
 		"markdown-extra",
 		"parsedown",
 		"parsedown-extra",
-		"laravel",
-		"lumen"
+		"laravel"
 	],
 	"homepage": "https://github.com/AlfredoRamos/parsedown-extra-laravel",
 	"license": "GPL-3.0-or-later",
@@ -35,8 +34,7 @@
 		"orchestra/testbench": "^10.0.0"
 	},
 	"suggest": {
-		"laravel/framework": "To integrate with Laravel",
-		"laravel/lumen-framework": "To integrate with Lumen"
+		"laravel/framework": "To integrate with Laravel"
 	},
 	"autoload": {
 		"psr-4": {
