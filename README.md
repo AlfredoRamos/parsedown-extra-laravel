@@ -11,21 +11,22 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 
 ### Compatibility
 
-| Version |      Laravel      |       Lumen       |       Status        |
-| :-----: | :---------------: | :---------------: | :-----------------: |
-|  0.8.x  | >= 5.5.x, < 6.x.x | >= 5.5.x, < 6.x.x |     End of life     |
-|  1.x.x  |       6.x.x       |       6.x.x       |     End of life     |
-|  2.x.x  |       7.x.x       |       7.x.x       |     End of life     |
-|  3.x.x  |       8.x.x       |       8.x.x       |     End of life     |
-|  4.x.x  |       9.x.x       |       9.x.x       | Security fixes only |
-|  5.x.x  |      10.x.x       |      10.x.x       |   Active support    |
+| Version |      Laravel      |       Lumen       |     Status     |
+| :-----: | :---------------: | :---------------: | :------------: |
+|  0.8.x  | >= 5.5.x, < 6.x.x | >= 5.5.x, < 6.x.x |  End of life   |
+|  1.x.x  |       6.x.x       |       6.x.x       |  End of life   |
+|  2.x.x  |       7.x.x       |       7.x.x       |  End of life   |
+|  3.x.x  |       8.x.x       |       8.x.x       |  End of life   |
+|  4.x.x  |       9.x.x       |       9.x.x       |  End of life   |
+|  5.x.x  |      10.x.x       |      10.x.x       |  End of life   |
+|  6.x.x  |      11.x.x       |      11.x.x       | Active support |
 
 ### Installation
 
 Open your `composer.json` file and add the package in the `require` object:
 
 ```json
-"alfredo-ramos/parsedown-extra-laravel": "^5.0.0"
+"alfredo-ramos/parsedown-extra-laravel": "^6.0.0"
 ```
 
 Then run `composer update` on your terminal.
@@ -65,7 +66,7 @@ Markdown::parse(string $text = '', array $config = [])
 
 **Notes:**
 
-- If `$config` is a string, it will be trated as an array key in the `[`purifier`][`settings`]` array.
+- If `$config` is a string, it will be trated as an array key in the `['purifier']['settings']` array.
 - If `$config` is an array it will extend default configuration for HTML Purifier.
 - An empty value for `$config` means that it will use default values for HTML Purifier, see `\AlfredoRamos\ParsedownExtra\HTMLPurifierLaravel::getConfig()` for more information.
 
