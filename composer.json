@@ -21,7 +21,7 @@
 	],
 	"require": {
 		"php": "^8.2.0",
-		"erusev/parsedown-extra": "^0.8.1",
+		"erusev/parsedown-extra": "^0.9.0",
 		"ezyang/htmlpurifier": "^4.18.0",
 		"xemlock/htmlpurifier-html5": "^0.1.11",
 		"illuminate/config": "^12.0.0",
