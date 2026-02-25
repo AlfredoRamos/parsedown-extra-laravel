@@ -29,9 +29,9 @@
 		"illuminate/filesystem": "^12.0.0"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "^11.5.10",
+		"phpunit/phpunit": "^11.5.55 || ^12.5.14 || ^13.0.5",
 		"mockery/mockery": "^1.6.12",
-		"orchestra/testbench": "^10.0.0"
+		"orchestra/testbench": "^10.9.0"
 	},
 	"suggest": {
 		"laravel/framework": "To integrate with Laravel"
