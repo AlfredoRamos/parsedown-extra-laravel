@@ -24,13 +24,11 @@ A [Parsedown Extra](https://github.com/erusev/parsedown-extra) package for Larav
 
 ### Installation
 
-Open your `composer.json` file and add the package in the `require` object:
+Run the following command on your terminal:
 
-```json
-"alfredo-ramos/parsedown-extra-laravel": "^7.0.0"
+```shell
+composer require 'alfredo-ramos/parsedown-extra-laravel:^7.0.0'
 ```
-
-Then run `composer update` on your terminal.
 
 #### Laravel
 
