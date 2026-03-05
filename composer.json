@@ -1,62 +1,62 @@
 {
-	"name": "alfredo-ramos/parsedown-extra-laravel",
-	"type": "package",
-	"description": "A Parsedown Extra package for Laravel",
-	"keywords": [
-		"markdown",
-		"markdown-extra",
-		"parsedown",
-		"parsedown-extra",
-		"laravel"
-	],
-	"homepage": "https://github.com/AlfredoRamos/parsedown-extra-laravel",
-	"license": "GPL-3.0-or-later",
-	"authors": [
-		{
-			"name": "Alfredo Ramos",
-			"email": "alfredo.ramos@proton.me",
-			"homepage": "https://alfredoramos.mx",
-			"role": "Developer"
-		}
-	],
-	"require": {
-		"php": "^8.2.0",
-		"erusev/parsedown-extra": "^0.9.0",
-		"ezyang/htmlpurifier": "^4.18.0",
-		"xemlock/htmlpurifier-html5": "^0.1.11",
-		"illuminate/config": "^12.0.0",
-		"illuminate/support": "^12.0.0",
-		"illuminate/filesystem": "^12.0.0"
-	},
-	"require-dev": {
-		"phpunit/phpunit": "^11.5.55 || ^12.5.14 || ^13.0.5",
-		"mockery/mockery": "^1.6.12",
-		"orchestra/testbench": "^10.9.0"
-	},
-	"suggest": {
-		"laravel/framework": "To integrate with Laravel"
-	},
-	"autoload": {
-		"psr-4": {
-			"AlfredoRamos\\ParsedownExtra\\": "src/"
-		},
-		"files": [
-			"src/helpers.php"
-		]
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"AlfredoRamos\\Tests\\": "tests/"
-		}
-	},
-	"extra": {
-		"laravel": {
-			"providers": [
-				"AlfredoRamos\\ParsedownExtra\\ParsedownExtraServiceProvider"
-			],
-			"aliases": {
-				"Markdown": "AlfredoRamos\\ParsedownExtra\\Facades\\ParsedownExtra"
-			}
-		}
-	}
+    "name": "alfredo-ramos/parsedown-extra-laravel",
+    "type": "package",
+    "description": "A Parsedown Extra package for Laravel",
+    "keywords": [
+        "markdown",
+        "markdown-extra",
+        "parsedown",
+        "parsedown-extra",
+        "laravel"
+    ],
+    "homepage": "https://github.com/AlfredoRamos/parsedown-extra-laravel",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Alfredo Ramos",
+            "email": "alfredo.ramos@proton.me",
+            "homepage": "https://alfredoramos.mx",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2.0",
+        "erusev/parsedown-extra": "^0.9.0",
+        "ezyang/htmlpurifier": "^4.18.0",
+        "xemlock/htmlpurifier-html5": "^0.1.11",
+        "illuminate/config": "^12.0.0 || ^13.0",
+        "illuminate/support": "^12.0.0 || ^13.0",
+        "illuminate/filesystem": "^12.0.0 || ^13.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5.55 || ^12.5.14 || ^13.0.5",
+        "mockery/mockery": "^1.6.12",
+        "orchestra/testbench": "^10.9.0 || ^11.0"
+    },
+    "suggest": {
+        "laravel/framework": "To integrate with Laravel"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlfredoRamos\\ParsedownExtra\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AlfredoRamos\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlfredoRamos\\ParsedownExtra\\ParsedownExtraServiceProvider"
+            ],
+            "aliases": {
+                "Markdown": "AlfredoRamos\\ParsedownExtra\\Facades\\ParsedownExtra"
+            }
+        }
+    }
 }
